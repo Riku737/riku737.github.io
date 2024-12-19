@@ -3,57 +3,208 @@
     <head>
         <title>Home | Riki</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
 
         <div class="main_container">
-            <div class="navigation_container">
-            </div>
-    
-            <div class="hero_container">
-                <div class="hero_content">
-                    <div class="left_hero">
-                        <h1>Hi, my name is Riki McAlear</h1>
-                        <p>I'm a Software Engineering (BASc) undergraduate at the University of Ottawa with a background in design, marketing, and business.</p>
-                        <button>Contact me</button>
+
+            <!--Navigation bar-->
+            <div class="navigation_section">
+                <div class="navigation_container">
+                    <div class="left_nav">
+                        <b>Riki McAlear</b>
                     </div>
-                    <div class="right_hero">
-                        <img class="avatar_image" src="avatar.jpg">
+                    <div class="right_nav">
+                        <a class="tertiary_button" href="#">Home</a>
+                        <a class="tertiary_button" href="#">Skills</a>
+                        <a class="tertiary_button" href="#">Projects</a>
+                        <a class="tertiary_button" href="#">Experience</a>
+                        <a class="tertiary_button" href="#">About</a>
+                        <a class="primary_button" href="#">Resume</a>
                     </div>
                 </div>
             </div>
+            
+            <!--Hero section-->
+            <div class="hero_section">
+
+                <div class="hero_container">
+                    <div class="hero_content">
+                        <div class="left_hero">
+                            <img class="avatar_image" src="assets/profile_picture.jpg" alt="Avatar">
+                        </div>
+                        <div class="right_hero">
+                            <h1>Hi, my name is Riki</h1>
+                            <p>I'm a Software Engineering (BASc) undergraduate at the University of Ottawa with a background in design, marketing, and business.</p>
+                            <a href="#" class="primary_button">Resume</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Skills section-->
+            <div class="skills_section">
+                <div class="skills_container">
+
+                    <h2>Skills</h2>
+
+                    <div class="skill_content">
+
+                        <div class="skill_left">
+
+                            <div class="skill_box">
+
+                                <h3>Programming languages</h3>
     
-            <div class="projects_container">
-                <div class="projects_content">
+                                <div class="skill_banner">
+                                    <img title="Python" class="skill_image" src="assets/python.png" alt="Python">
+                                    <img title="HTML" class="skill_image" src="assets/html.png" alt="HTML">
+                                    <img title="CSS" class="skill_image" src="assets/css.png" alt="CSS">
+                                    <img title="JavaScript" class="skill_image" src="assets/javascript.png" alt="JavaScript">
+                                    <img title="Visual Basic" class="skill_image" src="assets/visualbasic.png" alt="Visual Basic">
+                                    <img title="C++" class="skill_image" src="assets/c++.png" alt="C++">
+                                </div>
+                                
+                            </div>
 
-                    <div class="projects_box">
-                        <img class="project_image" src="clarinet.jpg">
-                        <h3>Project name</h3>
-                        <p>Project description</p>
-                    </div>
+                            <div class="skill_box">
 
-                    <div class="projects_box">
-                        <img class="project_image" src="clarinet.jpg">
-                        <h3>Project name</h3>
-                        <p>Project description</p>
-                    </div>
+                                <h3>Tools & platforms</h3>
+    
+                                <div class="skill_banner">
+                                    <img title="Git" class="skill_image" src="assets/git.png" alt="Git">
+                                    <img title="Figma" class="skill_image" src="assets/figma.png" alt="Figma">
+                                    <img title="Adobe XD" class="skill_image" src="assets/xd.png" alt="Adobe XD">
+                                    <img title="Canva" class="skill_image" src="assets/canva.png" alt="Canva">
+                                </div>
+                                
+                            </div>
 
-                    <div class="projects_box">
-                        <img class="project_image" src="clarinet.jpg">
-                        <h3>Project name</h3>
-                        <p>Project description</p>
-                    </div>
+                        </div>
+    
+                        <div class="skill_right">
+                            
+                            <div class="skill_box">
 
-                    <div class="projects_box">
-                        <img class="project_image" src="clarinet.jpg">
-                        <h3>Project name</h3>
-                        <p>Project description</p>
+                                <h3>Frameworks & libraries</h3>
+    
+                                <div class="skill_banner">
+                                    <img title="Bootstrap" class="skill_image" src="assets/bootstrap.png" alt="Bootstrap">
+                                </div>
+                                
+                            </div>
+
+                            <div class="skill_box">
+
+                                <h3>Other</h3>
+    
+                                <div class="skill_banner">
+                                    <img title="GitHub" class="skill_image" src="assets/github.png" alt="GitHub">
+                                    <img title="Notion" class="skill_image" src="assets/notion.png" alt="Notion">
+                                    <img title="Google Workspace" class="skill_image" src="assets/google.png" alt="Google Workspace">
+                                    <img title="Microsoft Office 365" class="skill_image" src="assets/office.jpg" alt="Microsoft Office 365">
+                                    <img title="Arduino" class="skill_image" src="assets/arduino.png" alt="Arduino">
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+
                     </div>
 
                 </div>
             </div>
+            
+            <!--Projects section-->
+            <div class="projects_section">
+                <div class="projects_container">
 
-            <h1>Website work in progress</h1>
+                    <h2>Projects</h2>
+
+                    <div class="projects_highlight">
+
+                        <div class="project_left">
+
+                            <img class="project_image_highlight" src="assets/clarinet.jpg">
+
+                        </div>
+
+                        <div class="project_right">
+
+                            <a href="website"><h3>Project name</h3></a>
+                            <p>Project description</p>
+                            
+                            <div class="tools_box">
+                                <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
+                                <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
+                                <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
+                                <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="projects_banner">
+    
+                        <div class="projects_box">
+                            <img class="project_image" src="assets/clarinet.jpg" alt="Thumbnail">
+                            <a href="website"><h3>Project name</h3></a>
+                            <p>Project description</p>
+                            
+                            <div class="tools_box">
+                                <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
+                                <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
+                                <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
+                                <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
+                            </div>
+    
+                        </div>
+    
+                        <div class="projects_box">
+                            <img class="project_image" src="assets/clarinet.jpg" alt="Thumbnail">
+                            <a href="website"><h3>Project name</h3></a>
+                            <p>Project description</p>
+                            
+                            <div class="tools_box">
+                                <img class="tool_image" src="assets/arduino.png" alt="Arduino" title="Arduino">
+                                <img class="tool_image" src="assets/c++.png" alt="C++" title="Arduino">
+                            </div>
+    
+                        </div>
+    
+                        <div class="projects_box">
+                            <img class="project_image" src="assets/clarinet.jpg" alt="Thumbnail">
+                            <a href="website"><h3>Project name</h3></a>
+                            <p>Project description</p>
+                            
+                            <div class="tools_box">
+                                <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
+                                <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
+                                <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
+                                <img class="tool_image" src="assets/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                                <img class="tool_image" src="assets/react.png" alt="React" title="React">
+                            </div>
+    
+                        </div>
+    
+                        <div class="projects_box">
+                            
+                            <img class="project_image" src="assets/clarinet.jpg" alt="Thubmnail">
+                            <a href="website"><h3>Project name</h3></a>
+                            <p>Project description</p>
+                            
+                            <div class="tools_box">
+                                <img class="tool_image" src="assets/python.png" alt="Python" title="Python">
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </body>
