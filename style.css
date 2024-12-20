@@ -7,9 +7,22 @@ body {
     margin: 0;
 }
 
-.navigation_container, .hero_container, .skills_container, .projects_container {
-    width: 1200px;
+p {
+    color: #575757;
+}
+
+.navigation_container, .hero_container, .skills_container, .projects_container, .experience_container {
+    width: 1000px;
     margin: auto;
+}
+
+.skills_section, .projects_section, .experience_section {
+    padding: 50px 0px;
+}
+
+.skills_section, .projects_section h2 {
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .primary_button {
@@ -23,6 +36,14 @@ body {
 
 .primary_button:hover {
     background-color: grey;
+}
+
+.secondary_button {
+    padding: 12.5px 25px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .tertiary_button {
@@ -65,8 +86,7 @@ body {
 /*Hero section*/
 .hero_section {
     width: 100%;
-    background-color: #dfdfdf;
-    padding: 100px 0px;
+    padding: 200px 0px;
 }
 
 .hero_container {
@@ -93,11 +113,19 @@ body {
 }
 
 .avatar_image {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
     border-radius: 100%;
 }
+
+.action_banner {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+
 
 
 /*Skills section*/
@@ -105,11 +133,23 @@ body {
     width: 100%;
     background-color: black;
     color: white;
-    padding: 50px 0px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 0;
 }
 
-.skills_container {
-    width: 1200;
+.skills_section:before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skewY(-3deg);
+    transform-origin: top left;
 }
 
 .skill_banner {
@@ -145,6 +185,7 @@ body {
 
 .skill_box h3 {
     margin-top: 0px;
+    margin-bottom: 12.5px;
 }
 
 
@@ -201,4 +242,11 @@ body {
     height: 25px;
     width: 25px;
     object-fit: contain;
+}
+
+/*Experience section*/
+.experience_section {
+    width: 100%;
+    background-color: black;
+    color:white;
 }
