@@ -7,8 +7,31 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
 p {
     color: #575757;
+    font-size: 18px;
 }
 
 .navigation_container, .hero_container, .skills_container, .projects_container, .experience_container {
@@ -20,18 +43,14 @@ p {
     padding: 50px 0px;
 }
 
-.skills_section, .projects_section h2 {
-    margin-top: 0px;
-    margin-bottom: 25px;
-}
-
 .primary_button {
     padding: 12.5px 25px;
     background-color: black;
     color: white;
     text-decoration: none;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-size: 18px;
 }
 
 .primary_button:hover {
@@ -43,17 +62,23 @@ p {
     color: black;
     text-decoration: none;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 3px;
+    font-size: 18px;
 }
 
 .tertiary_button {
+    padding: 12.5px 25px;
     color: black;
     text-decoration: black;
+    font-size: 18px;
 }
 
 .tertiary_button:hover {
     color: gray;
+    text-decoration: underline;
 }
+
+
 
 
 /*Navigation bar*/
@@ -71,16 +96,30 @@ p {
 }
 
 .left_nav {
-    width: 50%;
+    width: 25%;
 }
 
 .right_nav {
-    width: 50%;
+    width: 75%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 12.5px;
 }
+
+.logo_button {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo_button:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+
 
 
 /*Hero section*/
@@ -105,7 +144,8 @@ p {
 }
 
 .right_hero p {
-    font-size: larger;
+    margin-top: 12.5px;
+    margin-bottom: 25px;
 }
 
 .left_hero {
@@ -121,7 +161,7 @@ p {
 
 .action_banner {
     display: flex;
-    column-gap: 25px;
+    column-gap: 12.5px;
     align-items: center;
 }
 
@@ -154,7 +194,7 @@ p {
 
 .skill_banner {
     display: flex;
-    column-gap: 5px;
+    column-gap: 6.25px;
 }
 
 .skill_image {
@@ -179,14 +219,16 @@ p {
 .skill_box {
     color: black;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 25px;
 }
 
-.skill_box h3 {
+.skill_box h4 {
     margin-top: 0px;
     margin-bottom: 12.5px;
 }
+
+
 
 
 /*Projects section*/
@@ -201,19 +243,41 @@ p {
     margin-bottom: 25px;
 }
 
+
+.project_link {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.project_link:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
 .project_left {
     width: 50%;
 }
 
 .project_right {
     width: 50%;
+    align-content: center;
+}
+
+.project_right p {
+    margin-top: 6.25px;
+    margin-bottom: 0;
+}
+
+.project_right .tool_box {
+    margin-top: 12.5px;
 }
 
 .project_image_highlight {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .projects_banner {
@@ -225,16 +289,25 @@ p {
     width: 25%;
 }
 
+.projects_box h4 {
+    margin-top: 12.5px;
+}
+
+.projects_box p {
+    margin-top: 6.25px;
+    margin-bottom: 12.5px;
+}
+
 .project_image {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
-.tools_box {
+.tool_box {
     display: flex;
-    column-gap: 5px;
+    column-gap: 6.25px;
     width: 100%;
 }
 
@@ -243,6 +316,9 @@ p {
     width: 25px;
     object-fit: contain;
 }
+
+
+
 
 /*Experience section*/
 .experience_section {
