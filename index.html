@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Riki McAlear</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -13,7 +15,7 @@
             <div class="navigation_section">
                 <div class="navigation_container">
                     <div class="left_nav">
-                        <a class="logo_button" id="home" href="#home">Riki McAlear</a>
+                        <a class="logo_button" id="home" href="#">Riki McAlear</a>
                     </div>
                     <div class="right_nav">
                         <a class="tertiary_button" href="#skills">Skills</a>
@@ -124,13 +126,14 @@
                     <!--Highlighted projects-->
                     <h3>SEG2900 pitch competition finalist</h3>
 
-                    <a class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank">
+                    <a class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" id="thumbnail_highlight">
                         <div class="projects_highlight">
                             <div class="project_left">
-                                <img class="project_image_highlight" src="assets/harmony_thumbnail.jpg" alt="Thumbnail">
+                                <img class="project_image_highlight" id="highlight_cover" src="assets/harmony_thumbnail.jpg" alt="Thumbnail">
                             </div>
                             <div class="project_right">
 
+                                <p id="highlight_category_text">University</p>
                                 <h4>Harmony</h4>
                                 <p>Led a team to develop a social app matching users based on music preferences. Built key webpages using HTML, CSS, and JavaScript. Designed pitch slides, logo, and app prototype UI/UX with Figma.</p>
 
@@ -149,8 +152,9 @@
 
                     <div class="projects_banner">
                         <div class="projects_box">
-                            <a class="project_link" href="">
-                                <img class="project_image" src="assets/clarinet.jpg" alt="Thumbnail">
+                            <a class="project_link" href="" id="thumbnail_1">
+                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_1" src="assets/clarinet.jpg" alt="Thumbnail"></div>
+                                <p id="category_text">Personal</p>
                                 <h4>Calculator</h4>
                                 <p>Built a web calculator, computuation of basic mathematics.</p>
                                 
@@ -164,9 +168,10 @@
                         </div>
     
                         <div class="projects_box">
-                            <a class="project_link" href="">
-                                <img class="project_image" src="assets/clarinet.jpg" alt="Thumbnail">
-                               <h4>Rock Paper Scissors</h4>
+                            <a class="project_link" href="" id="thumbnail_2">
+                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_2" src="assets/clarinet.jpg" alt="Thumbnail"></div>
+                                <p id="category_text">Personal</p>
+                                <h4>Rock Paper Scissors</h4>
                                 <p>Developed a web-based rock paper scissors game.</p>
                                 
                                 <div class="tool_box">
@@ -178,8 +183,9 @@
                         </div>
     
                         <div class="projects_box">
-                            <a class="project_link" href="">
-                                <img class="project_image" src="assets/clarinet.jpg" alt="Thumbnail">
+                            <a class="project_link" href="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign" target="_blank" id="thumbnail_3">
+                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_3" src="assets/st_laurent.jpg" alt="Thumbnail"></div>
+                                <p id="category_text">High school</p>
                                 <h4>St. Laurent Mall</h4>
                                 <p>Redesigned the mall's branding, including logo, social media, and billboards.</p>
                                 
@@ -190,8 +196,9 @@
                         </div>
     
                         <div class="projects_box">
-                            <a class="project_link" href="">
-                                <img class="project_image" src="assets/clarinet.jpg" alt="Thubmnail">
+                            <a class="project_link" href="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement" target="_blank" id="thumbnail_4">
+                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_4" src="assets/sakura_manga_cafe.png" alt="Thubmnail"></div>
+                                <p id="category_text">High school</p>
                                 <h4>Sakura Manga Cafe</h4>
                                 <p>Designed billboards, business cards, and pamphlets.</p>
                                 
@@ -212,11 +219,19 @@
 
                     <h2 id="experience">Experience</h2>
 
+                    <h3>Volunteering</h3>
+                    
+                    <h4>Social Media Designer</h4>
+
+                    <h3>Extracurricular</h3>
+
                 </div>
 
             </div>
 
         </div>
+
+        <script src="script.js"></script>
 
     </body>
 </html>
