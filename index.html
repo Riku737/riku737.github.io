@@ -37,7 +37,7 @@
                         </div>
                         <div class="right_hero">
                             <h1>Hi, my name is Riki!</h1>
-                            <p>I'm a Software Engineering student at the University of Ottawa with a background in design and marketing.</p>
+                            <p>I'm a Software Engineering student at the University of Ottawa.</p>
                             <div class="action_banner">
                                 <a href="#" class="primary_button">Open resume</a>
                                 <a href="https://www.linkedin.com/in/riki-mcalear/" class="tertiary_button" target="_blank">Connect on LinkedIn</a>
@@ -50,10 +50,11 @@
 
             <!--Skills section-->
             
-            <div class="skills_section">
+            <div class="skills_section" id="skills">
                 <div class="skills_container">
 
-                    <h2 id="skills">Skills</h2>
+                    <h2>Skills</h2>
+                    <p class="heading_description" id="heading_description_bg">Technical skills in web and software development.</p>
 
                     <div class="skill_content">
 
@@ -67,6 +68,7 @@
                                     <img title="HTML" class="skill_image" src="assets/html.png" alt="HTML">
                                     <img title="CSS" class="skill_image" src="assets/css.png" alt="CSS">
                                     <img title="JavaScript" class="skill_image" src="assets/javascript.png" alt="JavaScript">
+                                    <img title="Visual Basic" class="skill_image" src="assets/visualbasic.png" alt="Visual Basic">
                                 </div>
                                 
                             </div>
@@ -106,6 +108,7 @@
                                     <img title="Google Workspace" class="skill_image" src="assets/google.png" alt="Google Workspace">
                                     <img title="Microsoft Office 365" class="skill_image" src="assets/office.jpg" alt="Microsoft Office 365">
                                     <img title="Arduino" class="skill_image" src="assets/arduino.png" alt="Arduino">
+                                    <img title="ChatGPT" class="skill_image" src="assets/openai.png" alt="ChatGPT">
                                 </div>
                                 
                             </div>
@@ -118,10 +121,11 @@
             </div>
             
             <!--Projects section-->
-            <div class="projects_section">
+            <div class="projects_section" id="projects">
                 <div class="projects_container">
 
-                    <h2 id="projects">Projects</h2>
+                    <h2>Projects</h2>
+                    <p class="heading_description">Highlighted projects from my portfolio.</p>
 
                     <!--Highlighted projects-->
                     <h3>SEG2900 pitch competition finalist</h3>
@@ -129,13 +133,13 @@
                     <a class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" id="thumbnail_highlight">
                         <div class="projects_highlight">
                             <div class="project_left">
-                                <img class="project_image_highlight" id="highlight_cover" src="assets/harmony_thumbnail.jpg" alt="Thumbnail">
+                                <video class="project_image_highlight" muted id="highlight_cover" src="assets/harmony_preview.mp4" type="video/mp4" poster="assets/harmony.png" alt="Thumbnail"></video>
                             </div>
                             <div class="project_right">
 
                                 <p id="highlight_category_text">Design & web development</p>
                                 <h4>Harmony</h4>
-                                <p>Led a team to develop a social app matching users based on music preferences. Built key webpages using HTML, CSS, and JavaScript. Designed pitch slides, logo, and app prototype UI/UX with Figma.</p>
+                                <p>Led a team to create a website for a social app that matches users by music preferences, developing key pages with HTML, CSS, and JavaScript, and designing the pitch slides, logo, and app prototype UI/UX in Figma.</p>
 
                                 <div class="tool_box">
                                     <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
@@ -156,7 +160,7 @@
                                 <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_1" src="assets/clarinet.jpg" alt="Thumbnail"></div>
                                 <p id="category_text">Web development</p>
                                 <h4>Calculator</h4>
-                                <p>Built a web calculator, computuation of basic mathematics.</p>
+                                <p>Built a web calculator for computing basic mathematics.</p>
                                 
                                 <div class="tool_box">
                                     <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
@@ -169,10 +173,10 @@
     
                         <div class="projects_box">
                             <a class="project_link" href="https://github.com/Riku737/portfolio" id="thumbnail_2" target="_blank">
-                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_2" src="assets/clarinet.jpg" alt="Thumbnail"></div>
+                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_2" src="assets/portfolio.png" alt="Thumbnail"></div>
                                 <p id="category_text">Web development</p>
                                 <h4>Portfolio</h4>
-                                <p>Developed a personal website showcasing my skills and projects.</p>
+                                <p>Developed a personal website to showcase my skills and projects.</p>
                                 
                                 <div class="tool_box">
                                     <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
@@ -213,59 +217,60 @@
             </div>
 
             <!--Experience section-->
-            <div class="experience_section">
+            <div class="experience_section" id="experience">
 
                 <div class="experience_container">
 
-                    <h2 id="experience">Experience</h2>
+                    <h2>Experience</h2>
+                    <p class="heading_description" id="heading_description_bg">Background in design, marketing, and leadership.</p>
 
                     <div class="experience_list">
-                        <div class="experience_box" id="experience_1">
+                        <div class="experience_box">
                             <div class="logo_box">
                                 <img class="logo_experience" src="assets/51aircadets.png">
                             </div>
                             <div class="experience_box_left">
                                 <h4 id="title_text">Youth Program Coordinator</h4>
-                                <p>51 Canada Aviation and Space Museum Air Cadet Squadron</p>
+                                <a class="experience_link" href="https://51aircadets.ca/" target="_blank">51 Canada Aviation and Space Museum Air Cadet Squadron</a>
                             </div>
                             <div class="experience_box_right">
                                 <p id="title_text">Sep 2018 - Nov 2024</p>
                                 <p>Ottawa, ON</p>
                             </div>
                         </div>
-                        <div class="experience_box" id="experience_2">
+                        <div class="experience_box">
                             <div class="logo_box">
-                                <img class="logo_experience" src="assets/jcmp.png">
+                                <img class="logo_experience" src="assets/51aircadets.png">
                             </div>
                             <div class="experience_box_left">
                                 <h4 id="title_text">Assistant Band Director</h4>
-                                <p>Joint Cadet Music Program</p>
+                                <a class="experience_link" href="https://51aircadets.ca/band/" target="_blank">Joint Cadet Music Program</a>
                             </div>
                             <div class="experience_box_right">
                                 <p id="title_text">Sep 2018 - Jun 2024</p>
                                 <p>Ottawa, ON</p>
                             </div>
                         </div>
-                        <div class="experience_box" id="experience_3">
+                        <div class="experience_box">
                             <div class="logo_box">
                                 <img class="logo_experience" src="assets/codeyouth.jpg">
                             </div>
                             <div class="experience_box_left">
                                 <h4 id="title_text">Social Media Designer</h4>
-                                <p>Code Youth</p>
+                                <a class="experience_link" href="https://www.code-youth.ca/" target="_blank">Code Youth</a>
                             </div>
                             <div class="experience_box_right">
                                 <p id="title_text">Oct 2021 - May 2024</p>
-                                <p>Remote</p>
+                                <p>Kanata, ON (Remote)</p>
                             </div>
                         </div>
-                        <div class="experience_box" id="experience_4">
+                        <div class="experience_box">
                             <div class="logo_box">
                                 <img class="logo_experience" src="assets/lbp.png">
                             </div>
                             <div class="experience_box_left">
                                 <h4 id="title_text">Yearbook Designer</h4>
-                                <p>Lester B. Pearson High School</p>
+                                <a class="experience_link" href="https://lbh.ocsb.ca/" target="_blank">Lester B. Pearson High School</a>
                             </div>
                             <div class="experience_box_right">
                                 <p id="title_text">Sep 2021 - Jun 2024</p>
@@ -279,12 +284,27 @@
             </div>
 
             <!--About section-->
-            <div class="about_section">
+            <div class="about_section" id="about">
 
                 <div class="about_container">
 
                     <h2>About</h2>
+                    <p class="heading_description">Passion for arts, business, and computers.</p>
 
+                    <div class="about_content">
+
+                        <div class="about_left">
+                            <img class="about_image" src="assets/about.jpg">
+                        </div>
+
+                        <div class="about_right">
+
+                            <h4>First-year software engineering student</h4>
+                            <p>My name is Riki, and I'm a first-year Software Engineering student at uOttawa. Through my volunteer and extracurricular experiences, I realized I wanted to create computer programs that solve real-world problems, which is at the core of software engineering. With my background mentoring youth aged 12-19, along with my experience in design and marketing positions, I am eager to apply my skills and learn from industry professionals during my internships.</p>
+
+                        </div>
+
+                    </div>
 
 
                 </div>
