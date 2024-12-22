@@ -37,3 +37,36 @@ document.getElementById("thumbnail_4").addEventListener("mouseover", event => {
 document.getElementById("thumbnail_4").addEventListener("mouseout", event => {
     document.getElementById("thumbnail_image_4").style.transform = "scale(1)"
 });
+
+document.getElementById("experience_1").addEventListener("mouseover", event => {
+    document.getElementById("experience_1").style.transform = "scale(1.005)"
+});
+
+document.getElementById("experience_1").addEventListener("mouseout", event => {
+    document.getElementById("experience_1").style.transform = "scale(1)"
+});
+
+document.getElementById("experience_2").addEventListener("mouseover", event => {
+    document.getElementById("experience_2").style.transform = "scale(1.005)"
+});
+
+document.getElementById("experience_2").addEventListener("mouseout", event => {
+    document.getElementById("experience_2").style.transform = "scale(1)"
+});
+
+document.getElementById("experience_3").addEventListener("mouseover", event => {
+    document.getElementById("experience_3").style.transform = "scale(1.005)"
+});
+
+document.getElementById("experience_3").addEventListener("mouseout", event => {
+    document.getElementById("experience_3").style.transform = "scale(1)"
+});
+
+document.getElementById("experience_4").addEventListener("mouseover", event => {
+    document.getElementById("experience_4").style.transform = "scale(1.005)"
+});
+
+document.getElementById("experience_4").addEventListener("mouseout", event => {
+    document.getElementById("experience_4").style.transform = "scale(1)"
+});
+

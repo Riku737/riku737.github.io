@@ -37,12 +37,12 @@ p {
     font-size: 18px;
 }
 
-.navigation_container, .hero_container, .skills_container, .projects_container, .experience_container {
+.navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container {
     width: 1000px;
     margin: auto;
 }
 
-.skills_section, .projects_section, .experience_section {
+.skills_section, .projects_section, .experience_section, .about_section {
     padding: 50px 0px;
 }
 
@@ -92,8 +92,6 @@ p {
 .navigation_section {
     width: 100%;
     background-color: white;
-    position: fixed;
-    z-index: 2;
 }
 
 .navigation_container {
@@ -259,7 +257,7 @@ p {
     font-size: 18px;
     color: black;
     text-decoration: none;
-    transition: 1s;
+    transition: 100ms;
 }
 
 .project_link:hover {
@@ -292,7 +290,7 @@ p {
     height: 300px;
     object-fit: cover;
     border-radius: 3px;
-    transition: 0.25s;
+    transition: 0.10s;
 }
 
 .projects_banner {
@@ -356,4 +354,67 @@ p {
     width: 100%;
     background-color: black;
     color:white;
+    position: relative;
+    margin-top: 75px;
+}
+
+.experience_section::before {
+    content: '';
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skewY(3deg);
+    transform-origin: top right;
+}
+
+.experience_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 25px;
+}
+
+.experience_box {
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    display: flex;
+    padding: 25px;
+    column-gap: 12.5px;
+    transition: 100ms;
+}
+
+.logo_experience {
+    height: 42.25px;
+    width: 42.25px;
+    object-fit: contain;
+}
+
+.logo_box {
+    width: fit-content;
+}
+
+.experience_box_left {
+    width:75%;
+}
+
+#title_text {
+    margin-bottom: 6.25px;
+}
+
+.experience_box_right {
+    width: 25%;
+    text-align: right;
+}
+
+.experience_box_left p {
+    margin: 0;
+}
+
+.experience_box_right p {
+    margin: 0;
 }
