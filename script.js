@@ -66,3 +66,10 @@ document.getElementById("thumbnail_4").addEventListener("mouseover", event => {
 document.getElementById("thumbnail_4").addEventListener("mouseout", event => {
     document.getElementById("thumbnail_image_4").style.transform = "scale(1)"
 });
+
+
+
+// Footer section
+document.getElementById("resume_button_2").onclick = () => {
+    window.alert("Resume coming soon!");
+}

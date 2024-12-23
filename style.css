@@ -663,3 +663,7 @@ a {
 .logo_link:hover {
     text-decoration: underline;
 }
+
+#resume_button_2:hover {
+    cursor: pointer;
+}
