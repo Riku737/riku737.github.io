@@ -1,3 +1,12 @@
+// Hero section
+const resume_button = document.getElementById("resume_button");
+resume_button.onclick = () => { 
+    window.alert("Resume coming soon!");
+}
+
+
+
+
 // Projects section
 document.getElementById("thumbnail_highlight").addEventListener("mouseenter", () => {
     document.getElementById("highlight_cover").play();
@@ -14,6 +23,11 @@ document.getElementById("thumbnail_highlight").addEventListener("mouseleave", ()
 document.getElementById("thumbnail_1").addEventListener("mouseover", event => {
     document.getElementById("thumbnail_image_1").style.transform = "scale(1.05)"
 });
+
+document.getElementById("thumbnail_1").onclick = () => {
+    window.alert("This project is currently under development. Please check back later!");
+    return window.location.href = "#projects";
+}
 
 document.getElementById("thumbnail_1").addEventListener("mouseout", event => {
     document.getElementById("thumbnail_image_1").style.transform = "scale(1)"

@@ -81,12 +81,8 @@ a {
     position: relative;
 }
 
-.tertiary_button:hover {
-    transition: 1s linear;
-}
-
 .tertiary_button:hover::before {
-    animation: tertiary_animation 500ms forwards;
+    animation: tertiary_animation 300ms cubic-bezier(0, 0, 0.2, 1) forwards;
 }
 
 .tertiary_button::before {
@@ -200,6 +196,32 @@ a {
 .social_link {
     height: 18px;
     width: 18px;
+    position: relative;
+    object-position: 0%;
+}
+
+.social_link:hover::before {
+    animation: social_animation 300ms cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.social_link::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 100%;
+    transform: scale(0);
+    z-index: -1;
+}
+
+@keyframes social_animation {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(2);
+    }
 }
 
 .social_icon {
@@ -211,7 +233,7 @@ a {
 }
 
 .social_icon:hover {
-    fill: gray;
+    fill: white;
 }
 
 
@@ -396,23 +418,11 @@ a {
     width: 100%;
 }
 
-.inline_icon {
-    margin: 0;
-    font-size: 18px;
-    vertical-align: middle;
-}
-
-.open_arrow {
-    height: 18px;
-    width: 18px;
-    margin: 0;
-}
 
 
 
 /*Experience section*/
 .experience_section {
-    width: 100%;
     background-color: black;
     color:white;
     position: relative;
@@ -500,6 +510,7 @@ a {
     width: 100%;
     display: flex;
     column-gap: 25px;
+    margin-bottom: 50px;
 }
 
 .about_left {
@@ -523,6 +534,34 @@ a {
     height: 300px;
     border-radius: 3px;
 }
+
+.contact_banner {
+    display: flex;
+    column-gap: 25px;
+}
+
+.contact_box {
+    width: 25%;
+}
+
+.contact_box p {
+    margin: 0;
+    margin-top: 6.25px;
+    margin-bottom: 12.5px;
+}
+
+.social_contact {
+    height: 25px;
+    margin-bottom: 12.5px;
+}
+
+.social_contact_icon {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+    transition: 100ms;
+}
+
 
 
 
@@ -550,12 +589,59 @@ a {
 
 .footer_container {
     display: flex;
+    column-gap: 25px;
 }
 
-.left_foot, .right_foot {
+.left_foot {
     width: 50%;
+}
+
+.middle_foot {
+    width: 25%;
+}
+
+.right_foot {
+    width: 25%;
 }
 
 #social_footer {
     fill: white;
+}
+
+.heading_description_footer {
+    color: grey;
+    margin: 0;
+    margin-top: 6.25px;
+    margin-bottom: 12.5px;
+}
+
+.foot_nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.foot_list {
+    margin: 0;
+    margin-bottom: 6.25px;
+}
+
+.foot_link {
+    color: grey;
+    text-decoration: none;
+}
+
+.foot_link:hover {
+    text-decoration: underline;
+}
+
+.logo_link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo_link:hover {
+    text-decoration: underline;
 }
