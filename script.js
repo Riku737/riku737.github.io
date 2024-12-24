@@ -18,6 +18,30 @@ function mobile_navigation() {
     }
 }
 
+document.getElementById("menu_button_1").onclick = () => {
+    navigation.style.display = "none"
+}
+
+document.getElementById("menu_button_2").onclick = () => {
+    navigation.style.display = "none"
+}
+
+document.getElementById("menu_button_3").onclick = () => {
+    navigation.style.display = "none"
+}
+
+document.getElementById("menu_button_4").onclick = () => {
+    navigation.style.display = "none"
+}
+
+document.getElementById("menu_button_5").onclick = () => {
+    navigation.style.display = "none"
+}
+
+document.getElementById("home").onclick = () => { 
+    navigation.style.display = "none"
+}
+
 // Projects section
 document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
     document.getElementById("highlight_cover_1").play();
