@@ -42,6 +42,9 @@ document.getElementById("home").onclick = () => {
     navigation.style.display = "none"
 }
 
+
+
+
 // Projects section
 document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
     document.getElementById("highlight_cover_1").play();

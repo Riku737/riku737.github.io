@@ -187,6 +187,10 @@ a {
     display: none;
 }
 
+.menu_button_nav:hover {
+    cursor: pointer;
+}
+
 
 
 
@@ -748,6 +752,10 @@ a {
     text-decoration: underline;
 }
 
+
+
+
+
 @media screen and (max-width: 1000px) {
     /* Main */
     html {
@@ -765,6 +773,7 @@ a {
     h1 {
         font-size: 30px;
     }
+
 
     /* Navigation */
     .menu_button_nav {
@@ -784,6 +793,7 @@ a {
     .right_nav {
         display: none;
     }
+
 
     /* Hero */
     .hero_section {
@@ -810,6 +820,7 @@ a {
         display: none;
     }
 
+
     /* Skill */
     .skills_section {
         padding: 50px 25px;
@@ -822,29 +833,24 @@ a {
         width: 100%;
     }
 
+
     /* Projects */
     .projects_section {
         width: unset;
         padding: 50px 25px;
     }
     .projects_highlight {
-        flex-direction: column;
         row-gap: 25px;
     }
-    .project_link {
-        width: 100%;
+    
+    .project_image_highlight, .highlight_thumbnail {
+        height: 30vh;
     }
-    .projects_banner {
-        flex-direction: column;
-        row-gap: 25px;
-        margin-bottom: 25px;
+
+    .project_image, .project_thumbnail_boundaries {
+        height: 15vh;
     }
-    .projects_box {
-        width: 100%;
-    }
-    .project_image, .project_thumbnail_boundaries, .project_image_highlight, .highlight_thumbnail {
-        height: 400px;
-    }
+
 
     /* Experience */
     .experience_section {
@@ -859,14 +865,11 @@ a {
     .experience_box {
         align-items: flex-start;
     }
+    
+
     /* About */
     .about_section {
         padding: 50px 25px;
-    }
-    .about_content {
-        flex-direction: column;
-        row-gap: 12.5px;
-        margin-bottom: 25px;
     }
     .about_left {
         border-radius: 3px;
@@ -875,8 +878,9 @@ a {
         width: 100%;
     }
     .about_image {
-        height: 400px;
+        height: 30vh;
     }
+
 
     /* Contact */
     .contact_banner {
@@ -888,6 +892,7 @@ a {
     .right_contact {
         width: 100%;
     }
+
 
     /* Footer */
     .footer_section {
@@ -905,7 +910,39 @@ a {
     }
 }
 
+
+
+
+@media screen and (max-width: 700px) {
+    .project_link {
+        width: 100%;
+    }
+    .project_image, .project_thumbnail_boundaries {
+        height: 30vh;
+    }
+    .projects_banner {
+        flex-direction: column;
+        row-gap: 25px;
+        margin-bottom: 25px;
+    }
+    .projects_box {
+        width: 100%;
+    }
+    .about_content {
+        flex-direction: column;
+        row-gap: 12.5px;
+        margin-bottom: 25px;
+    }
+}
+
+
+
+
 @media screen and (max-width: 500px) {
+    .projects_highlight {
+        flex-direction: column;
+        row-gap: 25px;
+    }
     .right_contact {
         flex-direction: column;
         row-gap: 25px;
