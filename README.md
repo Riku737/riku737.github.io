@@ -12,6 +12,7 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
+    <li>Visual Studio Code</li>
 </ul>
 
 <h2>Features</h2>
