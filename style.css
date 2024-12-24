@@ -194,8 +194,8 @@ a {
 }
 
 .social_link {
-    height: 18px;
-    width: 18px;
+    height: 25px;
+    width: 25px;
     position: relative;
     object-position: 0%;
 }
@@ -220,13 +220,13 @@ a {
         transform: scale(0);
     }
     100% {
-        transform: scale(2);
+        transform: scale(1.5);
     }
 }
 
 .social_icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     align-items: center;
     object-fit: cover;
     transition: 100ms;
@@ -662,8 +662,4 @@ a {
 
 .logo_link:hover {
     text-decoration: underline;
-}
-
-#resume_button_2:hover {
-    cursor: pointer;
 }
