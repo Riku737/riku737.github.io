@@ -4,8 +4,19 @@ resume_button.onclick = () => {
     window.alert("Resume coming soon!");
 }
 
+const navigation = document.getElementById("mobile_nav");
+let x = false;
 
-
+// Navigation section
+function mobile_navigation() {
+    if (x == false) {
+        navigation.style.display = "flex"
+        x = true
+    } else {
+        navigation.style.display = "none"
+        x = false
+    }
+}
 
 // Projects section
 document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
