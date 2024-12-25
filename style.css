@@ -26,7 +26,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-image: radial-gradient(circle, #cdcdcd 1px, rgba(0, 0, 0, 0) 1px);
-    background-size: 5rem 5rem;
+    background-size: 2rem 2rem;
 }
 
 h1 {
@@ -87,9 +87,15 @@ a {
     padding: var(--12_5px) var(--25px);
     color: black;
     text-decoration: none;
-    border: var(--1px) solid;
     border-radius: var(--3px);
     transition: 100ms;
+    outline:var(--1px) solid black;
+    outline-offset: -0.063rem;
+}
+
+.secondary_button:hover {
+    outline-color: grey;
+    color: grey;
 }
 
 .tertiary_button {
@@ -98,6 +104,26 @@ a {
     text-decoration: black;
     transition: 100ms;
     position: relative;
+}
+
+#inline_icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--6_25px);
+    fill: inherit;
+    width: fit-content;
+}
+
+#inline_icon p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: inherit;
+}
+
+#inline_icon svg {
+    height: var(--25px);
+    width: var(--25px);
 }
 
 .tertiary_button:hover::before {
@@ -267,7 +293,7 @@ a {
 
 .action_banner {
     display: flex;
-    column-gap: 2.344rem;
+    gap: var(--12_5px);
     align-items: center;
     margin-bottom: 25px;
 }
@@ -323,7 +349,7 @@ a {
 .arrow_down {
     position: absolute;
     bottom: 10vh;
-    left: 50%;
+    left: 48.5vw;
     fill:black;
     text-decoration: none;
     animation: arrow_down_bounce 1s infinite linear;
@@ -918,12 +944,8 @@ h1::before {
         row-gap: var(--25px);
     }
     
-    .project_image_highlight, .highlight_thumbnail {
-        height: 30vh;
-    }
-
     .project_image, .project_thumbnail_boundaries {
-        height: 15vh;
+        height: 9.375rem;
     }
 
 
@@ -951,9 +973,6 @@ h1::before {
     }
     .about_left, .about_right {
         width: 100%;
-    }
-    .about_image {
-        height: 30vh;
     }
 
 
@@ -993,7 +1012,7 @@ h1::before {
         width: 100%;
     }
     .project_image, .project_thumbnail_boundaries {
-        height: 30vh;
+        height: 18.75rem;
     }
     .projects_banner {
         flex-direction: column;
