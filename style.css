@@ -2,7 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --color_var: #000000;
+    --36px: 2.25rem;
+    --30px: 1.875rem;
+    --24px: 1.5rem;
+    --18px: 1.125rem;
+    --12px: 0.75rem;
+
+    --50px: 3.125rem;
+    --25px: 1.5625rem;
+    --12_5px: 0.78125rem;
+    --6_25px: 0.390625rem;
+    --10px: 0.625rem;
+    --3px: 0.1875rem;
+    --1px: 0.0625rem;
 }
 
 html {
@@ -18,34 +30,34 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: var(--36px);
     margin: 0;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: var(--30px);
     margin-top: 0;
-    margin-bottom: 12.5px;
+    margin-bottom: var(--12_5px);
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: var(--24px);
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: var(--25px);
 }
 
 h4 {
-    font-size: 1rem;
+    font-size:  var(--18px);
     margin: 0;
 }
 
 p {
     color: #575757;
-    font-size: 1rem;
+    font-size: var(--18px);
 }
 
 a {
-    font-size: 1rem;
+    font-size: var(--18px);
 }
 
 .navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container, .footer_container {
@@ -54,16 +66,16 @@ a {
 }
 
 .skills_section, .projects_section, .experience_section, .about_section, .footer_section {
-    padding: 50px 0px;
+    padding: var(--50px) 0rem;
 }
 
 .primary_button {
-    padding: 12.5px 25px;
+    padding: var(--12_5px) var(--25px);
     background-color: black;
     color: white;
     text-decoration: none;
     display: inline-block;
-    border-radius: 3px;
+    border-radius: var(--3px);
     transition: 100ms;
 }
 
@@ -72,16 +84,16 @@ a {
 }
 
 .secondary_button {
-    padding: 12.5px 25px;
+    padding: var(--12_5px) var(--25px);
     color: black;
     text-decoration: none;
-    border: 1px solid;
-    border-radius: 3px;
+    border: var(--1px) solid;
+    border-radius: var(--3px);
     transition: 100ms;
 }
 
 .tertiary_button {
-    padding: 12.5px 0px;
+    padding: var(--12_5px) 0rem;
     color: black;
     text-decoration: black;
     transition: 100ms;
@@ -94,7 +106,7 @@ a {
 
 .tertiary_button::before {
     content: "";
-    height: 1px;
+    height: var(--1px);
     background-color: black;
     position: absolute;
     width: 0%;
@@ -124,7 +136,7 @@ a {
 
 .navigation_container {
     display: flex;
-    padding: 10px 0px;
+    padding: var(--10px) 0rem;
 }
 
 .left_nav, .right_nav {
@@ -140,7 +152,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 62.5px;
+    column-gap: 3.906rem;
 }
 
 #home {
@@ -166,8 +178,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 25px;
-    padding: 25px;
+    row-gap: var(--25px);
+    padding: var(--25px);
     animation: menu_animation_up 250ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
     animation-delay: 250ms;
     transform: translateY(100%);
@@ -192,8 +204,8 @@ a {
 }
 
 .menu_icon {
-    width: 25px;
-    height: 25px;
+    width: var(--25px);
+    height: var(--25px);
 }
 
 .menu_button_nav {
@@ -229,7 +241,8 @@ a {
     width: 100%;
     display: flex;
     height: fit-content;
-    column-gap: 50px;
+    column-gap: var(--50px);
+    justify-content: center;
 }
 
 .left_hero, .right_hero {
@@ -237,8 +250,8 @@ a {
 }
 
 .right_hero p {
-    margin-top: 6.25px;
-    margin-bottom: 25px;
+    margin-top: var(--6_25px);
+    margin-bottom: var(--25px);
 }
 
 .left_hero {
@@ -246,27 +259,27 @@ a {
 }
 
 .avatar_image {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     object-fit: cover;
     border-radius: 100%;
 }
 
 .action_banner {
     display: flex;
-    column-gap: 37.5px;
+    column-gap: 2.344rem;
     align-items: center;
     margin-bottom: 25px;
 }
 
 .social_banner {
     display: flex;
-    column-gap: 12.5px;
+    column-gap: var(--12_5px);
 }
 
 .social_link {
-    height: 25px;
-    width: 25px;
+    height: var(--25px);
+    width: var(--25px);
     position: relative;
     object-position: 0%;
 }
@@ -278,8 +291,8 @@ a {
 .social_link::before {
     content: "";
     position: absolute;
-    height: 25px;
-    width: 25px;
+    height: var(--25px);
+    width: var(--25px);
     background-color: black;
     border-radius: 100%;
     transform: scale(0);
@@ -296,8 +309,8 @@ a {
 }
 
 .social_icon {
-    height: 25px;
-    width: 25px;
+    height: var(--25px);
+    width: var(--25px);
     align-items: center;
     object-fit: cover;
     transition: 100ms;
@@ -328,8 +341,8 @@ a {
 .arrow_down::before {
     content: "";
     position: absolute;
-    height: 25px;
-    width: 25px;
+    height: var(--25px);
+    width: var(--25px);
     background-color: black;
     border-radius: 100%;
     transform: scale(0);
@@ -352,17 +365,17 @@ h1::before {
     position: absolute;
     content: "";
     background-color: #000000;
-    height: 44px;
+    height: 2.75rem;
     z-index: -1;
-    border-radius: 3px;
+    border-radius: var(--3px);
 }
 
 @keyframes h1_animation {
     from {
-        width: 313px;
+        width: 19.563rem;
     }
     to {
-        width: 0px;
+        width: 0rem;
     }
 }
 
@@ -370,17 +383,17 @@ h1::before {
     position: absolute;
     content: "";
     background-color: #575757;
-    height: 21px;
+    height: 2.625rem;
     z-index: -1;
-    border-radius: 3px;
+    border-radius: var(--3px);
 }
 
 @keyframes p_animation {
     from {
-        width: 525px;
+        width: 40.625rem;
     }
     to {
-        width: 0px;
+        width: 0rem;
     }
 }
 
@@ -395,7 +408,7 @@ h1::before {
     position: relative;
     box-sizing: border-box;
     z-index: 0;
-    margin-top: 75px;
+    margin-top: 4.688rem;
 }
 
 .skills_section:before {
@@ -413,20 +426,20 @@ h1::before {
 
 .skill_banner {
     display: flex;
-    column-gap: 6.25px;
-    row-gap: 6.25px;
+    column-gap: var(--6_25px);
+    row-gap: var(--6_25px);
     flex-wrap: wrap;
 }
 
 .skill_image {
-    height: 50px;
-    width: 50px;
+    height: var(--50px);
+    width: var(--50px);
     object-fit: contain;
 }
 
 .skill_content {
     display: flex;
-    column-gap: 25px;
+    column-gap: var(--25px);
     width: 100%;
 }
 
@@ -434,25 +447,25 @@ h1::before {
     width: 50%;
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: var(--25px);
 }
 
 .skill_box {
     color: black;
     background-color: white;
-    border-radius: 3px;
-    padding: 25px;
+    border-radius: var(--3px);
+    padding: var(--25px);
     transition: 100ms;
 }
 
 .skill_box h4 {
-    margin-top: 0px;
-    margin-bottom: 12.5px;
+    margin-top: 0rem;
+    margin-bottom: var(--12_5px);
 }
 
 .heading_description {
-    margin: 0;
-    margin-bottom: 50px;
+    margin: 0rem;
+    margin-bottom: var(--50px);
 }
 
 #heading_description_bg {
@@ -470,8 +483,8 @@ h1::before {
 .projects_highlight {
     width: 100%;
     display: flex;
-    column-gap: 25px;
-    margin-bottom: 50px;
+    column-gap: var(--25px);
+    margin-bottom: var(--50px);
 }
 
 .project_link {
@@ -486,10 +499,10 @@ h1::before {
 }
 
 .highlight_thumbnail {
-    border-radius: 3px;
+    border-radius: var(--3px);
     overflow: hidden;
-    height: 300px;
-    margin-bottom: 12.5px;
+    height: 18.75rem;
+    margin-bottom: var(--12_5px);
 }
 
 .project_right {
@@ -497,26 +510,26 @@ h1::before {
 }
 
 .project_link p {
-    margin-top: 6.25px;
+    margin-top: var(--6_25px);
     margin-bottom: 0;
 }
 
 .project_link .tool_box {
-    margin-top: 12.5px;
+    margin-top: var(--12_5px);
 }
 
 .project_image_highlight {
     width: 100%;
-    height: 300px;
+    height: 18.75rem;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: var(--3px);
     transition: 0.10s;
 }
 
 .projects_banner {
     display: flex;
-    column-gap: 25px;
-    margin-bottom: 50px;
+    column-gap: var(--25px);
+    margin-bottom: var(--50px);
 }
 
 .projects_box {
@@ -524,46 +537,46 @@ h1::before {
 }
 
 .projects_box p {
-    margin-top: 6.25px;
-    margin-bottom: 12.5px;
+    margin-top: var(--6_25px);
+    margin-bottom: var(--12_5px);
 }
 
 .project_image {
     width: 100%;
-    height: 150px;
+    height: 9.375rem;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: var(--3px);
     transition: 100ms;
 }
 
 .tool_box {
     display: flex;
-    column-gap: 6.25px;
+    column-gap: var(--6_25px);
     width: 100%;
 }
 
 .tool_image {
-    height: 25px;
-    width: 25px;
+    height: var(--25px);
+    width: var(--25px);
     object-fit: contain;
 }
 
 #category_text {
-    margin-top: 12.5px;
-    margin-bottom: 6.25px;
-    font-size: 12px;
+    margin-top: var(--12_5px);
+    margin-bottom: var(--6_25px);
+    font-size: var(--12px);
 }
 
 #highlight_category_text {
-    margin-top: 0;
-    margin-bottom: 6.25px;
-    font-size: 12px;
+    margin-top: 0rem;
+    margin-bottom: var(--6_25px);
+    font-size: var(--12px);
 }
 
 .project_thumbnail_boundaries {
     overflow: hidden;
-    border-radius: 3px;
-    height: 150px;
+    border-radius: var(--3px);
+    height: 9.375rem;
     width: 100%;
 }
 
@@ -575,7 +588,7 @@ h1::before {
     background-color: black;
     color:white;
     position: relative;
-    margin-top: 75px;
+    margin-top: 4.688rem;
 }
 
 .experience_section::before {
@@ -595,23 +608,23 @@ h1::before {
     display: flex;
     flex-direction: column;
     width: 100%;
-    row-gap: 25px;
+    row-gap: var(--25px);
 }
 
 .experience_box {
     background-color: white;
-    border-radius: 3px;
+    border-radius: var(--3px);
     color: black;
     display: flex;
-    padding: 25px;
-    column-gap: 12.5px;
+    padding: var(--25px);
+    column-gap: var(--12_5px);
     transition: 100ms;
     align-items: center;
 }
 
 .logo_experience {
-    height: 50px;
-    width: 50px;
+    height: var(--50px);
+    width: var(--50px);
     object-fit: contain;
 }
 
@@ -633,15 +646,15 @@ h1::before {
 }
 
 .experience_box_left p {
-    margin: 0;
+    margin: 0rem;
 }
 
 .experience_box_right p {
-    margin: 0;
+    margin: 0rem;
 }
 
 .experience_link {
-    margin: 0;
+    margin: 0rem;
     color: #575757;
     text-decoration: none;
     fill: #575757;
@@ -658,8 +671,8 @@ h1::before {
 .about_content {
     width: 100%;
     display: flex;
-    column-gap: 25px;
-    margin-bottom: 50px;
+    column-gap: var(--25px);
+    margin-bottom: var(--50px);
 }
 
 .about_left {
@@ -674,24 +687,26 @@ h1::before {
 
 .about_right p {
     margin: 0;
-    margin-top: 6.25px;
+    margin-top: var(--6_25px);
 }
 
 .about_image {
     object-fit:cover;
     width: 100%;
-    border-radius: 3px;
+    border-radius: var(--3px);
+    height: 18.75rem;
 }
 
 .contact_image {
     object-fit: cover;
     width: 100%;
-    border-radius: 3px;
+    border-radius: var(--3px);
+    height: 18.75rem;
 }
 
 .contact_banner {
     display: flex;
-    column-gap: 25px;
+    column-gap: var(--25px);
 }
 
 .left_contact {
@@ -702,7 +717,7 @@ h1::before {
 .right_contact {
     width: 50%;
     display: flex;
-    column-gap: 25px;
+    column-gap: var(--25px);
     align-items: center;
 }
 
@@ -712,18 +727,18 @@ h1::before {
 
 .contact_box p {
     margin: 0;
-    margin-top: 6.25px;
-    margin-bottom: 12.5px;
+    margin-top: var(--6_25px);
+    margin-bottom: var(--12_5px);
 }
 
 .social_contact {
-    height: 25px;
-    margin-bottom: 12.5px;
+    height: var(--25px);
+    margin-bottom: var(--12_5px);
 }
 
 .social_contact_icon {
-    height: 25px;
-    width: 25px;
+    height: var(--25px);
+    width: var(--25px);
     object-fit: contain;
     transition: 100ms;
 }
@@ -736,7 +751,7 @@ h1::before {
 .footer_section {
     background-color: black;
     position: relative;
-    margin-top: 75px;
+    margin-top: 4.688rem;
     color: white;
 }
 
@@ -755,7 +770,7 @@ h1::before {
 
 .footer_container {
     display: flex;
-    column-gap: 25px;
+    column-gap: var(--25px);
 }
 
 .left_foot {
@@ -777,8 +792,8 @@ h1::before {
 .heading_description_footer {
     color: grey;
     margin: 0;
-    margin-top: 6.25px;
-    margin-bottom: 12.5px;
+    margin-top: var(--6_25px);
+    margin-bottom: var(--12_5px);
 }
 
 .foot_nav {
@@ -789,7 +804,7 @@ h1::before {
 
 .foot_list {
     margin: 0;
-    margin-bottom: 6.25px;
+    margin-bottom: var(--6_25px);
 }
 
 .foot_link {
@@ -804,7 +819,7 @@ h1::before {
 .logo_link {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: var(--18px);
     font-weight: bold;
 }
 
@@ -816,7 +831,7 @@ h1::before {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     /* Main */
     html {
         overflow-x: hidden;
@@ -828,21 +843,23 @@ h1::before {
         width: 100%;
     }
     .heading_description {
-        margin-bottom: 25px;
+        margin-bottom: var(--25px);
+    }
+    h1 {
+        font-size: var(--30px);
     }
 
-    
 
     /* Navigation */
     .menu_button_nav {
         display: block;
     }
     .navigation_section {
-        padding: 25px;
+        padding: var(--25px);
         width: -webkit-fill-available;
     }
     .navigation_container {
-        padding: 0;
+        padding: 0rem;
         justify-content: space-between;
     }
     .left_nav {
@@ -858,17 +875,17 @@ h1::before {
         height: fit-content;
     }
     .hero_content {
-        margin-top: 80px;
+        margin-top: 5rem;
         flex-direction: column;
         text-align: center;
-        row-gap: 25px;
+        row-gap: var(--25px);
     }
     .avatar_image {
-        height: 200px;
-        width: 200px;
+        height: 12.5rem;
+        width: 12.5rem;
     }
     .hero_container {
-        padding: 25px;
+        padding: var(--25px);
     }
     .action_banner, .social_banner {
         align-items: center;
@@ -881,11 +898,11 @@ h1::before {
 
     /* Skill */
     .skills_section {
-        padding: 50px 25px;
+        padding: var(--50px) var(--25px);
     }
     .skill_content {
         flex-direction: column;
-        row-gap: 25px;
+        row-gap: var(--25px);
     }
     .skill_left, .skill_right {
         width: 100%;
@@ -895,10 +912,10 @@ h1::before {
     /* Projects */
     .projects_section {
         width: unset;
-        padding: 50px 25px;
+        padding: var(--50px) var(--25px);
     }
     .projects_highlight {
-        row-gap: 25px;
+        row-gap: var(--25px);
     }
     
     .project_image_highlight, .highlight_thumbnail {
@@ -912,7 +929,7 @@ h1::before {
 
     /* Experience */
     .experience_section {
-        padding: 50px 25px;
+        padding: var(--50px) var(--25px);
     }
     .experience_box_right {
         display: none;
@@ -927,10 +944,10 @@ h1::before {
 
     /* About */
     .about_section {
-        padding: 50px 25px;
+        padding: var(--50px) var(--25px);
     }
     .about_left {
-        border-radius: 3px;
+        border-radius: var(--3px);
     }
     .about_left, .about_right {
         width: 100%;
@@ -954,11 +971,11 @@ h1::before {
 
     /* Footer */
     .footer_section {
-        padding: 50px 25px;
+        padding: var(--50px) var(--25px);
     }
     .footer_container {
         flex-wrap: wrap;
-        gap: 25px;
+        gap: var(--25px);
     }
     .left_foot {
         width: 100%;
@@ -980,16 +997,16 @@ h1::before {
     }
     .projects_banner {
         flex-direction: column;
-        row-gap: 25px;
-        margin-bottom: 25px;
+        row-gap: var(--25px);
+        margin-bottom: var(--25px);
     }
     .projects_box {
         width: 100%;
     }
     .about_content {
         flex-direction: column;
-        row-gap: 12.5px;
-        margin-bottom: 25px;
+        row-gap: var(--12_5px);
+        margin-bottom: var(--25px);
     }
 }
 
@@ -999,11 +1016,11 @@ h1::before {
 @media screen and (max-width: 500px) {
     .projects_highlight {
         flex-direction: column;
-        row-gap: 25px;
+        row-gap: var(--25px);
     }
     .right_contact {
         flex-direction: column;
-        row-gap: 25px;
+        row-gap: var(--25px);
     }
     .contact_box {
         width: 100%;
@@ -1012,12 +1029,12 @@ h1::before {
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
     h1::before {
         animation: h1_animation 500ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
     }
     .hero_p::before {
-        width: 525px;
+        width: 40.625rem;
         animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
         animation-delay: 500ms;
     }
