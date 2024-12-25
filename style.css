@@ -1,6 +1,10 @@
 /*Main*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    --color_var: #000000;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -14,34 +18,34 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.5rem;
     margin: 0;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 12.5px;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0;
     margin-bottom: 25px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1rem;
     margin: 0;
 }
 
 p {
     color: #575757;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 a {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container, .footer_container {
@@ -826,10 +830,8 @@ h1::before {
     .heading_description {
         margin-bottom: 25px;
     }
-    h1 {
-        font-size: 30px;
-    }
 
+    
 
     /* Navigation */
     .menu_button_nav {
