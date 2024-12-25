@@ -60,6 +60,10 @@ a {
     font-size: var(--18px);
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container, .footer_container {
     width: 1000px;
     margin: auto;
@@ -91,11 +95,17 @@ a {
     transition: 100ms;
     outline:var(--1px) solid black;
     outline-offset: -0.063rem;
+    background-color: white;
+    transition: 100ms;
 }
 
 .secondary_button:hover {
     outline-color: grey;
     color: grey;
+}
+
+.projects_section #inline_icon:hover svg {
+    fill: grey;
 }
 
 .tertiary_button {
@@ -261,6 +271,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .hero_content {
@@ -349,10 +360,17 @@ a {
 .arrow_down {
     position: absolute;
     bottom: 10vh;
-    left: 48.5vw;
+    left: 50vw;
     fill:black;
     text-decoration: none;
     animation: arrow_down_bounce 1s infinite linear;
+}
+
+.arrow_icon {
+    height: var(--25px);
+    width: var(--25px);
+    object-fit: contain;
+    transition: 100ms;
 }
 
 .arrow_down:hover {
@@ -528,7 +546,7 @@ h1::before {
     border-radius: var(--3px);
     overflow: hidden;
     height: 18.75rem;
-    margin-bottom: var(--12_5px);
+    margin: 0 0 var(--12_5px) 0;
 }
 
 .project_right {
@@ -604,6 +622,7 @@ h1::before {
     border-radius: var(--3px);
     height: 9.375rem;
     width: 100%;
+    margin: 0;
 }
 
 
@@ -704,6 +723,7 @@ h1::before {
 .about_left {
     width: 50%;
     overflow: hidden;
+    margin: 0;
 }
 
 .about_right {
@@ -738,6 +758,7 @@ h1::before {
 .left_contact {
     width: 50%;
     overflow: hidden;
+    margin: 0;
 }
 
 .right_contact {

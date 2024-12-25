@@ -18,7 +18,8 @@
 <h2>Features</h2>
 <ul>
     <li>Mobile responsive web design</li>
-    <li>Web accessible text sizing based on W3C recommendations</li>
+    <li>Web accessible sizing based on W3C recommendations</li>
+    <li>HTML semantic elements</li>
     <li>CSS animations</li>
     <li>Bootstrap icons</li>
 </ul>

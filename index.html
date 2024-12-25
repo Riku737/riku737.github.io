@@ -23,7 +23,7 @@
         <div class="main_container">
 
             <!--Navigation bar-->
-            <div class="navigation_section">
+            <nav class="navigation_section">
                 <div class="navigation_container">
                     <!-- Title navigation -->
                     <div class="left_nav">
@@ -43,10 +43,10 @@
                         <svg id="close_icon" class="menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"> <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/> </svg>
                     </button>
                 </div>
-            </div>
+            </nav>
 
             <!-- Mobile navigation -->
-             <div class="navigation_menu" id="mobile_nav">
+            <nav class="navigation_menu" id="mobile_nav">
                 <div class="mobile_nav_list">
                     <a class="tertiary_button" id="menu_button_1" href="#skills">Skills</a>
                     <a class="tertiary_button" id="menu_button_2" href="#projects">Projects</a>
@@ -60,18 +60,17 @@
                         <a class="social_link" title="Email" href="mailto:mcalear.rs@gmail.com" target="_blank"><svg class="social_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"> <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/> </svg></a>
                     </div>
                 </div>
-                
-             </div>
+            </nav>
             
             <!--Hero section-->
-            <div class="hero_section">
+            <header class="hero_section">
 
                 <div class="hero_container">
                     <div class="hero_content">
                         <!-- Profile picture -->
-                        <div class="left_hero">
-                            <img class="avatar_image" src="assets/profile_picture.jpg" alt="Avatar">
-                        </div>
+                        <figure class="left_hero">
+                            <img class="avatar_image" src="assets/profile_picture.jpg" alt="Profile picture of Riki">
+                        </figure>
                         <!-- Introduction -->
                         <div class="right_hero">
                             <h1>Hi, my name is Riki!</h1>
@@ -95,11 +94,11 @@
                     </a>
                 </div>
 
-            </div>
+            </header>
 
             <!--Skills section-->
             
-            <div class="skills_section" id="skills">
+            <section class="skills_section" id="skills">
                 <div class="skills_container">
 
                     <h2>Skills</h2>
@@ -113,11 +112,11 @@
                             <div class="skill_box">
                                 <h4>Programming languages</h4>
                                 <div class="skill_banner">
-                                    <img title="Python" class="skill_image" src="assets/python.png" alt="Python">
-                                    <img title="HTML" class="skill_image" src="assets/html.png" alt="HTML">
-                                    <img title="CSS" class="skill_image" src="assets/css.png" alt="CSS">
-                                    <img title="JavaScript" class="skill_image" src="assets/javascript.png" alt="JavaScript">
-                                    <img title="Visual Basic" class="skill_image" src="assets/visualbasic.png" alt="Visual Basic">
+                                    <img title="Python" class="skill_image" src="assets/python.png" alt="Python logo">
+                                    <img title="HTML" class="skill_image" src="assets/html.png" alt="HTML logo">
+                                    <img title="CSS" class="skill_image" src="assets/css.png" alt="CSS logo">
+                                    <img title="JavaScript" class="skill_image" src="assets/javascript.png" alt="JavaScript logo">
+                                    <img title="Visual Basic" class="skill_image" src="assets/visualbasic.png" alt="Visual Basic logo">
                                 </div>
                             </div>
 
@@ -125,11 +124,11 @@
                             <div class="skill_box">
                                 <h4>Tools & platforms</h4>
                                 <div class="skill_banner">
-                                    <img title="Git" class="skill_image" src="assets/git.png" alt="Git">
-                                    <img title="Visual Studio Code" class="skill_image" src="assets/vscode.png" alt="Visual Studio Code">
-                                    <img title="Figma" class="skill_image" src="assets/figma.png" alt="Figma">
-                                    <img title="Adobe XD" class="skill_image" src="assets/xd.png" alt="Adobe XD">
-                                    <img title="Canva" class="skill_image" src="assets/canva.png" alt="Canva">
+                                    <img title="Git" class="skill_image" src="assets/git.png" alt="Git logo">
+                                    <img title="Visual Studio Code" class="skill_image" src="assets/vscode.png" alt="Visual Studio Code logo">
+                                    <img title="Figma" class="skill_image" src="assets/figma.png" alt="Figma logo">
+                                    <img title="Adobe XD" class="skill_image" src="assets/xd.png" alt="Adobe XD logo">
+                                    <img title="Canva" class="skill_image" src="assets/canva.png" alt="Canva logo">
                                 </div>
                             </div>
 
@@ -141,7 +140,7 @@
                             <div class="skill_box">
                                 <h4>Frameworks & libraries</h4>
                                 <div class="skill_banner">
-                                    <img title="Bootstrap" class="skill_image" src="assets/bootstrap.png" alt="Bootstrap">
+                                    <img title="Bootstrap" class="skill_image" src="assets/bootstrap.png" alt="Bootstrap logo">
                                 </div>
                             </div>
 
@@ -149,12 +148,12 @@
                             <div class="skill_box">
                                 <h4>Other</h4>
                                 <div class="skill_banner">
-                                    <img title="GitHub" class="skill_image" src="assets/github.png" alt="GitHub">
-                                    <img title="Notion" class="skill_image" src="assets/notion.png" alt="Notion">
-                                    <img title="Google Workspace" class="skill_image" src="assets/google.png" alt="Google Workspace">
-                                    <img title="Microsoft Office 365" class="skill_image" src="assets/office.jpg" alt="Microsoft Office 365">
-                                    <img title="Arduino" class="skill_image" src="assets/arduino.png" alt="Arduino">
-                                    <img title="ChatGPT" class="skill_image" src="assets/openai.png" alt="ChatGPT">
+                                    <img title="GitHub" class="skill_image" src="assets/github.png" alt="GitHub logo">
+                                    <img title="Notion" class="skill_image" src="assets/notion.png" alt="Notion logo">
+                                    <img title="Google Workspace" class="skill_image" src="assets/google.png" alt="Google Workspace logo">
+                                    <img title="Microsoft Office 365" class="skill_image" src="assets/office.jpg" alt="Microsoft Office 365 logo">
+                                    <img title="Arduino" class="skill_image" src="assets/arduino.png" alt="Arduino" logo>
+                                    <img title="ChatGPT" class="skill_image" src="assets/openai.png" alt="ChatGPT logo">
                                 </div>
                             </div>
     
@@ -163,10 +162,10 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
             
             <!--Projects section-->
-            <div class="projects_section" id="projects">
+            <section class="projects_section" id="projects">
                 <div class="projects_container">
 
                     <h2>Projects</h2>
@@ -179,28 +178,28 @@
 
                             <!-- Highlighted project left -->
                             <a class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" id="thumbnail_highlight_1">
-                                <div class="highlight_thumbnail">
-                                    <video class="project_image_highlight" muted id="highlight_cover_1" src="assets/harmony_preview.mp4" type="video/mp4" poster="assets/harmony_thumbnail.jpg" alt="Thumbnail"></video>
-                                </div>
+                                <figure class="highlight_thumbnail">
+                                    <video class="project_image_highlight" muted id="highlight_cover_1" src="assets/harmony_preview.mp4" type="video/mp4" poster="assets/harmony_thumbnail.jpg" alt="Video highlighting moments during the pitch presentation"></video>
+                                </figure>
                                 
                                 <p id="highlight_category_text">SEG2900 pitch competition finalist</p>
                                 <h4>Harmony</h4>
                                 <p>Led a team of 5 to build a website to market a social app that matches users by music preferences, developing key pages with HTML, CSS, and JavaScript, and designing the pitch slides, logo, and app prototype UI/UX in Figma.</p>
 
                                 <div class="tool_box">
-                                    <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                    <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
+                                    <img class="tool_image" src="assets/html.png" alt="HTML logo" title="HTML">
+                                    <img class="tool_image" src="assets/css.png" alt="CSS logo" title="CSS">
                                     <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
-                                    <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
-                                    <img class="tool_image" src="assets/git.png" alt="Git" title="Git">
+                                    <img class="tool_image" src="assets/figma.png" alt="Figma logo" title="Figma">
+                                    <img class="tool_image" src="assets/git.png" alt="Git logo" title="Git">
                                 </div>
                             </a>
 
                             <!-- Highlighted project right -->
                             <a class="project_link" href="#projects" id="thumbnail_highlight_2">
-                                <div class="highlight_thumbnail">
-                                    <img class="project_image_highlight" id="highlight_cover_2" src="assets/clarinet.jpg" alt="Thumbnail">
-                                </div>
+                                <figure class="highlight_thumbnail">
+                                    <img class="project_image_highlight" id="highlight_cover_2" src="assets/clarinet.jpg" alt="Tempory thumbnail for second highlighted project">
+                                </figure>
                                 
                                 <p id="highlight_category_text">uOttahack 7 hackathon</p>
                                 <h4>Coming soon</h4>
@@ -217,16 +216,16 @@
                         <!-- Project 1 -->
                         <div class="projects_box">
                             <a class="project_link" href="#projects" id="thumbnail_1">
-                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_1" src="assets/clarinet.jpg" alt="Thumbnail"></div>
+                                <figure class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_1" src="assets/clarinet.jpg" alt="Thumbnail for other project 1"></figure>
                                 <p id="category_text">Personal</p>
                                 <h4>Calculator</h4>
                                 <p>Built a web calculator for computing basic mathematics.</p>
                                 
                                 <div class="tool_box">
-                                    <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                    <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
-                                    <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
-                                    <img class="tool_image" src="assets/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                                    <img class="tool_image" src="assets/html.png" alt="HTML logo" title="HTML">
+                                    <img class="tool_image" src="assets/css.png" alt="CSS logo" title="CSS">
+                                    <img class="tool_image" src="assets/javascript.png" alt="JavaScript logo" title="JavaScript">
+                                    <img class="tool_image" src="assets/bootstrap.png" alt="Bootstrap logo" title="Bootstrap">
                                 </div>
                             </a>
                         </div>
@@ -234,15 +233,15 @@
                         <!-- Project 2 -->
                         <div class="projects_box">
                             <a class="project_link" href="https://github.com/Riku737/portfolio" id="thumbnail_2" target="_blank">
-                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_2" src="assets/portfolio.png" alt="Thumbnail"></div>
+                                <figure class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_2" src="assets/portfolio.png" alt="Thumbnail for other project 2"></figure>
                                 <p id="category_text">Personal</p>
                                 <h4>Portfolio</h4>
                                 <p>Developed a personal website to showcase my skills and projects.</p>
                                 
                                 <div class="tool_box">
-                                    <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                    <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
-                                    <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
+                                    <img class="tool_image" src="assets/html.png" alt="HTML logo" title="HTML">
+                                    <img class="tool_image" src="assets/css.png" alt="CSS logo" title="CSS">
+                                    <img class="tool_image" src="assets/javascript.png" alt="JavaScript logo" title="JavaScript">
                                 </div>
                             </a>
                         </div>
@@ -250,13 +249,13 @@
                         <!-- Project 3 -->
                         <div class="projects_box">
                             <a class="project_link" href="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign" target="_blank" id="thumbnail_3">
-                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_3" src="assets/st_laurent.jpg" alt="Thumbnail"></div>
+                                <figure class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_3" src="assets/st_laurent.jpg" alt="Thumbnail for other project 3"></figure>
                                 <p id="category_text">High school</p>
                                 <h4>St. Laurent Mall</h4>
                                 <p>Redesigned the branding, including logo, social media, and billboards.</p>
                                 
                                 <div class="tool_box">
-                                    <img class="tool_image" src="assets/canva.png" alt="Canva" title="Canva">
+                                    <img class="tool_image" src="assets/canva.png" alt="Canva logo" title="Canva">
                                 </div>
                             </a>
                         </div>
@@ -264,25 +263,25 @@
                         <!-- Project 4 -->
                         <div class="projects_box">
                             <a class="project_link" href="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement" target="_blank" id="thumbnail_4">
-                                <div class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_4" src="assets/sakura_manga_cafe.png" alt="Thubmnail"></div>
+                                <figure class="project_thumbnail_boundaries"><img class="project_image" id="thumbnail_image_4" src="assets/sakura_manga_cafe.png" alt="Thumbnail for other project 4"></figure>
                                 <p id="category_text">High school</p>
                                 <h4>Sakura Manga Cafe</h4>
                                 <p>Designed billboards, business cards, and pamphlets.</p>
                                 
                                 <div class="tool_box">
-                                    <img class="tool_image" src="assets/xd.png" alt="Adobe XD" title="Adobe XD">
+                                    <img class="tool_image" src="assets/xd.png" alt="Adobe XD logo" title="Adobe XD">
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <a href="https://github.com/Riku737" style="margin: auto;" target="_blank" class="secondary_button" id="inline_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/> </svg><p>See more on GitHub</p></a>
+                    <a href="https://github.com/Riku737" style="margin: auto;" target="_blank" class="secondary_button" id="inline_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/> </svg><p>See more on GitHub</p></a>
 
                 </div>
-            </div>
+            </section>
 
             <!--Experience section-->
-            <div class="experience_section" id="experience">
+            <section class="experience_section" id="experience">
 
                 <div class="experience_container">
 
@@ -364,10 +363,10 @@
 
                 </div>
 
-            </div>
+            </section>
 
             <!--About section-->
-            <div class="about_section" id="about">
+            <section class="about_section" id="about">
 
                 <div class="about_container">
 
@@ -376,9 +375,9 @@
 
                     <div class="about_content">
 
-                        <div class="about_left">
+                        <figure class="about_left">
                             <img class="about_image" src="assets/about.jpg" alt="about_image">
-                        </div>
+                        </figure>
 
                         <div class="about_right">
                             <h4>Summary</h4>
@@ -409,18 +408,18 @@
 
                         </div>
 
-                        <div class="left_contact">
+                        <figure class="left_contact">
                             <img class="contact_image" src="assets/demonstration.jpg">
-                        </div>
+                        </figure>
                         
                     </div>
 
                 </div>
 
-            </div>
+            </section>
 
             <!--Footer section-->
-            <div class="footer_section">
+            <footer class="footer_section">
 
                 <div class="footer_container">
 
@@ -454,7 +453,7 @@
                     
                 </div>
 
-            </div>
+            </footer>
 
         </div>
 
