@@ -13,6 +13,7 @@
     <li>CSS</li>
     <li>JavaScript</li>
     <li>Visual Studio Code</li>
+    <li>Bootstrap</li>
 </ul>
 
 <h2>Features</h2>
@@ -20,6 +21,8 @@
     <li>Mobile responsive web design</li>
     <li>Web accessible sizing based on W3C recommendations</li>
     <li>HTML semantic elements</li>
+    <li>WebM video supported formats</li>
+    <li>Interactive web elements</li>
     <li>CSS animations</li>
     <li>Bootstrap icons</li>
 </ul>

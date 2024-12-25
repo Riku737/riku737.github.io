@@ -292,7 +292,7 @@ a:hover {
 }
 
 .left_hero {
-    text-align: center;
+    margin: 0;
 }
 
 .avatar_image {
@@ -357,66 +357,24 @@ a:hover {
     fill: white;
 }
 
-.arrow_down {
-    position: absolute;
-    bottom: 10vh;
-    left: 50vw;
-    fill:black;
-    text-decoration: none;
-    animation: arrow_down_bounce 1s infinite linear;
-}
-
-.arrow_icon {
-    height: var(--25px);
-    width: var(--25px);
-    object-fit: contain;
-    transition: 100ms;
-}
-
-.arrow_down:hover {
-    animation-play-state: paused;
-    fill: white;
-}
-
-.arrow_down:hover::before {
-    animation: social_animation 300ms cubic-bezier(0, 0, 0.2, 1) forwards;
-}
-
-.arrow_down::before {
-    content: "";
-    position: absolute;
-    height: var(--25px);
-    width: var(--25px);
-    background-color: black;
-    border-radius: 100%;
-    transform: scale(0);
-    z-index: -1;
-}
-
-@keyframes arrow_down_bounce {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
 h1::before {
     position: absolute;
     content: "";
-    background-color: #000000;
+    background-color: black;
     height: 2.75rem;
-    z-index: -1;
+    z-index: 2;
     border-radius: var(--3px);
 }
 
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
 @keyframes h1_animation {
     from {
-        width: 19.563rem;
+        width: 19.625rem;
     }
     to {
         width: 0rem;
@@ -428,13 +386,13 @@ h1::before {
     content: "";
     background-color: #575757;
     height: 2.625rem;
-    z-index: -1;
+    z-index: 2;
     border-radius: var(--3px);
 }
 
 @keyframes p_animation {
     from {
-        width: 40.625rem;
+        width: 37.625rem;
     }
     to {
         width: 0rem;
@@ -938,9 +896,6 @@ h1::before {
         align-items: center;
         justify-content: center;
     }
-    .arrow_down {
-        display: none;
-    }
 
 
     /* Skill */
@@ -1054,6 +1009,24 @@ h1::before {
 
 
 @media screen and (max-width: 500px) {
+    .mobile_nav_list a {
+        padding: var(--12_5px) 0rem;
+        width: 100%;
+        text-align: center;
+    }
+    #inline_icon {
+        width: unset;
+        padding: var(--12_5px) 0rem;
+        justify-content: center;
+    }
+    .action_banner {
+        flex-direction: column;
+        row-gap: var(--12_5px);
+    }
+    .action_banner a {
+        width: 100%;
+        padding: var(--12_5px) 0rem;
+    }
     .projects_highlight {
         flex-direction: column;
         row-gap: var(--25px);
@@ -1072,9 +1045,10 @@ h1::before {
 @media screen and (min-width: 1050px) {
     h1::before {
         animation: h1_animation 500ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+        width: 19.625rem;
     }
     .hero_p::before {
-        width: 40.625rem;
+        width: 37.625rem;
         animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
         animation-delay: 500ms;
     }

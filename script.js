@@ -47,6 +47,7 @@ document.getElementById("home").onclick = () => {
     document.getElementById("hamburger_icon").style.display = "unset"
     document.getElementById("close_icon").style.display = "none"
     x = false
+    window.scrollTo(0, 0);
 }
 
 
