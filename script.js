@@ -11,10 +11,14 @@ let x = false;
 function mobile_navigation() {
     if (x == false) {
         navigation.style.display = "flex"
+        document.getElementById("hamburger_icon").style.display = "none"
+        document.getElementById("close_icon").style.display = "unset"
         x = true
     } else {
         navigation.style.display = "none"
         x = false
+        document.getElementById("hamburger_icon").style.display = "unset"
+        document.getElementById("close_icon").style.display = "none"
     }
 }
 
@@ -40,6 +44,9 @@ document.getElementById("menu_button_5").onclick = () => {
 
 document.getElementById("home").onclick = () => { 
     navigation.style.display = "none"
+    document.getElementById("hamburger_icon").style.display = "unset"
+    document.getElementById("close_icon").style.display = "none"
+    x = false
 }
 
 

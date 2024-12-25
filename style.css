@@ -8,6 +8,9 @@ html {
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     margin: 0;
+    overflow-x: hidden;
+    background-image: radial-gradient(circle, #cdcdcd 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 5rem 5rem;
 }
 
 h1 {
@@ -106,7 +109,6 @@ a {
 
 
 
-
 /*Navigation bar*/
 .navigation_section {
     width: 100%;
@@ -151,7 +153,7 @@ a {
     display: none;
     overflow: hidden;
     background-color: white;
-    animation: menu_animation_in 500ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation: menu_animation_in 150ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .mobile_nav_list {
@@ -162,6 +164,9 @@ a {
     align-items: center;
     row-gap: 25px;
     padding: 25px;
+    animation: menu_animation_up 250ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation-delay: 250ms;
+    transform: translateY(100%);
 }
 
 @keyframes menu_animation_in {
@@ -170,6 +175,15 @@ a {
     }
     100% {
         transform: translateX(0px);
+    }
+}
+
+@keyframes menu_animation_up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
 
@@ -189,6 +203,10 @@ a {
 
 .menu_button_nav:hover {
     cursor: pointer;
+}
+
+#close_icon {
+    display: none;
 }
 
 
@@ -325,6 +343,44 @@ a {
         transform: translateY(0px);
     }
 }
+
+h1::before {
+    position: absolute;
+    content: "";
+    background-color: #000000;
+    height: 44px;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+@keyframes h1_animation {
+    from {
+        width: 313px;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+.hero_p::before {
+    position: absolute;
+    content: "";
+    background-color: #575757;
+    height: 21px;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+@keyframes p_animation {
+    from {
+        width: 525px;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+
 
 
 
@@ -949,5 +1005,18 @@ a {
     }
     .contact_box {
         width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    h1::before {
+        animation: h1_animation 500ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    }
+    .hero_p::before {
+        width: 525px;
+        animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+        animation-delay: 500ms;
     }
 }
