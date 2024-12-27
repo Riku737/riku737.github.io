@@ -67,9 +67,6 @@ a:hover {
 .navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container, .footer_container {
     width: 1000px;
     margin: auto;
-    animation: appear_animation linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 20%;
 }
 
 .skills_section, .projects_section, .experience_section, .about_section, .footer_section {
@@ -169,17 +166,6 @@ a:hover {
     }
     100% {
         width: 100%;
-    }
-}
-
-@keyframes appear_animation {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
     }
 }
 
