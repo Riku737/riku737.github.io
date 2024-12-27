@@ -14,7 +14,6 @@
     <li>JavaScript</li>
     <li>Visual Studio Code</li>
     <li>Bootstrap</li>
-    <li>jQuery</li>
 </ul>
 <h2>Features</h2>
 <ul>
@@ -25,5 +24,4 @@
     <li>Interactive web elements</li>
     <li>CSS animations</li>
     <li>Bootstrap icons</li>
-    <li>jQuery effects</li>
 </ul>
