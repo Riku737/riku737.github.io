@@ -4,10 +4,13 @@ resume_button.onclick = () => {
     window.alert("Resume coming soon!");
 }
 
+
+
+
+// Navigation section
 const navigation = document.getElementById("mobile_nav");
 let x = false;
 
-// Navigation section
 function mobile_navigation() {
     if (x == false) {
         navigation.style.display = "flex"
@@ -24,22 +27,32 @@ function mobile_navigation() {
 
 document.getElementById("menu_button_1").onclick = () => {
     navigation.style.display = "none"
+    document.getElementById("hamburger_icon").style.display = "unset"
+    document.getElementById("close_icon").style.display = "none"
 }
 
 document.getElementById("menu_button_2").onclick = () => {
     navigation.style.display = "none"
+    document.getElementById("hamburger_icon").style.display = "unset"
+    document.getElementById("close_icon").style.display = "none"
 }
 
 document.getElementById("menu_button_3").onclick = () => {
     navigation.style.display = "none"
+    document.getElementById("hamburger_icon").style.display = "unset"
+    document.getElementById("close_icon").style.display = "none"
 }
 
 document.getElementById("menu_button_4").onclick = () => {
     navigation.style.display = "none"
+    document.getElementById("hamburger_icon").style.display = "unset"
+    document.getElementById("close_icon").style.display = "none"
 }
 
 document.getElementById("menu_button_5").onclick = () => {
     navigation.style.display = "none"
+    document.getElementById("hamburger_icon").style.display = "unset"
+    document.getElementById("close_icon").style.display = "none"
 }
 
 document.getElementById("home").onclick = () => { 
@@ -61,8 +74,9 @@ document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", 
 
 document.getElementById("thumbnail_highlight_1").addEventListener("mouseleave", () => {
     document.getElementById("highlight_cover_1").pause();
-    document.getElementById("highlight_cover_1").load()
-    document.getElementById("highlight_cover_1").style.transform = "scale(1)"
+    document.getElementById("highlight_cover_1").load();
+    document.getElementById("highlight_cover_1").style.transform = "scale(1)";
+
 });
 
 document.getElementById("thumbnail_highlight_2").onclick = () => {
