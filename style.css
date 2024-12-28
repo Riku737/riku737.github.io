@@ -99,6 +99,18 @@ a:hover {
     outline-offset: -0.063rem;
     background-color: white;
     transition: 100ms;
+    position: relative;
+}
+
+.secondary_button:focus::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: solid black 0.0625rem;
+    border-radius: var(--3px);
 }
 
 .secondary_button:hover {
