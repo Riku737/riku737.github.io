@@ -118,6 +118,7 @@ a:hover {
     text-decoration: black;
     transition: 100ms;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 #inline_icon {
@@ -140,8 +141,12 @@ a:hover {
     width: var(--25px);
 }
 
-.tertiary_button:hover::before {
+.tertiary_button.active::before {
     animation: tertiary_animation 300ms cubic-bezier(0, 0, 0.2, 1) forwards;
+}
+
+.tertiary_button.in-active::before {
+    animation: tertiary_animation_reverse 300ms cubic-bezier(0, 0, 0.2, 1) reverse;
 }
 
 .tertiary_button::before {
@@ -170,6 +175,15 @@ a:hover {
     }
     100% {
         width: 100%;
+    }
+}
+
+@keyframes tertiary_animation_reverse {
+    100% {
+        width: 100%;
+    }
+    0% {
+        width: 0%;
     }
 }
 
@@ -335,6 +349,7 @@ a:hover {
 
 .social_link:hover::before {
     animation: social_animation 300ms cubic-bezier(0, 0, 0.2, 1) forwards;
+    fill: white;
 }
 
 .social_link::before {
@@ -346,6 +361,7 @@ a:hover {
     border-radius: 100%;
     transform: scale(0);
     z-index: -1;
+    fill: white;
 }
 
 @keyframes social_animation {

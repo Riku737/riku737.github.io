@@ -1,5 +1,5 @@
 // Hidden message in console
-console.log("Hello! I see you're checking out my code. If you're interested in working together, feel free to reach out to me! I'd love to hear from you.");
+console.log("Hi there! Thanks for checking out my website.");
 
 // Hero section
 const resume_button = document.getElementById("resume_button");
@@ -9,9 +9,18 @@ resume_button.onclick = () => {
 
 
 // Navigation section
-document.getElementsbyid("menu_button_web_1").addEventListener("mouseenter", () => {
-    document.getElementById("menu_button_web_1").style.color = "red";
+const tertiary_button = document.querySelectorAll(".tertiary_button");
+tertiary_button.forEach(button => {
+    button.addEventListener("mouseenter", () => {
+        button.classList.add("active");
+        button.classList.remove("in-active");
+    });
+    button.addEventListener("mouseout", () => {
+        button.classList.remove("active");
+        button.classList.add("in-active");
+    });
 });
+
 
 const navigation = document.getElementById("mobile_nav");
 let x = false;
