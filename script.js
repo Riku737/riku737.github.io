@@ -1,3 +1,6 @@
+// Hidden message in console
+console.log("Hello! I see you're checking out my code. If you're interested in working together, feel free to reach out to me! I'd love to hear from you.");
+
 // Hero section
 const resume_button = document.getElementById("resume_button");
 resume_button.onclick = () => { 
@@ -5,9 +8,11 @@ resume_button.onclick = () => {
 }
 
 
-
-
 // Navigation section
+document.getElementsbyid("menu_button_web_1").addEventListener("mouseenter", () => {
+    document.getElementById("menu_button_web_1").style.color = "red";
+});
+
 const navigation = document.getElementById("mobile_nav");
 let x = false;
 
