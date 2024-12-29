@@ -1,3 +1,4 @@
+<img src="assets/github_heading.png" alt="Heading for GitHub README.mb" width="100%">
 <h1>Riki's Personal Website</h1>
 <div>
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/riku737/portfolio">
