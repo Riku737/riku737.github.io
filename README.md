@@ -10,7 +10,7 @@
 <a href="https://riku737.github.io/" target="_blank">View website</a>
 <h2>Languages and tools</h2>
 <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,vscode,bootstrap" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,vscode" />
 </a>
 <h2>Features</h2>
 <ul>
