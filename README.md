@@ -9,13 +9,9 @@
 <p>This is a portfolio website built by yours truly to breathe life into my original CV. It visualizes my skills, projects, experience, about, and contact information.</p>
 <a href="https://riku737.github.io/" target="_blank">View website</a>
 <h2>Languages and tools</h2>
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Visual Studio Code</li>
-    <li>Bootstrap</li>
-</ul>
+<a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,vscode,bootstrap" />
+</a>
 <h2>Features</h2>
 <ul>
     <li>Mobile responsive web design</li>
