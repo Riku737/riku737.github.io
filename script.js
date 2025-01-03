@@ -1,14 +1,7 @@
-// Hidden message in console
+// HIDDEN CONSOLE MESSAGE
 console.log("Hi there! Thanks for checking out my website.");
 
-// Hero section
-const resume_button = document.getElementById("resume_button");
-resume_button.onclick = () => { 
-    window.alert("Resume coming soon!");
-}
-
-
-// Navigation section
+// WEN NAVIGATION
 const tertiary_button = document.querySelectorAll(".tertiary_button");
 tertiary_button.forEach(button => {
     button.addEventListener("mouseenter", () => {
@@ -21,66 +14,61 @@ tertiary_button.forEach(button => {
     });
 });
 
+// MOBILE NAVIGATION
 
+// Menu button
 const navigation = document.getElementById("mobile_nav");
-let x = false;
+let trigger = false;
 
 function mobile_navigation() {
-    if (x == false) {
-        navigation.style.display = "flex"
-        document.getElementById("hamburger_icon").style.display = "none"
-        document.getElementById("close_icon").style.display = "unset"
-        x = true
+    if (trigger == false) {
+        navigation.classList.add("active");
+        navigation.classList.remove("in-active");
+        document.getElementById("hamburger_icon").style.display = "none";
+        document.getElementById("close_icon").style.display = "unset";
+        trigger = true;
     } else {
-        navigation.style.display = "none"
-        x = false
-        document.getElementById("hamburger_icon").style.display = "unset"
-        document.getElementById("close_icon").style.display = "none"
+        navigation.classList.remove("active");
+        navigation.classList.add("in-active");
+        document.getElementById("hamburger_icon").style.display = "unset";
+        document.getElementById("close_icon").style.display = "none";
+        trigger = false;
     }
 }
 
-document.getElementById("menu_button_1").onclick = () => {
-    navigation.style.display = "none"
-    document.getElementById("hamburger_icon").style.display = "unset"
-    document.getElementById("close_icon").style.display = "none"
-}
+// Menu links
+const navigation_links = document.querySelectorAll("#menu_button");
 
-document.getElementById("menu_button_2").onclick = () => {
-    navigation.style.display = "none"
-    document.getElementById("hamburger_icon").style.display = "unset"
-    document.getElementById("close_icon").style.display = "none"
-}
-
-document.getElementById("menu_button_3").onclick = () => {
-    navigation.style.display = "none"
-    document.getElementById("hamburger_icon").style.display = "unset"
-    document.getElementById("close_icon").style.display = "none"
-}
-
-document.getElementById("menu_button_4").onclick = () => {
-    navigation.style.display = "none"
-    document.getElementById("hamburger_icon").style.display = "unset"
-    document.getElementById("close_icon").style.display = "none"
-}
-
-document.getElementById("menu_button_5").onclick = () => {
-    navigation.style.display = "none"
-    document.getElementById("hamburger_icon").style.display = "unset"
-    document.getElementById("close_icon").style.display = "none"
-}
+navigation_links.forEach(button => {
+    button.addEventListener("click", () => {
+        navigation.classList.remove("active");
+        navigation.classList.add("in-active");
+        document.getElementById("hamburger_icon").style.display = "unset";
+        document.getElementById("close_icon").style.display = "none";
+        trigger = false;
+    });
+});
 
 document.getElementById("home").onclick = () => { 
-    navigation.style.display = "none"
-    document.getElementById("hamburger_icon").style.display = "unset"
-    document.getElementById("close_icon").style.display = "none"
-    x = false
+    navigation.classList.remove("active");
+    navigation.classList.add("in-active");
+    document.getElementById("hamburger_icon").style.display = "unset";
+    document.getElementById("close_icon").style.display = "none";
+    trigger = false;
     window.scrollTo(0, 0);
+};
+
+
+// HERO SECTION
+const resume_button = document.getElementById("resume_button");
+resume_button.onclick = () => { 
+    window.alert("Resume coming soon!");
 }
 
 
 
 
-// Projects section
+// PROJECTS SECTION
 document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
     document.getElementById("highlight_cover_1").play();
     document.getElementById("highlight_cover_1").style.transform = "scale(1.05)";
@@ -143,7 +131,7 @@ document.getElementById("thumbnail_4").addEventListener("mouseout", event => {
 
 
 
-// Footer section
+// FOOTER SECTION
 document.getElementById("resume_button_2").onclick = () => {
     window.alert("Resume coming soon!");
 }
