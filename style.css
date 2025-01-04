@@ -1,6 +1,9 @@
 /* GOOGLE FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
+
+
+
 /* GLOBAL VARIABLES */
 :root {
     /* Fonts */
@@ -11,6 +14,7 @@
     --12px: 0.75rem;
 
     /* Spacing */
+    --100px: 6.25rem;
     --50px: 3.125rem;
     --25px: 1.5625rem;
     --12_5px: 0.78125rem;
@@ -20,6 +24,17 @@
     --1px: 0.0625rem;
 }
 
+/* GLOBAL COLOURS */
+:root {
+    --text_color: #7d7d7d;
+    --background_color: #ffffff;
+    --primary_color: #000000;
+    --secondary_color: #bfbfbf;
+    --accent_color: #4d4d4d;
+}
+
+
+
 
 
 /* MAIN */
@@ -28,10 +43,11 @@ html {
 }
 
 body {
+    background-color: var(--background_color);
     font-family: Inter, Arial, Helvetica, sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-image: radial-gradient(circle, #cdcdcd 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: radial-gradient(circle, #bfbfbf96 1px, #00000000 1px);
     background-size: 2rem 2rem;
 }
 
@@ -58,10 +74,11 @@ h3 {
 h4 {
     font-size:  var(--18px);
     margin: 0;
+    color: var(--primary_color);
 }
 
 p {
-    color: #575757;
+    color: var(--text_color);
     font-size: var(--18px);
 }
 
@@ -81,14 +98,14 @@ a:hover {
 }
 
 .skills_section, .projects_section, .experience_section, .about_section, .footer_section {
-    padding: var(--50px) 0rem;
+    padding: var(--100px) 0rem;
 }
 
 /* Buttons */
 
 .primary_button {
     padding: var(--12_5px) var(--25px);
-    background-color: black;
+    background-color: var(--primary_color);
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -97,35 +114,35 @@ a:hover {
 }
 
 .primary_button:hover {
-    background-color: grey;
+    background-color: var(--accent_color);
 }
 
 .secondary_button {
     padding: var(--12_5px) var(--25px);
-    color: black;
+    color: var(--primary_color);
     text-decoration: none;
     border-radius: var(--3px);
     transition: 100ms;
-    outline:var(--1px) solid black;
+    outline:var(--1px) solid var(--primary_color);
     outline-offset: -0.063rem;
-    background-color: white;
+    background-color: var(--background_color);
     transition: 100ms;
     position: relative;
 }
 
 .secondary_button:hover {
-    outline-color: grey;
-    color: grey;
+    outline-color: var(--accent_color);
+    color: var(--accent_color);
 }
 
 .projects_section #inline_icon:hover svg {
-    fill: grey;
+    fill: var(--accent_color);
 }
 
 .tertiary_button {
     padding: var(--12_5px) 0rem;
-    color: black;
-    text-decoration: black;
+    color: var(--primary_color);
+    text-decoration: var(--primary_color);
     transition: 100ms;
     position: relative;
     transition: all 0.3s ease;
@@ -142,19 +159,9 @@ a:hover {
 .tertiary_button::before {
     content: "";
     height: var(--1px);
-    background-color: black;
+    background-color: var(--accent_color);
     position: absolute;
     width: 0%;
-    bottom: 0;
-    left: 0;
-}
-
-.tertiary_button:focus::before {
-    content: "";
-    height: var(--1px);
-    background-color: black;
-    position: absolute;
-    width: 100%;
     bottom: 0;
     left: 0;
 }
@@ -202,7 +209,7 @@ a:hover {
 
 
 
-/* NAVIGATION */
+/* NAVIGATION SECTION */
 
 /* Navigation bar */
 
@@ -238,7 +245,7 @@ a:hover {
 }
 
 #home {
-    color: black;
+    color: var(--primary_color);
     font-weight: bold;
 }
 
@@ -251,7 +258,7 @@ a:hover {
     width: 100vw;
     z-index: 5;
     overflow: hidden;
-    background-color: white;
+    background-color: var(--background_color);
     transform: translateX(100%);
 }
 
@@ -318,7 +325,7 @@ a:hover {
 
 
 
-/* HERO */
+/* HERO SECTION */
 .hero_section {
     height: 90vh;
     display: flex;
@@ -389,7 +396,7 @@ a:hover {
     position: absolute;
     height: var(--25px);
     width: var(--25px);
-    background-color: black;
+    background-color: var(--primary_color);
     border-radius: 100%;
     transform: scale(0);
     z-index: -1;
@@ -422,7 +429,7 @@ a:hover {
 h1::before {
     position: absolute;
     content: "";
-    background-color: black;
+    background-color: var(--primary_color);
     height: 2.75rem;
     z-index: 2;
     border-radius: var(--3px);
@@ -446,7 +453,7 @@ h1::before {
 .hero_p::before {
     position: absolute;
     content: "";
-    background-color: #575757;
+    background-color: var(--text_color);
     height: 2.625rem;
     z-index: 2;
     border-radius: var(--3px);
@@ -468,7 +475,7 @@ h1::before {
 /* SKILLS SECTION */
 
 .skills_section {
-    background-color: black;
+    background-color: var(--primary_color);
     color: white;
     position: relative;
     box-sizing: border-box;
@@ -516,8 +523,8 @@ h1::before {
 }
 
 .skill_box {
-    color: black;
-    background-color: white;
+    color: var(--primary_color);
+    background-color: var(--background_color);
     border-radius: var(--3px);
     padding: var(--25px);
     transition: 100ms;
@@ -534,13 +541,13 @@ h1::before {
 }
 
 #heading_description_bg {
-    color: grey;
+    color: var(--text_color);
 }
 
 
 
 
-/* PROJECTS */
+/* PROJECTS SECTION */
 .projects_section {
     width: 100%;
 }
@@ -555,7 +562,7 @@ h1::before {
 /* Project card */
 
 .project_link {
-    color: black;
+    color: var(--primary_color);
     text-decoration: none;
     transition: 100ms;
     width: 50%;
@@ -616,12 +623,14 @@ h1::before {
     margin-top: var(--12_5px);
     margin-bottom: var(--6_25px);
     font-size: var(--12px);
+    color: var(--accent_color);
 }
 
 #highlight_category_text {
     margin-top: 0rem;
     margin-bottom: var(--6_25px);
     font-size: var(--12px);
+    color: var(--accent_color);
 }
 
 .project_thumbnail_boundaries {
@@ -650,9 +659,9 @@ h1::before {
 
 
 
-/* EXPERIENCE */
+/* EXPERIENCE SECTION */
 .experience_section {
-    background-color: black;
+    background-color: var(--primary_color);
     color:white;
     position: relative;
     margin-top: 4.688rem;
@@ -681,9 +690,9 @@ h1::before {
 }
 
 .experience_box {
-    background-color: white;
+    background-color: var(--background_color);
     border-radius: var(--3px);
-    color: black;
+    color: var(--primary_color);
     display: flex;
     padding: var(--25px);
     column-gap: var(--12_5px);
@@ -733,13 +742,13 @@ h1::before {
 
 .experience_link {
     margin: 0rem;
-    color: #575757;
+    color: var(--text_color);
     text-decoration: none;
-    fill: #575757;
 }
 
 .experience_link:hover {
     text-decoration: underline;
+    color: var(--accent_color);
 }
 
 
@@ -832,12 +841,12 @@ h1::before {
 
 
 
-/* FOOTER */
+/* FOOTER SECTION */
 .footer_section {
-    background-color: black;
+    background-color: var(--primary_color);
     position: relative;
     margin-top: 4.688rem;
-    color: white;
+    color: var(--background_color);
 }
 
 .footer_section:before {
@@ -871,11 +880,11 @@ h1::before {
 }
 
 #social_footer {
-    fill: white;
+    fill: var(--background_color);
 }
 
 .heading_description_footer {
-    color: grey;
+    color: var(--text_color);
     margin: 0;
     margin-top: var(--6_25px);
     margin-bottom: var(--12_5px);
@@ -895,18 +904,19 @@ h1::before {
 }
 
 .foot_link {
-    color: grey;
+    color: var(--text_color);
     text-decoration: none;
 }
 
 .foot_link:hover {
     text-decoration: underline;
+    color: var(--accent_color);
 }
 
 /* Back to top */
 
 .logo_link {
-    color: white;
+    color: var(--background_color);
     text-decoration: none;
     font-size: var(--18px);
     font-weight: bold;
@@ -921,6 +931,11 @@ h1::before {
 /* WEB RESPONSIVE */
 
 @media screen and (max-width: 1050px) {
+    #cursor {
+        display: none;
+        visibility: none;
+    }
+
     /* Main */
     html {
         overflow-x: hidden;
@@ -946,6 +961,7 @@ h1::before {
     .navigation_section {
         padding: var(--25px);
         width: -webkit-fill-available;
+        position: fixed;
     }
     .navigation_container {
         padding: 0rem;
@@ -1026,6 +1042,9 @@ h1::before {
     .experience_box_right {
         text-align: left;
         width: 100%;
+    }
+    .experience_box_right p {
+        color: grey;
     }
     .experience_box_left {
         width: 100%;
@@ -1149,5 +1168,8 @@ h1::before {
         width: 37.625rem;
         animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
         animation-delay: 500ms;
+    }
+    .navigation_menu {
+        display: none;
     }
 }

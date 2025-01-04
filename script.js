@@ -1,7 +1,13 @@
 // HIDDEN CONSOLE MESSAGE
 console.log("Hi there! Thanks for checking out my website.");
 
-// WEN NAVIGATION
+
+
+
+// WEB NAVIGATION
+
+// Menu links
+
 const tertiary_button = document.querySelectorAll(".tertiary_button");
 tertiary_button.forEach(button => {
     button.addEventListener("mouseenter", () => {
@@ -14,25 +20,29 @@ tertiary_button.forEach(button => {
     });
 });
 
+
+
+
+
 // MOBILE NAVIGATION
 
 // Menu button
 const navigation = document.getElementById("mobile_nav");
-let trigger = false;
+let vTrigger = false;
 
 function mobile_navigation() {
-    if (trigger == false) {
+    if (vTrigger == false) {
         navigation.classList.add("active");
         navigation.classList.remove("in-active");
         document.getElementById("hamburger_icon").style.display = "none";
         document.getElementById("close_icon").style.display = "unset";
-        trigger = true;
+        vTrigger = true;
     } else {
         navigation.classList.remove("active");
         navigation.classList.add("in-active");
         document.getElementById("hamburger_icon").style.display = "unset";
         document.getElementById("close_icon").style.display = "none";
-        trigger = false;
+        vTrigger = false;
     }
 }
 
@@ -50,13 +60,17 @@ navigation_links.forEach(button => {
 });
 
 document.getElementById("home").onclick = () => { 
-    navigation.classList.remove("active");
-    navigation.classList.add("in-active");
-    document.getElementById("hamburger_icon").style.display = "unset";
-    document.getElementById("close_icon").style.display = "none";
-    trigger = false;
+    if (document.body.clientWidth < 1050 || document.documentElement.clientWidth < 1050) {
+        navigation.classList.remove("active");
+        navigation.classList.add("in-active");
+        document.getElementById("hamburger_icon").style.display = "unset";
+        document.getElementById("close_icon").style.display = "none";
+        trigger = false;
+    }
     window.scrollTo(0, 0);
 };
+
+
 
 
 // HERO SECTION

@@ -19,6 +19,7 @@
     <li>HTML semantic elements</li>
     <li>WebM video and WebP image supported formats</li>
     <li>Interactive web elements</li>
+    <li>CSS Pseudo-elements</li>
     <li>CSS animations</li>
     <li>Bootstrap icons</li>
 </ul>
