@@ -9,17 +9,18 @@
 <p>This is a portfolio website built by yours truly to breathe life into my original CV. It visualizes my skills, projects, experience, about, and contact information.</p>
 <a href="https://riku737.github.io/" target="_blank">View website</a>
 <h2>Languages and tools</h2>
-<a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,vscode" />
+<a href="https://skills-icons.vercel.app">
+    <img src="https://skills-icons.vercel.app/api/icons?i=html,css,js,vscode,gsap" />
 </a>
 <h2>Features</h2>
 <ul>
+    <li>GSAP animations</li>
+    <li>CSS animations</li>
     <li>Mobile responsive web design</li>
     <li>Web accessible sizing based on W3C recommendations</li>
     <li>HTML semantic elements</li>
     <li>WebM video and WebP image supported formats</li>
     <li>Interactive web elements</li>
     <li>CSS Pseudo-elements</li>
-    <li>CSS animations</li>
     <li>Bootstrap icons</li>
 </ul>

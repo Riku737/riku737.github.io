@@ -578,7 +578,20 @@ h1::before {
     height: 18.75rem;
     margin: 0 0 var(--12_5px) 0;
     pointer-events: none;
+    position: relative;
 }
+
+/* #highlight_thumbnail_1::after {
+    content: "View on GitHub";
+    position: absolute;
+    z-index: 3;
+    bottom: var(--12_5px);
+    left: var(--12_5px);
+    background-color: white;
+    padding: var(--6_25px) var(--12_5px);
+    border-radius: var(--3px);
+    font-size: var(--12_5px);
+} */
 
 .project_link p {
     margin-top: var(--6_25px);
@@ -640,6 +653,7 @@ h1::before {
     width: 100%;
     margin: 0;
     pointer-events: none;
+    margin: 0 0 var(--12_5px) 0;
 }
 
 /* Skill icons */
@@ -647,7 +661,6 @@ h1::before {
 .tool_box {
     display: flex;
     column-gap: var(--6_25px);
-    width: 100%;
 }
 
 .tool_image {
