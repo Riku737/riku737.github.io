@@ -31,18 +31,22 @@ gsap.from(".skill_information", {
     opacity: 0,
 });
 
-gsap.from(".skill_content", {
-    scrollTrigger: {
-        trigger: ".skill_content",
-        markers: true,
-        scrub: false,
-        start: "top 90%",
-        end: "bottom 90%",
-        markers: false,
-        toggleActions: "play none none reverse",
-    },
-    y: "20%",
-    opacity: 0,
+const skill_box = document.querySelectorAll(".skill_box");
+
+skill_box.forEach(box => {
+    gsap.from(box, {
+        scrollTrigger: {
+            trigger: box,
+            markers: true,
+            scrub: false,
+            start: "top 90%",
+            end: "bottom 90%",
+            markers: false,
+            toggleActions: "play none none reverse",
+        },
+        y: "20%",
+        opacity: 0,
+    });
 });
 
 
@@ -61,7 +65,7 @@ gsap.from(".projects_information", {
     },
     x: "-100%",
     opacity: 0,
-})
+});
 
 gsap.from(".highlighted_information", {
     scrollTrigger: {
@@ -75,7 +79,7 @@ gsap.from(".highlighted_information", {
     },
     x: "100%",
     opacity: 0,
-})
+});
 
 gsap.from(".other_projects_information", {
     scrollTrigger: {
@@ -89,7 +93,7 @@ gsap.from(".other_projects_information", {
     },
     x: "-100%",
     opacity: 0,
-})
+});
 
 // Experience
 
@@ -105,21 +109,27 @@ gsap.from(".experience_information", {
     },
     y: "20%",
     opacity: 0,
-})
+});
 
-gsap.from(".experience_list", {
-    scrollTrigger: {
-        trigger: ".experience_list",
-        markers: true,
-        scrub: false,
-        start: "top 90%",
-        end: "bottom 90%",
-        markers: false,
-        toggleActions: "play none none reverse",
-    },
-    y: "20%",
-    opacity: 0,
-})
+const experience_box = document.querySelectorAll(".experience_box");
+
+experience_box.forEach(box => {
+    gsap.from(box, {
+        scrollTrigger: {
+            trigger: box,
+            markers: true,
+            scrub: false,
+            start: "top 90%",
+            end: "bottom 90%",
+            markers: false,
+            toggleActions: "play none none reverse",
+        },
+        y: "20%",
+        opacity: 0,
+    });
+});
+
+
 
 
 // About
@@ -136,7 +146,7 @@ gsap.from(".about_information", {
     },
     x: "-100%",
     opacity: 0,
-})
+});
 
 gsap.from(".about_content", {
     scrollTrigger: {
@@ -150,7 +160,7 @@ gsap.from(".about_content", {
     },
     x: "100%",
     opacity: 0,
-})
+});
 
 gsap.from(".contact_banner", {
     scrollTrigger: {
@@ -164,7 +174,7 @@ gsap.from(".contact_banner", {
     },
     x: "-100%",
     opacity: 0,
-})
+});
 
 
 // Footer
@@ -181,7 +191,7 @@ gsap.from(".footer_container", {
     },
     y: "20%",
     opacity: 0,
-})
+});
 
 
 // Extra
