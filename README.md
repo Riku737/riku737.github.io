@@ -7,8 +7,8 @@
 </div>
 <h2>Introduction</h2>
 <p>This is a portfolio website built by yours truly to breathe life into my original CV. It visualizes my skills, projects, experience, about, and contact information.</p>
-<a href="https://riku737.github.io/" target="_blank">View website</a>
-<h2>Languages and tools</h2>
+<!-- <a href="https://riku737.github.io/" target="_blank">View website</a>
+<h2>Languages and tools</h2> -->
 <a href="https://skills-icons.vercel.app">
     <img src="https://skills-icons.vercel.app/api/icons?i=html,css,js,vscode,gsap" />
 </a>
