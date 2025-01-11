@@ -944,11 +944,6 @@ a:hover {
 /* WEB RESPONSIVE */
 
 @media screen and (max-width: 1050px) {
-    #cursor {
-        display: none;
-        visibility: none;
-    }
-
     /* Main */
     html {
         overflow-x: hidden;
@@ -1191,10 +1186,16 @@ a:hover {
 
 /* ERROR 404 */
 .error_section {
-    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .error_section {
+        padding: var(--50px);
+    }
 }
