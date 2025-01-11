@@ -23,4 +23,5 @@
     <li>Interactive web elements</li>
     <li>CSS Pseudo-elements</li>
     <li>Bootstrap icons</li>
+    <li>Error 404 page</li>
 </ul>
