@@ -17,11 +17,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Skills
 
+gsap.from(".skills_section", {
+    scrollTrigger: {
+        trigger: ".skills_section",
+        markers: true,
+        scrub: false,
+        start: "top 100%",
+        end: "bottom 90%",
+        markers: false,
+        toggleActions: "play none none reverse",
+    },
+    width: "20%",
+    opacity: 0,
+});
+
 gsap.from(".skill_information", {
     scrollTrigger: {
         trigger: ".skill_information",
         markers: true,
-        scrub: true,
+        scrub: false,
         start: "top 90%",
         end: "bottom 90%",
         markers: false,
@@ -96,6 +110,21 @@ gsap.from(".other_projects_information", {
 });
 
 // Experience
+
+gsap.from(".experience_section", {
+    scrollTrigger: {
+        trigger: ".experience_section",
+        markers: true,
+        scrub: false,
+        start: "top 100%",
+        end: "bottom 90%",
+        markers: false,
+        toggleActions: "play none none reverse",
+    },
+    x: "100%",
+    width: "20%",
+    opacity: 0,
+});
 
 gsap.from(".experience_information", {
     scrollTrigger: {
@@ -178,6 +207,20 @@ gsap.from(".contact_banner", {
 
 
 // Footer
+
+gsap.from(".footer_section", {
+    scrollTrigger: {
+        trigger: ".footer_section",
+        markers: true,
+        scrub: false,
+        start: "top 100%",
+        end: "bottom 90%",
+        markers: false,
+        toggleActions: "play none none reverse",
+    },
+    width: "20%",
+    opacity: 0,
+});
 
 gsap.from(".footer_container", {
     scrollTrigger: {
