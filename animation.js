@@ -225,3 +225,5 @@ gsap.from(".footer_container", {
 // tl.from(".skill_content", {
 //     x: "100%"
 // });
+
+// Hi there!
