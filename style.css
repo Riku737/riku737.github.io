@@ -1208,4 +1208,19 @@ a:hover {
     .error_section {
         padding: var(--50px);
     }
+    .error_section p {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .error_section p {
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .error_section a {
+        width: 100%;
+    }    
 }

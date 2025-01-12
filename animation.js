@@ -95,6 +95,10 @@ gsap.from(".other_projects_information", {
     opacity: 0,
 });
 
+
+
+
+
 // Experience
 
 // gsap.from(".experience_section", {
