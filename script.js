@@ -1,10 +1,12 @@
 // HIDDEN CONSOLE MESSAGE
+// Suprise message for those who check the console! :D
 console.log("Hi there! Thanks for checking out my website.");
 
 
 
 
 // WEB NAVIGATION
+// Navigation menu for desktop devices
 
 // Menu links
 
@@ -25,6 +27,7 @@ tertiary_button.forEach(button => {
 
 
 // MOBILE NAVIGATION
+// Navigation menu for mobile devices
 
 // Menu button
 const navigation = document.getElementById("mobile_nav");

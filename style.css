@@ -767,6 +767,7 @@ a:hover {
 
 
 /* ABOUT */
+
 .about_content {
     width: 100%;
     display: flex;
@@ -855,6 +856,7 @@ a:hover {
 
 
 /* FOOTER SECTION */
+/* Footer content of webpage */
 .footer_section {
     background-color: var(--primary_color);
     position: relative;
@@ -942,6 +944,7 @@ a:hover {
 
 
 /* WEB RESPONSIVE */
+/* Website rescalling and resizing */
 
 @media screen and (max-width: 1050px) {
     /* Main */
@@ -1185,6 +1188,8 @@ a:hover {
 
 
 /* ERROR 404 */
+/* Code for error page */
+/* Github pages does not support .htcacess but redirects to 404.html */
 .error_section {
     height: 90vh;
     display: flex;
