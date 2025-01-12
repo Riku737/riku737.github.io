@@ -74,10 +74,15 @@ document.getElementById("home").onclick = () => {
 
 
 // HERO SECTION
-const resume_button = document.getElementById("resume_button");
-resume_button.onclick = () => { 
-    window.alert("Resume coming soon!");
-}
+const resume_button = document.querySelectorAll("#resume_button");
+
+resume_button.forEach(button => {
+
+    button.onclick = () => {
+        window.alert("Resume coming soon!");
+    }
+
+});
 
 
 
@@ -142,10 +147,3 @@ document.getElementById("thumbnail_4").addEventListener("mouseover", event => {
 document.getElementById("thumbnail_4").addEventListener("mouseout", event => {
     document.getElementById("thumbnail_image_4").style.transform = "scale(1)"
 });
-
-
-
-// FOOTER SECTION
-document.getElementById("resume_button_2").onclick = () => {
-    window.alert("Resume coming soon!");
-}
