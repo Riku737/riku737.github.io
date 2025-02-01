@@ -1,6 +1,6 @@
 /* GOOGLE FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
 
@@ -44,7 +44,7 @@ html {
 
 body {
     background-color: var(--background_color);
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     margin: 0;
     overflow-x: hidden;
     background-image: radial-gradient(circle, #bfbfbf96 1px, #00000000 1px);
@@ -57,22 +57,25 @@ h1 {
     font-size: var(--36px);
     margin: 0;
     font-weight: bold;
+    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
 }
 
 h2 {
+    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
     font-size: var(--30px);
     margin-top: 0;
     margin-bottom: var(--12_5px);
 }
 
 h3 {
+    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
     font-size: var(--24px);
     margin: 0;
     margin-bottom: var(--25px);
 }
 
 h4 {
-    font-size:  var(--18px);
+    font-size: var(--18px);
     margin: 0;
     color: var(--primary_color);
 }
@@ -92,12 +95,22 @@ a:hover {
 
 /* Sections */
 
-.navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container, .footer_container {
+.navigation_container,
+.hero_container,
+.skills_container,
+.projects_container,
+.experience_container,
+.about_container,
+.footer_container {
     width: 1000px;
     margin: auto;
 }
 
-.skills_section, .projects_section, .experience_section, .about_section, .footer_section {
+.skills_section,
+.projects_section,
+.experience_section,
+.about_section,
+.footer_section {
     padding: var(--100px) 0rem;
 }
 
@@ -123,7 +136,7 @@ a:hover {
     text-decoration: none;
     border-radius: var(--3px);
     transition: 100ms;
-    outline:var(--1px) solid var(--primary_color);
+    outline: var(--1px) solid var(--primary_color);
     outline-offset: -0.063rem;
     background-color: var(--background_color);
     transition: 100ms;
@@ -170,6 +183,7 @@ a:hover {
     0% {
         width: 0%;
     }
+
     100% {
         width: 100%;
     }
@@ -179,6 +193,7 @@ a:hover {
     100% {
         width: 100%;
     }
+
     0% {
         width: 0%;
     }
@@ -228,7 +243,8 @@ a:hover {
     padding: var(--10px) 0rem;
 }
 
-.left_nav, .right_nav {
+.left_nav,
+.right_nav {
     align-content: center;
 }
 
@@ -284,6 +300,7 @@ a:hover {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0px);
     }
@@ -293,6 +310,7 @@ a:hover {
     0% {
         transform: translateX(0px);
     }
+
     100% {
         transform: translateX(100%);
     }
@@ -342,7 +360,8 @@ a:hover {
     justify-content: center;
 }
 
-.left_hero, .right_hero {
+.left_hero,
+.right_hero {
     align-content: center;
 }
 
@@ -407,6 +426,7 @@ a:hover {
     0% {
         transform: scale(0);
     }
+
     100% {
         transform: scale(1.5);
     }
@@ -437,14 +457,15 @@ a:hover {
 
 @keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
 @keyframes h1_animation {
     from {
         width: 19.625rem;
     }
+
     to {
         width: 0rem;
     }
@@ -463,6 +484,7 @@ a:hover {
     from {
         width: 37.625rem;
     }
+
     to {
         width: 0rem;
     }
@@ -515,7 +537,8 @@ a:hover {
     width: 100%;
 }
 
-.skill_left, .skill_right {
+.skill_left,
+.skill_right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -675,7 +698,7 @@ a:hover {
 /* EXPERIENCE SECTION */
 .experience_section {
     background-color: var(--primary_color);
-    color:white;
+    color: white;
     position: relative;
     margin-top: 4.688rem;
 }
@@ -725,7 +748,7 @@ a:hover {
 }
 
 .experience_box_left {
-    width:75%;
+    width: 75%;
 }
 
 #title_text {
@@ -794,7 +817,7 @@ a:hover {
 }
 
 .about_image {
-    object-fit:cover;
+    object-fit: cover;
     width: 100%;
     border-radius: var(--3px);
     height: 18.75rem;
@@ -947,19 +970,30 @@ a:hover {
 /* Website rescalling and resizing */
 
 @media screen and (max-width: 1050px) {
+
     /* Main */
     html {
         overflow-x: hidden;
     }
+
     .main_container {
         width: 100%;
     }
-    .navigation_container, .hero_container, .skills_container, .projects_container, .experience_container, .about_container, .footer_container {
+
+    .navigation_container,
+    .hero_container,
+    .skills_container,
+    .projects_container,
+    .experience_container,
+    .about_container,
+    .footer_container {
         width: 100%;
     }
+
     .heading_description {
         margin-bottom: var(--25px);
     }
+
     h1 {
         font-size: var(--30px);
     }
@@ -969,18 +1003,22 @@ a:hover {
     .menu_button_nav {
         display: block;
     }
+
     .navigation_section {
         padding: var(--25px);
         width: -webkit-fill-available;
         position: fixed;
     }
+
     .navigation_container {
         padding: 0rem;
         justify-content: space-between;
     }
+
     .left_nav {
         width: 75%;
     }
+
     .right_nav {
         display: none;
     }
@@ -990,23 +1028,29 @@ a:hover {
     .hero_section {
         height: fit-content;
     }
+
     .hero_content {
         margin-top: 5rem;
         flex-direction: column;
         text-align: center;
         row-gap: var(--25px);
     }
+
     .avatar_image {
         height: 12.5rem;
         width: 12.5rem;
     }
+
     .hero_container {
         padding: var(--25px);
     }
-    .action_banner, .social_banner {
+
+    .action_banner,
+    .social_banner {
         align-items: center;
         justify-content: center;
     }
+
     .hero_p {
         width: 50%;
         margin: auto;
@@ -1019,11 +1063,14 @@ a:hover {
     .skills_section {
         padding: var(--50px) var(--25px);
     }
+
     .skill_content {
         flex-direction: column;
         row-gap: var(--25px);
     }
-    .skill_left, .skill_right {
+
+    .skill_left,
+    .skill_right {
         width: 100%;
     }
 
@@ -1033,11 +1080,13 @@ a:hover {
         width: unset;
         padding: var(--50px) var(--25px);
     }
+
     .projects_highlight {
         row-gap: var(--25px);
     }
-    
-    .project_image, .project_thumbnail_boundaries {
+
+    .project_image,
+    .project_thumbnail_boundaries {
         height: 9.375rem;
     }
 
@@ -1046,33 +1095,41 @@ a:hover {
     .experience_section {
         padding: var(--50px) var(--25px);
     }
+
     .experience_box_details {
         flex-direction: column;
         row-gap: var(--6_25px);
     }
+
     .experience_box_right {
         text-align: left;
         width: 100%;
     }
+
     .experience_box_right p {
         color: grey;
     }
+
     .experience_box_left {
         width: 100%;
     }
+
     .experience_box {
         align-items: flex-start;
     }
-    
+
 
     /* About */
     .about_section {
         padding: var(--50px) var(--25px);
     }
+
     .about_left {
         border-radius: var(--3px);
     }
-    .about_left, .about_right {
+
+    .about_left,
+    .about_right {
         width: 100%;
     }
 
@@ -1081,9 +1138,11 @@ a:hover {
     .contact_banner {
         flex-direction: column;
     }
+
     .left_contact {
         display: none;
     }
+
     .right_contact {
         width: 100%;
     }
@@ -1093,13 +1152,16 @@ a:hover {
     .footer_section {
         padding: var(--50px) var(--25px);
     }
+
     .footer_container {
         flex-wrap: wrap;
         gap: var(--25px);
     }
+
     .left_foot {
         width: 100%;
     }
+
     .middle_foot {
         width: 50%;
     }
@@ -1112,20 +1174,26 @@ a:hover {
     .hero_p {
         width: unset;
     }
+
     .project_link {
         width: 100%;
     }
-    .project_image, .project_thumbnail_boundaries {
+
+    .project_image,
+    .project_thumbnail_boundaries {
         height: 18.75rem;
     }
+
     .projects_banner {
         flex-direction: column;
         row-gap: var(--25px);
         margin-bottom: var(--25px);
     }
+
     .projects_box {
         width: 100%;
     }
+
     .about_content {
         flex-direction: column;
         row-gap: var(--12_5px);
@@ -1142,27 +1210,33 @@ a:hover {
         width: 100%;
         text-align: center;
     }
+
     #inline_icon {
         width: unset;
         padding: var(--12_5px) 0rem;
         justify-content: center;
     }
+
     .action_banner {
         flex-direction: column;
         row-gap: var(--12_5px);
     }
+
     .action_banner a {
         width: 100%;
         padding: var(--12_5px) 0rem;
     }
+
     .projects_highlight {
         flex-direction: column;
         row-gap: var(--25px);
     }
+
     .right_contact {
         flex-direction: column;
         row-gap: var(--25px);
     }
+
     .contact_box {
         width: 100%;
     }
@@ -1175,11 +1249,13 @@ a:hover {
         animation: h1_animation 500ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
         width: 19.625rem;
     }
+
     .hero_p::before {
         width: 37.625rem;
         animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
         animation-delay: 500ms;
     }
+
     .navigation_menu {
         display: none;
     }
@@ -1208,6 +1284,7 @@ a:hover {
     .error_section {
         padding: var(--50px);
     }
+
     .error_section p {
         width: 50%;
     }
@@ -1222,5 +1299,5 @@ a:hover {
 @media screen and (max-width: 500px) {
     .error_section a {
         width: 100%;
-    }    
+    }
 }

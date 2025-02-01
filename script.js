@@ -62,7 +62,7 @@ navigation_links.forEach(button => {
     });
 });
 
-document.getElementById("home").onclick = () => { 
+document.getElementById("home").onclick = () => {
     if (document.body.clientWidth < 1050 || document.documentElement.clientWidth < 1050) {
         navigation.classList.remove("active");
         navigation.classList.add("in-active");
@@ -102,10 +102,6 @@ document.getElementById("thumbnail_highlight_1").addEventListener("mouseleave", 
     document.getElementById("highlight_cover_1").style.transform = "scale(1)";
 
 });
-
-document.getElementById("thumbnail_highlight_2").onclick = () => {
-    window.alert("This project is currently under development. Please check back later!");
-}
 
 document.getElementById("thumbnail_highlight_2").addEventListener("mouseenter", () => {
     document.getElementById("highlight_cover_2").style.transform = "scale(1.05)";
