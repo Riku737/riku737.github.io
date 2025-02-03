@@ -29,6 +29,6 @@
     <li>Interactive web elements</li>
     <li>CSS Pseudo-elements</li>
     <li>Bootstrap icons</li>
-    <li>Google embed web fonts (Inter and Space Grotesk</li>
+    <li>Google embed web fonts (Inter and Space Grotesk)</li>
     <li>Error 404 page</li>
 </ul>
