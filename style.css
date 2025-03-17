@@ -579,7 +579,7 @@ a:hover {
     width: 100%;
     display: flex;
     column-gap: var(--25px);
-    margin-bottom: var(--50px);
+    margin-bottom: var(--25px);
 }
 
 /* Project card */
@@ -636,7 +636,7 @@ a:hover {
 .projects_banner {
     display: flex;
     column-gap: var(--25px);
-    margin-bottom: var(--50px);
+    /* margin-bottom: var(--50px); */
 }
 
 .projects_box {

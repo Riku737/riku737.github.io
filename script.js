@@ -76,19 +76,6 @@ document.getElementById("home").onclick = () => {
 
 
 
-// HERO SECTION
-const resume_button = document.querySelectorAll("#resume_button");
-
-resume_button.forEach(button => {
-
-    button.onclick = () => {
-        window.alert("Resume coming soon!");
-    }
-
-});
-
-
-
 
 // PROJECTS SECTION
 document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
