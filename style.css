@@ -1184,7 +1184,7 @@ a:hover {
         height: 18.75rem;
     }
 
-    .projects_banner {
+    .projects_banner, .projects_highlight {
         flex-direction: column;
         row-gap: var(--25px);
         margin-bottom: var(--25px);
