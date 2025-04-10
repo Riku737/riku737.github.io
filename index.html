@@ -18,6 +18,7 @@
 
     <script defer src="script.js"></script>
     <script defer src="animation.js"></script>
+    <script defer src="vanilla-tilt.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -92,7 +93,7 @@
             <div class="hero_container">
                 <div class="hero_content">
                     <!-- Profile picture -->
-                    <figure class="left_hero">
+                    <figure class="left_hero" id="destroy-box" data-tilt data-tilt-scale="1.1">
                         <picture>
                             <source srcset="assets/web/profile_picture.webp" type="image/webp">
                             <source srcset="assets/profile_picture.jpg" type="image/jpeg">
@@ -216,7 +217,7 @@
                     <div class="projects_highlight">
 
                         <!-- Highlighted project left -->
-                        <a class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" id="thumbnail_highlight_1">
+                        <a data-tilt class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" id="thumbnail_highlight_1">
                             <figure class="highlight_thumbnail" id="highlight_thumbnail_1">
                                 <video class="project_image_highlight" muted id="highlight_cover_1" poster="assets/harmony_thumbnail.jpg" alt="Video highlighting moments during the pitch presentation">
                                     <source src="assets/web/harmony_preview.webm" type="video/webm">
@@ -238,7 +239,7 @@
                         </a>
 
                         <!-- Highlighted project right -->
-                        <a class="project_link" href="https://github.com/fnguy093/flashcards-majaai" target="_blank" id="thumbnail_highlight_2">
+                        <a data-tilt class="project_link" href="https://github.com/fnguy093/flashcards-majaai" target="_blank" id="thumbnail_highlight_2">
                             <figure class="highlight_thumbnail">
                                 <picture>
                                     <source srcset="assets/web/mayaai.webp" type="image/webp">
@@ -268,7 +269,7 @@
                     <!-- <h3>Personal projects</h3> -->
 
                     <div class="projects_banner">
-                        <div class="projects_box">
+                        <div data-tilt class="projects_box">
                             <a class="project_link" href="#projects" id="thumbnail_1">
                                 <figure class="project_thumbnail_boundaries">
                                     <picture>
@@ -292,7 +293,7 @@
                             </a>
                         </div>
 
-                        <div class="projects_box">
+                        <div data-tilt class="projects_box">
                             <a class="project_link" href="https://github.com/Riku737/portfolio" id="thumbnail_2" target="_blank">
                                 <figure class="project_thumbnail_boundaries">
                                     <picture>
@@ -314,7 +315,7 @@
                             </a>
                         </div>
 
-                        <div class="projects_box">
+                        <div data-tilt class="projects_box">
                             <a class="project_link" href="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign" target="_blank" id="thumbnail_3">
                                 <figure class="project_thumbnail_boundaries">
                                     <picture>
@@ -333,7 +334,7 @@
                             </a>
                         </div>
 
-                        <div class="projects_box">
+                        <div data-tilt class="projects_box">
                             <a class="project_link" href="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement" target="_blank" id="thumbnail_4">
                                 <figure class="project_thumbnail_boundaries">
                                     <picture>
@@ -473,7 +474,7 @@
 
                 <div class="about_content">
 
-                    <figure class="about_left">
+                    <figure data-tilt class="about_left">
                         <picture>
                             <source srcset="assets/web/about.webp" type="image/webp">
                             <source srcset="assets/about.jpg" type="image/jpeg">
@@ -520,7 +521,7 @@
 
                     </div>
 
-                    <figure class="left_contact">
+                    <figure data-tilt class="left_contact">
                         <picture>
                             <source srcset="assets/web/question.webp" type="image/webp">
                             <source srcset="assets/question.jpg" type="image/jpeg">
