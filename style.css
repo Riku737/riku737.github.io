@@ -1,3 +1,11 @@
+/* 
+ _   _ _ 
+| | | (_)
+| |_| | |
+|  _  | |
+|_| |_|_|
+*/
+
 /* GOOGLE FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
@@ -79,6 +87,13 @@ h4 {
     margin: 0;
     color: var(--primary_color);
 }
+
+/* h5 {
+    font-size: var(--18px);
+    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: var(--accent_color);
+} */
 
 p {
     color: var(--text_color);
@@ -257,7 +272,7 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 3.906rem;
+    column-gap: var(--25px);
 }
 
 #home {

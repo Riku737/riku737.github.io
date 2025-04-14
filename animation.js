@@ -1,3 +1,5 @@
+// If you can read this, you deserve a cookie.
+
 // Importing the GSAP library
 gsap.registerPlugin(ScrollTrigger);
 
