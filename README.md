@@ -11,8 +11,6 @@
 <!-- <a href="https://riku737.github.io/" target="_blank">View website</a>
 <h2>Languages and tools</h2> -->
 
-<a href="https://riku737.github.io/" target="_blank">Open website</a>
-
 <h2>Languages and tools</h2>
 <a href="https://skills-icons.vercel.app">
     <img src="https://skills-icons.vercel.app/api/icons?i=html,css,js,vscode,gsap" />
