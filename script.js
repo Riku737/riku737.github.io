@@ -78,60 +78,87 @@ document.getElementById("home").onclick = () => {
 
 
 // PROJECTS SECTION
-document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
-    document.getElementById("highlight_cover_1").play();
-    document.getElementById("highlight_cover_1").style.transform = "scale(1.05)";
+
+// GitHub Co-Pilot Implementation
+
+document.querySelectorAll('.project_link').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        // Scale image thumbnails
+        const img = link.querySelector('.project_image');
+        if (img) img.style.transform = 'scale(1.05)';
+        // Scale and play video highlights
+        const video = link.querySelector('.project_image_highlight');
+        if (video) {
+            video.style.transform = 'scale(1.05)';
+            video.play();
+        }
+    });
+    link.addEventListener('mouseleave', () => {
+        // Reset image thumbnails
+        const img = link.querySelector('.project_image');
+        if (img) img.style.transform = 'scale(1)';
+        // Reset and pause video highlights
+        const video = link.querySelector('.project_image_highlight');
+        if (video) {
+            video.style.transform = 'scale(1)';
+            video.pause();
+            video.load();
+        }
+    });
 });
 
-document.getElementById("thumbnail_highlight_1").addEventListener("mouseleave", () => {
-    document.getElementById("highlight_cover_1").pause();
-    document.getElementById("highlight_cover_1").load();
-    document.getElementById("highlight_cover_1").style.transform = "scale(1)";
+// Original Implementation
 
-});
+// document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
+//     document.getElementById("highlight_cover_1").play();
+//     document.getElementById("highlight_cover_1").style.transform = "scale(1.05)";
+// });
 
-document.getElementById("thumbnail_highlight_2").addEventListener("mouseenter", () => {
-    document.getElementById("highlight_cover_2").style.transform = "scale(1.05)";
-});
+// document.getElementById("thumbnail_highlight_1").addEventListener("mouseleave", () => {
+//     document.getElementById("highlight_cover_1").pause();
+//     document.getElementById("highlight_cover_1").load();
+//     document.getElementById("highlight_cover_1").style.transform = "scale(1)";
 
-document.getElementById("thumbnail_highlight_2").addEventListener("mouseleave", () => {
-    document.getElementById("highlight_cover_2").style.transform = "scale(1)"
-});
+// });
 
-document.getElementById("thumbnail_1").addEventListener("mouseover", event => {
-    document.getElementById("thumbnail_image_1").style.transform = "scale(1.05)"
-});
+// document.getElementById("thumbnail_highlight_2").addEventListener("mouseenter", () => {
+//     document.getElementById("highlight_cover_2").style.transform = "scale(1.05)";
+// });
 
-document.getElementById("thumbnail_1").onclick = () => {
-    window.alert("This project is currently under development. Please check back later!");
-}
+// document.getElementById("thumbnail_highlight_2").addEventListener("mouseleave", () => {
+//     document.getElementById("highlight_cover_2").style.transform = "scale(1)"
+// });
 
-document.getElementById("thumbnail_1").addEventListener("mouseout", event => {
-    document.getElementById("thumbnail_image_1").style.transform = "scale(1)"
-});
+// document.getElementById("thumbnail_1").addEventListener("mouseover", event => {
+//     document.getElementById("thumbnail_image_1").style.transform = "scale(1.05)"
+// });
 
-document.getElementById("thumbnail_2").addEventListener("mouseover", event => {
-    document.getElementById("thumbnail_image_2").style.transform = "scale(1.05)"
-});
+// document.getElementById("thumbnail_1").addEventListener("mouseout", event => {
+//     document.getElementById("thumbnail_image_1").style.transform = "scale(1)"
+// });
 
-document.getElementById("thumbnail_2").addEventListener("mouseout", event => {
-    document.getElementById("thumbnail_image_2").style.transform = "scale(1)"
-});
+// document.getElementById("thumbnail_2").addEventListener("mouseover", event => {
+//     document.getElementById("thumbnail_image_2").style.transform = "scale(1.05)"
+// });
 
-document.getElementById("thumbnail_3").addEventListener("mouseover", event => {
-    document.getElementById("thumbnail_image_3").style.transform = "scale(1.05)"
-});
+// document.getElementById("thumbnail_2").addEventListener("mouseout", event => {
+//     document.getElementById("thumbnail_image_2").style.transform = "scale(1)"
+// });
 
-document.getElementById("thumbnail_3").addEventListener("mouseout", event => {
-    document.getElementById("thumbnail_image_3").style.transform = "scale(1)"
-});
+// document.getElementById("thumbnail_3").addEventListener("mouseover", event => {
+//     document.getElementById("thumbnail_image_3").style.transform = "scale(1.05)"
+// });
 
-document.getElementById("thumbnail_4").addEventListener("mouseover", event => {
-    document.getElementById("thumbnail_image_4").style.transform = "scale(1.05)"
-});
+// document.getElementById("thumbnail_3").addEventListener("mouseout", event => {
+//     document.getElementById("thumbnail_image_3").style.transform = "scale(1)"
+// });
 
-document.getElementById("thumbnail_4").addEventListener("mouseout", event => {
-    document.getElementById("thumbnail_image_4").style.transform = "scale(1)"
-});
+// document.getElementById("thumbnail_4").addEventListener("mouseover", event => {
+//     document.getElementById("thumbnail_image_4").style.transform = "scale(1.05)"
+// });
+
+// document.getElementById("thumbnail_4").addEventListener("mouseout", event => {
+//     document.getElementById("thumbnail_image_4").style.transform = "scale(1)"
+// });
 
 // Hello!

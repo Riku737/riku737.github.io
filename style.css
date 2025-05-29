@@ -651,7 +651,6 @@ a:hover {
 .projects_banner {
     display: flex;
     column-gap: var(--25px);
-    /* margin-bottom: var(--50px); */
 }
 
 .projects_box {
