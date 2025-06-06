@@ -111,13 +111,6 @@ document.querySelectorAll('.project_link').forEach(link => {
     });
 });
 
-function redirectTo(url) {
-    // Redirect immediately
-    window.location.replace(url);
-    // Fallback link for users with JS disabled or slow redirect
-    document.body.innerHTML = `<p>If you are not redirected automatically, <a href="${url}">click here</a>.</p>`;
-}
-
 // Original Implementation
 
 // document.getElementById("thumbnail_highlight_1").addEventListener("mouseenter", () => {
