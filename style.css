@@ -592,9 +592,16 @@ a:hover {
 
 .projects_highlight {
     width: 100%;
+    gap: var(--25px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-bottom: var(--50px); */
+}
+
+.projects_rows {
     display: flex;
-    column-gap: var(--25px);
-    margin-bottom: var(--50px);
+    flex-direction: column;
+    gap: var(--50px);
 }
 
 /* Project card */
@@ -603,7 +610,7 @@ a:hover {
     color: var(--primary_color);
     text-decoration: none;
     transition: 100ms;
-    width: 50%;
+    width: 100%;
 }
 
 .project_link:hover {
@@ -649,12 +656,13 @@ a:hover {
 }
 
 .projects_banner {
-    display: flex;
-    column-gap: var(--25px);
+    gap: var(--25px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .projects_box {
-    width: 25%;
+    width: 100%;
 }
 
 .projects_box p {
@@ -1201,7 +1209,7 @@ a:hover {
     .projects_banner, .projects_highlight {
         flex-direction: column;
         row-gap: var(--25px);
-        margin-bottom: var(--25px);
+        /* margin-bottom: var(--25px); */
     }
 
     .projects_box {
