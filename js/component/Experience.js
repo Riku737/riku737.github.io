@@ -4,7 +4,7 @@ class Experience extends HTMLElement {
     }
     
     connectedCallback() {
-        var e_company = this.getAttribute('company');
+        var e_company = this.getAttribute('e_company');
         var e_link = this.getAttribute('e_link');
         var e_logo = this.getAttribute('e_logo');
         var e_title = this.getAttribute('e_title');
