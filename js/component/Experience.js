@@ -10,7 +10,7 @@ class Experience extends HTMLElement {
         var title = this.getAttribute('title');
         var location = this.getAttribute('location');
         var start = this.getAttribute('start');
-        var end = this.getAttribute('end') || "Present";
+        var end = this.getAttribute('end');
 
         this.innerHTML = `
         <div class="experience_box">
