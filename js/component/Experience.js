@@ -5,12 +5,12 @@ class Experience extends HTMLElement {
     
     connectedCallback() {
         var e_company = this.getAttribute('company');
-        var e_link = this.getAttribute('link');
-        var e_logo = this.getAttribute('logo');
-        var e_title = this.getAttribute('title');
-        var e_location = this.getAttribute('location');
-        var e_start = this.getAttribute('start');
-        var e_end = this.getAttribute('end');
+        var e_link = this.getAttribute('e_link');
+        var e_logo = this.getAttribute('e_logo');
+        var e_title = this.getAttribute('e_title');
+        var e_location = this.getAttribute('e_location');
+        var e_start = this.getAttribute('e_start');
+        var e_end = this.getAttribute('e_end');
 
         this.innerHTML = `
         <div class="experience_box">
