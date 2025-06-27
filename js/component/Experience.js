@@ -10,12 +10,12 @@ class Experience extends HTMLElement {
         var title = this.getAttribute('title');
         var location = this.getAttribute('location');
         var start = this.getAttribute('start');
-        var end = this.getAttribute('end');
+        var end = this.getAttribute('end') || "Present";
 
         this.innerHTML = `
         <div class="experience_box">
             <div class="logo_box">
-                <img class="logo_experience" alt="experience_logo" src="assets/${logo}" title="${title}">
+                <img class="logo_experience" alt="experience_logo" src="assets/${logo}" title="${company}">
             </div>
             <div class="experience_box_details">
                 <div class="experience_box_left">
