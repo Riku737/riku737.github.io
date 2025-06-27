@@ -17,15 +17,16 @@
 
 <h2>Features</h2>
 <ul>
-  <li>GSAP animations 🎥</li>
-  <li>CSS animations 🎨</li>
+  <li>Component-based architecture and modular web components 📐</li>
   <li>Mobile responsive web design 📱</li>
   <li>Web accessible sizing based on W3C recommendations ♿</li>
   <li>HTML semantic elements 🏷️</li>
-  <li>WebM video and WebP image supported formats 📹</li>
+  <li>GSAP animations 🎥</li>
+  <li>CSS animations 🎨</li>
   <li>Interactive web elements 🖱️</li>
-  <li>CSS Pseudo-elements 🎭</li>
-  <li>Bootstrap icons 🖌️</li>
+  <li>WebM video and WebP image supported formats 📹</li>
   <li>Google embed web fonts (Inter and Space Grotesk) 🔤</li>
+  <li>Bootstrap icons 🖌️</li>
+  <li>CSS Pseudo-elements 🎭</li>
   <li>Error 404 page 🚫</li>
 </ul>
