@@ -6,7 +6,7 @@ class ProjectBox extends HTMLElement {
 
         const file =  this.getAttribute('file');
         const imgWebP = 'assets/web/' + file + '.webp';
-        const imgPNG = 'assets/' + file + '.png';
+        const imgPNG = 'assets/thumbnails/' + file + '.png';
 
         const imgAlt = 'Asset for ' + name;
         
