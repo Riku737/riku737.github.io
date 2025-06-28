@@ -108,6 +108,13 @@ a:hover {
     cursor: pointer;
 }
 
+.text_chip {
+    background-color: var(--primary_color);
+    color: white;
+    border-radius: var(--3px);
+    padding: var(--1px) var(--3px);
+}
+
 /* Sections */
 
 .navigation_container,

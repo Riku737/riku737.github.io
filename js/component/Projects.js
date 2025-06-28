@@ -18,7 +18,8 @@ class ProjectBox extends HTMLElement {
             toolbox += `<tool-item tool="${tool}" type="tool_image"></tool-item>`;
         });
 
-        const type =  this.getAttribute('type') ?? 'image';
+        const type =  this.getAttribute('type');
+        const status =  this.getAttribute('status');
 
         if (type === "video") {
             const videoWebM =  'assets/web/' + file + '.webm';
@@ -42,7 +43,7 @@ class ProjectBox extends HTMLElement {
             </a>
             `;
 
-        } else {
+        } else if (status != null) {
             this.innerHTML = `
                 <div class="projects_box">
                     <a class="project_link" href="${link}" target="_blank">
@@ -54,7 +55,7 @@ class ProjectBox extends HTMLElement {
                             </picture>
                         </figure>
                         <div class="project_details">
-                            <h4>${name}</h4>
+                            <h4><chip-text text="${status}"></chip-text> ${name}</h4>
                             <p>${description}</p>
                             <div class="tool_box">
                                 ${toolbox}
@@ -63,9 +64,40 @@ class ProjectBox extends HTMLElement {
                     </a>
                 </div>
                 `;
+        } else {
+            this.innerHTML = `
+            <div class="projects_box">
+                <a class="project_link" href="${link}" target="_blank">
+                    <figure class="project_thumbnail_boundaries">
+                        <picture>
+                            <source srcset="${imgWebP}" type="image/webp">
+                            <source srcset="${imgPNG}" type="image/png">
+                            <img class="project_image" src="${imgPNG}" alt="${imgAlt}">
+                        </picture>
+                    </figure>
+                    <div class="project_details">
+                        <h4>${name}</h4>
+                        <p>${description}</p>
+                        <div class="tool_box">
+                            ${toolbox}
+                        </div>
+                    </div>
+                </a>
+            </div>
+            `;
             }
 
         }
 }
 
+class ChipText extends HTMLElement {
+    connectedCallback() {
+        const message = this.getAttribute('text');
+        this.innerHTML = `
+        <span class="text_chip">${message}</span>
+        `;
+    }
+}
+
 customElements.define('project-box', ProjectBox);
+customElements.define('chip-text', ChipText);
