@@ -1,9 +1,5 @@
 class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
-    
-    connectedCallback() {
+       connectedCallback() {
         this.innerHTML = `
         <footer class="footer_section">
 

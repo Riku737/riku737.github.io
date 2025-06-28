@@ -1,30 +1,26 @@
 class Experience extends HTMLElement {
-    constructor() {
-        super();
-    }
-    
     connectedCallback() {
-        var e_company = this.getAttribute('e_company');
-        var e_link = this.getAttribute('e_link');
-        var e_logo = this.getAttribute('e_logo');
-        var e_title = this.getAttribute('e_title');
-        var e_location = this.getAttribute('e_location');
-        var e_start = this.getAttribute('e_start');
-        var e_end = this.getAttribute('e_end');
+        const company = this.getAttribute('company');
+        const link = this.getAttribute('link');
+        const logo = this.getAttribute('logo');
+        const title = this.getAttribute('title');
+        const location = this.getAttribute('location');
+        const start = this.getAttribute('start');
+        const end = this.getAttribute('end');
 
         this.innerHTML = `
         <div class="experience_box">
             <div class="logo_box">
-                <img class="logo_experience" alt="experience_logo" src="assets/${e_logo}" title="${e_company}">
+                <img class="logo_experience" alt="experience_logo" src="assets/${logo}" title="${company}">
             </div>
             <div class="experience_box_details">
                 <div class="experience_box_left">
-                    <h4 id="title_text">${e_title}</h4>
-                    <a class="experience_link" href="${e_link}" target="_blank">${e_company}</a>
+                    <h4 id="title_text">${title}</h4>
+                    <a class="experience_link" href="${link}" target="_blank">${company}</a>
                 </div>
                 <div class="experience_box_right">
-                    <p id="title_text">${e_start} - ${e_end}</p>
-                    <p>${e_location}</p>
+                    <p id="title_text">${start} - ${end}</p>
+                    <p>${location}</p>
                 </div>
             </div>
         </div>

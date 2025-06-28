@@ -1,8 +1,4 @@
 class MobileNavBar extends HTMLElement {
-    constructor() {
-        super();
-    }
-    
     connectedCallback() {
         this.innerHTML = `
         <nav class="navigation_menu" id="mobile_nav">

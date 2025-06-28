@@ -88,7 +88,7 @@ __      _____| |__  ___(_) |_ ___
                     </figure>
                     <!-- Introduction -->
                     <div class="right_hero">
-                        <h1>Hi, my name is Riki!</h1>
+                        <h1 class="hero_h1">Hi, my name is </h1>
                         <p class="hero_p">I'm a Software Engineering student at uOttawa specializing in web design/development, seeking Winter 2026 internships.</p>
                         <div class="action_banner">
                             <a href="#projects" class="primary_button">View my work</a>
@@ -131,13 +131,13 @@ __      _____| |__  ___(_) |_ ___
                         <div class="skill_box">
                             <h4>Programming Languages</h4>
                             <div class="skill_banner">
-                                <img title="Python" class="skill_image" src="assets/python.png" alt="Python">
-                                <img title="HTML" class="skill_image" src="assets/html.png" alt="HTML">
-                                <img title="CSS" class="skill_image" src="assets/css.png" alt="CSS">
-                                <img title="JavaScript" class="skill_image" src="assets/javascript.png" alt="JavaScript">
-                                <img title="mySQL" class="skill_image" src="assets/sql.png" alt="mySQL">
-                                <img title="PHP" class="skill_image" src="assets/php.png" alt="PHP">
-                                <img title="Java" class="skill_image" src="assets/java.png" alt="Java">
+                                <tool-item tool="Python" type="skill_image"></tool-item>
+                                <tool-item tool="HTML" type="skill_image"></tool-item>
+                                <tool-item tool="CSS" type="skill_image"></tool-item>
+                                <tool-item tool="JavaScript" type="skill_image"></tool-item>
+                                <tool-item tool="MySQL" type="skill_image"></tool-item>
+                                <tool-item tool="PHP" type="skill_image"></tool-item>
+                                <tool-item tool="Java" type="skill_image"></tool-item>
                             </div>
                         </div>
 
@@ -145,11 +145,11 @@ __      _____| |__  ___(_) |_ ___
                         <div class="skill_box">
                             <h4>Tools & Platforms</h4>
                             <div class="skill_banner">
-                                <img title="Git" class="skill_image" src="assets/git.png" alt="Git">
-                                <img title="Visual Studio Code" class="skill_image" src="assets/vscode.png" alt="Visual Studio Code">
-                                <img title="Figma" class="skill_image" src="assets/figma.png" alt="Figma">
-                                <img title="Adobe XD" class="skill_image" src="assets/xd.png" alt="Adobe XD">
-                                <img title="Canva" class="skill_image" src="assets/canva.png" alt="Canva">
+                                <tool-item tool="Git" type="skill_image"></tool-item>
+                                <tool-item tool="VSCode" type="skill_image"></tool-item>
+                                <tool-item tool="Figma" type="skill_image"></tool-item>
+                                <tool-item tool="XD" type="skill_image"></tool-item>
+                                <tool-item tool="Canva" type="skill_image"></tool-item>
                             </div>
                         </div>
 
@@ -161,8 +161,8 @@ __      _____| |__  ___(_) |_ ___
                         <div class="skill_box">
                             <h4>Frameworks & Libraries</h4>
                             <div class="skill_banner">
-                                <img title="Bootstrap" class="skill_image" src="assets/bootstrap.png" alt="Bootstrap">
-                                <img title="GSAP" class="skill_image" src="assets/gsap.png" alt="GSAP">
+                                <tool-item tool="Bootstrap" type="skill_image"></tool-item>
+                                <tool-item tool="GSAP" type="skill_image"></tool-item>
                             </div>
                         </div>
 
@@ -170,13 +170,13 @@ __      _____| |__  ___(_) |_ ___
                         <div class="skill_box">
                             <h4>Other</h4>
                             <div class="skill_banner">
-                                <img title="GitHub" class="skill_image" src="assets/github.png" alt="GitHub">
-                                <img title="WordPress" class="skill_image" src="assets/wordpress.png" alt="Notion">
-                                <img title="Google Workspace" class="skill_image" src="assets/google.png" alt="Google Workspace">
-                                <img title="Microsoft Office 365" class="skill_image" src="assets/office.jpg" alt="Microsoft Office 365">
-                                <img title="Arduino" class="skill_image" src="assets/arduino.png" alt="Arduino">
-                                <img title="Cloudflare" class="skill_image" src="assets/cloudflare.png" alt="Cloudflare">
-                                <img title="Windows" class="skill_image" src="assets/windows.jpg" alt="Windows">
+                                <tool-item tool="GitHub" type="skill_image"></tool-item>
+                                <tool-item tool="WordPress" type="skill_image"></tool-item>
+                                <tool-item tool="GoogleWorkspace" type="skill_image"></tool-item>
+                                <tool-item tool="Office365" type="skill_image"></tool-item>
+                                <tool-item tool="Arduino" type="skill_image"></tool-item>
+                                <tool-item tool="Cloudflare" type="skill_image"></tool-item>
+                                <tool-item tool="Windows" type="skill_image"></tool-item>
                             </div>
                         </div>
 
@@ -199,58 +199,31 @@ __      _____| |__  ___(_) |_ ___
                 <div class="projects_rows">
 
                     <!--Highlighted projects-->
-                    <div class="highlighted_information">
+                    <div class="other_projects_information">
 
                         <h3>Collaborative Work</h3>
 
-                        <div class="projects_highlight">
+                        <div class="projects_banner">
 
-                            <!-- Highlighted project left -->
-                            <a class="project_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" id="thumbnail_highlight_1">
-                                <figure class="highlight_thumbnail" id="highlight_thumbnail_1">
-                                    <video class="project_image_highlight" muted id="highlight_cover_1" poster="assets/harmony_thumbnail.jpg" alt="Video highlighting moments during the pitch presentation">
-                                        <source src="assets/web/harmony_preview.webm" type="video/webm">
-                                        <source src="assets/harmony_preview.mp4" type="video/mp4">
-                                    </video>
-                                </figure>
+                            <project-box
+                                name="Harmony (Startup Pitch Competition Finalist)"
+                                description="Led a team of 5 to build a marketing website for an app that matches users by music tastes. Designed the branding and developed key pages."
+                                link="https://github.com/Harmaniacz/Harmaniacz.github.io"
+                                file="harmony_preview"
+                                tools="HTML,CSS,JavaScript,Figma,Git"
+                                type="video">
+                            </project-box>
 
-                                <div class="project_details">
-                                    <h4>Harmony (Startup Pitch Competition Finalist)</h4>
-                                    <p>Led a team of 5 to build a marketing website for an app that matches users by music tastes. Designed the branding and developed key pages.</p>
-                                    <div class="tool_box">
-                                        <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                        <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
-                                        <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
-                                        <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
-                                        <img class="tool_image" src="assets/git.png" alt="Git" title="Git">
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- Highlighted project right -->
-                            <a class="project_link" href="https://github.com/fnguy093/flashcards-majaai" target="_blank" id="thumbnail_highlight_2">
-                                <figure class="highlight_thumbnail">
-                                    <picture>
-                                        <source srcset="assets/web/mayaai.webp" type="image/webp">
-                                        <source srcset="assets/mayaai.JPG" type="image/jpeg">
-                                        <img class="project_image_highlight" id="highlight_cover_2" src="assets/mayaai.JPG" alt="Tempory thumbnail for second highlighted project">
-                                    </picture>
-                                </figure>
-
-                                <div class="project_details">
-                                    <h4>MayaAI (uOttaHack 2025)</h4>
-                                    <p>Created a web-based flashcard app as part of a team of four at uOttaHack 7 (2025). Contributed to the website's front-end and UI/UX.</p>
-                                    <div class="tool_box">
-                                        <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                        <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
-                                        <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
-                                        <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
-                                        <img class="tool_image" src="assets/surveymonkey.png" alt="SurveyMonkey" title="SurveyMonkey">
-                                    </div>
-                                </div>
-                            </a>
+                            <project-box
+                                name="MayaAI (uOttaHack 2025)"
+                                description="Created a web-based flashcard app as part of a team of four at uOttaHack 7 (2025). Contributed to the website's front-end and UI/UX."
+                                link="https://github.com/fnguy093/flashcards-majaai"
+                                file="mayaai"
+                                tools="HTML,CSS,JavaScript,Figma,SurveyMonkey">
+                            </project-box>
 
                         </div>
+
                     </div>
 
                     <!--Design projects-->
@@ -259,106 +232,51 @@ __      _____| |__  ___(_) |_ ___
                         <h3>Design & Interaction</h3>
 
                         <div class="projects_banner">
-                            <div class="projects_box">
-                                <a class="project_link" href="https://www.figma.com/proto/BfrFvKdruTjynJFxYUqCgJ/SESA-Design?node-id=535-3618&t=D3RxgZQBFSdMdfUS-1" target="_blank" id="thumbnail_1">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/sesa_thumbnail.webp" type="image/webp">
-                                            <source srcset="assets/sesa_thumbnail.png" type="image/png">
-                                            <img class="project_image" id="thumbnail_image_1" src="assets/sesa_thumbnail.png" alt="Thumbnail for other project 1">
-                                        </picture>
-                                    </figure>
-                                    
-                                    <div class="project_details">
-                                        <h4>SESA</h4>
-                                        <p>Designed wireframes and highfidelity UI/UX website prototypes.</p>
 
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <!-- SESA -->
+                            <project-box
+                                name="Software Engineering Student Association Web Design"
+                                description="Designed wireframes, low-fidelity, and high-fidelity UI/UX website prototypes."
+                                link="https://www.figma.com/proto/BfrFvKdruTjynJFxYUqCgJ/SESA-Design?node-id=535-3618&t=D3RxgZQBFSdMdfUS-1"
+                                file="sesa_thumbnail"
+                                tools="Figma">
+                            </project-box>
 
-                            <div class="projects_box">
-                                <a class="project_link" href="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio" target="_blank" id="thumbnail_1">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/code_youth_thumbnail.webp" type="image/webp">
-                                            <source srcset="assets/code_youth_thumbnail.png" type="image/png">
-                                            <img class="project_image" id="thumbnail_image_1" src="assets/code_youth_thumbnail.png" alt="Thumbnail for other project 1">
-                                        </picture>
-                                    </figure>
-                                    
-                                    <div class="project_details">
-                                        <h4>Code Youth</h4>
-                                        <p>Designed social media content to support outreach from behind the scenes.</p>
+                            <!-- Code Youth -->
+                            <project-box
+                                name="Code Youth Social Media Design"
+                                description="Designed social media content to support online outreach from behind the scenes."
+                                link="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio"
+                                file="code_youth_thumbnail"
+                                tools="XD,Figma,Canva">
+                            </project-box>
 
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/xd.png" alt="XD" title="XD">
-                                            <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
-                                            <img class="tool_image" src="assets/canva.png" alt="Canva" title="Canva">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <!-- Harmony -->
+                            <project-box
+                                name="Harmony App Prototype Design"
+                                description="Designed a startup's pitch slidedeck and high-fidelity mobile UI/UX prototypes."
+                                link="https://www.behance.net/gallery/216127593/Harmony-social-media-app"
+                                file="harmony_uiux"
+                                tools="Figma">
+                            </project-box>
 
-                            <div class="projects_box">
-                                <a class="project_link" href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" id="thumbnail_2" target="_blank">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/harmony_uiux.webp" type="image/webp">
-                                            <source srcset="assets/harmony_uiux.png" type="image/png">
-                                            <img class="project_image" id="thumbnail_image_2" src="assets/harmony_uiux.png" alt="Thumbnail for other project 2">
-                                        </picture>
-                                    </figure>
-                                    <div class="project_details">
-                                        <h4>Harmony</h4>
-                                        <p>Designed startup pitch slideshow and high fidelity mobile UI/UX prototypes.</p>
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/figma.png" alt="Figma" title="Figma">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <!-- St Laurent Mall -->
+                            <project-box
+                                name="St. Laurent Mall Redesign Concept"
+                                description="Redesigned existing company branding, proposing social media and billboard advertising."
+                                link="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign"
+                                file="st_laurent"
+                                tools="Canva">
+                            </project-box>
 
-                            <div class="projects_box">
-                                <a class="project_link" href="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign" target="_blank" id="thumbnail_3">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/st_laurent.webp" type="image/webp">
-                                            <source srcset="assets/st_laurent.png" type="image/png">
-                                            <img class="project_image" id="thumbnail_image_3" src="assets/st_laurent.png" alt="Thumbnail for other project 3">
-                                        </picture>
-                                    </figure>
-                                    <div class="project_details">
-                                        <h4>St. Laurent Mall</h4>
-                                        <p>Redesigned branding, including, social media, and billboards.</p>
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/canva.png" alt="Canva" title="Canva">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="projects_box">
-                                <a class="project_link" href="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement" target="_blank" id="thumbnail_4">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/sakura_manga_cafe.webp" type="image/webp">
-                                            <source srcset="assets/sakura_manga_cafe.png" type="image/jpeg">
-                                            <img class="project_image" id="thumbnail_image_4" src="assets/sakura_manga_cafe.png" alt="Thumbnail for other project 4">
-                                        </picture>
-                                    </figure>
-                                    <div class="project_details">
-                                        <h4>Sakura Manga Cafe</h4>
-                                        <p>Designed billboards, business cards, and pamphlets.</p>
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/xd.png" alt="Adobe XD" title="Adobe XD">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <!-- Sakura Manga Cafe -->
+                            <project-box
+                                name="Sakura Manga Cafe Brand Design"
+                                description="Designed a fictitious company's branding, including billboards, business cards, and pamphlets."
+                                link="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement"
+                                file="sakura_manga_cafe"
+                                tools="XD">
+                            </project-box>
                         </div>
 
                         <!-- <a href="https://github.com/Riku737" style="margin: auto;" target="_blank" class="secondary_button" id="inline_icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -374,51 +292,24 @@ __      _____| |__  ___(_) |_ ___
                         
                         <h3>Engineering Projects</h3>
 
+                        <!-- Portfolio Website -->
                         <div class="projects_banner">
-                            <div class="projects_box">
-                                <a class="project_link" href="https://github.com/Riku737/portfolio" id="thumbnail_2" target="_blank">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/portfolio.webp" type="image/webp">
-                                            <source srcset="assets/portfolio.png" type="image/jpeg">
-                                            <img class="project_image" id="thumbnail_image_2" src="assets/portfolio.png" alt="Thumbnail for other project 2">
-                                        </picture>
-                                    </figure>
-                                    <div class="project_details">
-                                        <h4>Portfolio Website</h4>
-                                        <p>Developed a responsive personal website hosted on GitHub pages.</p>
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                            <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
-                                            <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
-                                            <img class="tool_image" src="assets/gsap.png" alt="GSAP" title="GSAP">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <project-box
+                                name="Portfolio Website"
+                                description="Architected a responsive component-based personal website hosted on GitHub pages."
+                                link="https://github.com/Riku737/portfolio"
+                                file="website_thumbnail"
+                                tools="HTML,CSS,JavaScript,GSAP">
+                            </project-box>
 
-                            <div class="projects_box">
-                                <a class="project_link" href="https://github.com/Riku737/Content-Management-System" id="thumbnail_2" target="_blank">
-                                    <figure class="project_thumbnail_boundaries">
-                                        <picture>
-                                            <source srcset="assets/web/temporary.webp" type="image/webp">
-                                            <source srcset="assets/temporary.jpg" type="image/jpeg">
-                                            <img class="project_image" id="thumbnail_image_2" src="assets/temporary.jpg" alt="Thumbnail for other project 2">
-                                        </picture>
-                                    </figure>
-                                    <div class="project_details">
-                                        <h4>CMS (Coming Soon)</h4>
-                                        <p>Building a content management system (CMS) to learn PHP and MySQL.</p>
-                                        <div class="tool_box">
-                                            <img class="tool_image" src="assets/html.png" alt="HTML" title="HTML">
-                                            <img class="tool_image" src="assets/css.png" alt="CSS" title="CSS">
-                                            <img class="tool_image" src="assets/javascript.png" alt="JavaScript" title="JavaScript">
-                                            <img class="tool_image" src="assets/php.png" alt="GSAP" title="GSAP">
-                                            <img class="tool_image" src="assets/sql.png" alt="mySQL" title="mySQL">
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            <!-- Website CMS -->
+                            <project-box
+                                name="Website Content Management System"
+                                description="Built a website CMS platform using PHP and MySQL, implementing user admin authentication and CRUD."
+                                link="https://github.com/Riku737/Content-Management-System"
+                                file="cms_thumbnail"
+                                tools="HTML,CSS,JavaScript,PHP,MySQL">
+                            </project-box>
 
                         </div>
 
@@ -442,63 +333,63 @@ __      _____| |__  ___(_) |_ ___
                 <div class="experience_list">
                     <!-- SESA Advisor -->
                     <experience-item
-                        e_company="Software Engineering Student Association (uOttawa SESA)"
-                        e_link="https://uottawasesa.ca"
-                        e_logo="sesa.png"
-                        e_title="Advisor"
-                        e_location="Ottawa, ON"
-                        e_start="Jan 2020"
-                        e_end="Present">
+                        company="Software Engineering Student Association (uOttawa SESA)"
+                        link="https://uottawasesa.ca"
+                        logo="sesa.png"
+                        title="Advisor"
+                        location="Ottawa, ON"
+                        start="Jan 2020"
+                        end="Present">
                     </experience-item>
                     <!-- SESA Communications Lead -->
                     <experience-item
-                        e_company="Software Engineering Student Association (uOttawa SESA)"
-                        e_link="https://uottawasesa.ca"
-                        e_logo="sesa.png"
-                        e_title="Communications Lead"
-                        e_location="Ottawa, ON"
-                        e_start="Jan 2025"
-                        e_end="May 2025">
+                        company="Software Engineering Student Association (uOttawa SESA)"
+                        link="https://uottawasesa.ca"
+                        logo="sesa.png"
+                        title="Communications Lead"
+                        location="Ottawa, ON"
+                        start="Jan 2025"
+                        end="May 2025">
                     </experience-item>
                     <!-- Youth Program Coordinator -->
                     <experience-item
-                        e_company="51 Canada Aviation and Space Museum Air Cadet Squadron"
-                        e_link="https://51aircadets.ca/"
-                        e_logo="51aircadets.png"
-                        e_title="Youth Program Coordinator"
-                        e_location="Ottawa, ON"
-                        e_start="Sep 2023"
-                        e_end="Nov 2024">
+                        company="51 Canada Aviation and Space Museum Air Cadet Squadron"
+                        link="https://51aircadets.ca/"
+                        logo="51aircadets.png"
+                        title="Youth Program Coordinator"
+                        location="Ottawa, ON"
+                        start="Sep 2023"
+                        end="Nov 2024">
                     </experience-item>
                     <!-- Assistant Band Director -->
                     <experience-item
-                        e_company="Joint Cadet Music Program"
-                        e_link="https://51aircadets.ca/band/"
-                        e_logo="jcmp.png"
-                        e_title="Assistant Band Director"
-                        e_location="Ottawa, ON"
-                        e_start="Sep 2022"
-                        e_end="Jun 2024">
+                        company="Joint Cadet Music Program"
+                        link="https://51aircadets.ca/band/"
+                        logo="jcmp.png"
+                        title="Assistant Band Director"
+                        location="Ottawa, ON"
+                        start="Sep 2022"
+                        end="Jun 2024">
                     </experience-item>
                     <!-- Social Media Designer -->
                     <experience-item
-                        e_company="Code Youth"
-                        e_link="https://www.code-youth.ca/"
-                        e_logo="codeyouth.jpg"
-                        e_title="Social Media Designer"
-                        e_location="Kanata, ON"
-                        e_start="Oct 2021"
-                        e_end="May 2024">
+                        company="Code Youth"
+                        link="https://www.code-youth.ca/"
+                        logo="codeyouth.jpg"
+                        title="Social Media Designer"
+                        location="Kanata, ON"
+                        start="Oct 2021"
+                        end="May 2024">
                     </experience-item>
                     <!-- Yearbook Designer, Marketer, and Photographer -->
                     <experience-item
-                        e_company="Lester B. Pearson High School"
-                        e_link="https://lbh.ocsb.ca/"
-                        e_logo="lbp.png"
-                        e_title="Yearbook Designer, Marketer, and Photographer"
-                        e_location="Ottawa, ON"
-                        e_start="Sep 2021"
-                        e_end="Jun 2024">
+                        company="Lester B. Pearson High School"
+                        link="https://lbh.ocsb.ca/"
+                        logo="lbp.png"
+                        title="Yearbook Designer, Marketer, and Photographer"
+                        location="Ottawa, ON"
+                        start="Sep 2021"
+                        end="Jun 2024"></experience-item>
                     </experience-item>
                 </div>
 

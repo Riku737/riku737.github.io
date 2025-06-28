@@ -1,11 +1,13 @@
 const scriptsToLoad = [
     "js/component/NavBar.js",
     "js/component/MobileNavBar.js",
-    "js/component/Footer.js",
     "js/component/Project.js",
+    "js/component/Tools.js",
+    "js/component/Projects.js",
     "js/component/Experience.js",
-    "js/script.js",
+    "js/component/Footer.js",
     "js/animation.js",
+    "js/script.js",
     "js/vanilla-tilt.js",
 ];
 

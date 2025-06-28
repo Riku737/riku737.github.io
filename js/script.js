@@ -89,6 +89,7 @@ document.querySelectorAll('.project_link').forEach(link => {
             img.style.transform = 'scale(1.05)';
         }
         // Scale and play video highlights
+        
         const video = link.querySelector('.project_image_highlight');
         if (video) {
             video.style.transform = 'scale(1.05)';
