@@ -128,7 +128,7 @@ a:hover {
     margin: auto;
 }
 
-.skills_section,
+.toned_section,
 .projects_section,
 .experience_section,
 .about_section,
@@ -522,16 +522,19 @@ a:hover {
 
 /* SKILLS SECTION */
 
-.skills_section {
+.toned_section {
     background-color: var(--primary_color);
     color: white;
     position: relative;
     box-sizing: border-box;
     z-index: 0;
-    margin-top: 4.688rem;
+    border-radius: var(--12_5px);
+    margin: auto;
+    width: fit-content;
+    padding: var(--100px) var(--100px);
 }
 
-.skills_section:before {
+/* .skills_section:before {
     content: '';
     background: inherit;
     position: absolute;
@@ -542,7 +545,7 @@ a:hover {
     z-index: -1;
     transform: skewY(-3deg);
     transform-origin: top left;
-}
+} */
 
 .skill_banner {
     display: flex;
@@ -558,18 +561,21 @@ a:hover {
 }
 
 .skill_content {
-    display: flex;
+    /* display: flex;
     column-gap: var(--25px);
-    width: 100%;
+    width: 100%; */
+    gap: var(--25px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.skill_left,
+/* .skill_left,
 .skill_right {
     width: 50%;
     display: flex;
     flex-direction: column;
     row-gap: var(--25px);
-}
+} */
 
 .skill_box {
     color: var(--primary_color);
@@ -733,10 +739,16 @@ a:hover {
     background-color: var(--primary_color);
     color: white;
     position: relative;
-    margin-top: 4.688rem;
+    box-sizing: border-box;
+    z-index: 0;
+    border-radius: var(--12_5px);
+    margin: auto;
+    width: fit-content;
+    padding: var(--100px) var(--100px);
+    /* margin-top: 4.688rem; */
 }
 
-.experience_section::before {
+/* .experience_section::before {
     content: '';
     background: inherit;
     position: absolute;
@@ -747,7 +759,7 @@ a:hover {
     z-index: -1;
     transform: skewY(3deg);
     transform-origin: top right;
-}
+} */
 
 /* Experience cards */
 
@@ -914,13 +926,13 @@ a:hover {
 /* FOOTER SECTION */
 /* Footer content of webpage */
 .footer_section {
+    border-radius: var(--12_5px) var(--12_5px) 0 0;
     background-color: var(--primary_color);
     position: relative;
-    margin-top: 4.688rem;
     color: var(--background_color);
 }
 
-.footer_section:before {
+/* .footer_section:before {
     content: '';
     background: inherit;
     position: absolute;
@@ -931,7 +943,7 @@ a:hover {
     z-index: -1;
     transform: skewY(-3deg);
     transform-origin: top left;
-}
+} */
 
 .footer_container {
     display: flex;
@@ -1001,6 +1013,16 @@ a:hover {
 
 /* WEB RESPONSIVE */
 /* Website rescalling and resizing */
+
+@media screen and (max-width: 1400px) {
+
+    .toned_section {
+        width: 100%;
+        padding: var(--100px) 0rem;
+        border-radius: var(--12_5px) var(--12_5px) 0 0 ;
+    }
+
+}
 
 @media screen and (max-width: 1080px) {
 
@@ -1075,7 +1097,7 @@ a:hover {
     }
 
     .hero_container {
-        padding: var(--25px);
+        padding: var(--25px) var(--25px) var(--50px) var(--25px);
     }
 
     .action_banner,
@@ -1093,19 +1115,18 @@ a:hover {
 
 
     /* Skill */
-    .skills_section {
+    .toned_section {
         padding: var(--50px) var(--25px);
     }
 
     .skill_content {
-        flex-direction: column;
-        row-gap: var(--25px);
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .skill_left,
+    /* .skill_left,
     .skill_right {
         width: 100%;
-    }
+    } */
 
 
     /* Projects */

@@ -1,7 +1,6 @@
 const scriptsToLoad = [
     "js/component/NavBar.js",
     "js/component/MobileNavBar.js",
-    "js/component/Project.js",
     "js/component/Tools.js",
     "js/component/Projects.js",
     "js/component/Experience.js",
