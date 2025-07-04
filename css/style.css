@@ -9,7 +9,7 @@
 /* GOOGLE FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 
 /* GLOBAL VARIABLES */
@@ -36,9 +36,10 @@
 :root {
     --text_color: #7d7d7d;
     --background_color: #ffffff;
-    --primary_color: #000000;
+    --primary_color: #080808;
     --secondary_color: #bfbfbf;
     --accent_color: #4d4d4d;
+    --outline_color: #e7e7e7;
 }
 
 
@@ -65,18 +66,18 @@ h1 {
     font-size: var(--36px);
     margin: 0;
     font-weight: bold;
-    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
-    font-size: var(--30px);
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: var(--36px);
     margin-top: 0;
     margin-bottom: var(--12_5px);
 }
 
 h3 {
-    font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-size: var(--24px);
     margin: 0;
     margin-bottom: var(--25px);
@@ -123,7 +124,8 @@ a:hover {
 .projects_container,
 .experience_container,
 .about_container,
-.footer_container {
+.footer_container, 
+.contact_container {
     width: 1080px;
     margin: auto;
 }
@@ -132,7 +134,8 @@ a:hover {
 .projects_section,
 .experience_section,
 .about_section,
-.footer_section {
+.footer_section,
+.contact_section {
     padding: var(--100px) 0rem;
 }
 
@@ -144,8 +147,9 @@ a:hover {
     color: white;
     text-decoration: none;
     display: inline-block;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px);
     transition: 100ms;
+    font-weight: 500;
 }
 
 .primary_button:hover {
@@ -156,13 +160,14 @@ a:hover {
     padding: var(--12_5px) var(--25px);
     color: var(--primary_color);
     text-decoration: none;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px);
     transition: 100ms;
     outline: var(--1px) solid var(--primary_color);
     outline-offset: -0.063rem;
-    background-color: var(--background_color);
+    background-color: inherit;
     transition: 100ms;
     position: relative;
+    font-weight: 500;
 }
 
 .secondary_button:hover {
@@ -252,8 +257,10 @@ a:hover {
 
 .navigation_section {
     width: 100%;
-    background-color: #ffffff88;
-    backdrop-filter: blur(16px);
+    /* background-color: #ffffff88; */
+    background-color: white;
+    border-bottom: var(--1px) solid var(--outline_color);
+    /* backdrop-filter: blur(16px); */
     z-index: 6;
     position: fixed;
 }
@@ -378,7 +385,7 @@ a:hover {
     width: 100%;
     display: flex;
     height: fit-content;
-    column-gap: var(--50px);
+    column-gap: var(--25px);
     justify-content: center;
 }
 
@@ -485,7 +492,7 @@ a:hover {
 
 @keyframes h1_animation {
     from {
-        width: 19.625rem;
+        width: 47.1875rem;
     }
 
     to {
@@ -502,13 +509,9 @@ a:hover {
     border-radius: var(--3px);
 }
 
-.hero_h1::after {
-    content: "Riki!";
-}
-
 @keyframes p_animation {
     from {
-        width: 37.625rem;
+        width: 47.1875rem;
     }
 
     to {
@@ -523,15 +526,22 @@ a:hover {
 /* SKILLS SECTION */
 
 .toned_section {
-    background-color: var(--primary_color);
     color: white;
     position: relative;
     box-sizing: border-box;
     z-index: 0;
     border-radius: var(--12_5px);
     margin: auto;
-    width: fit-content;
-    padding: var(--100px) var(--100px);
+    width: calc(100% - 200px); /* Subtract 100px from each side */
+    /* padding: var(--100px) var(--100px); */
+}
+
+.dark_section {
+    background-color: var(--primary_color);
+}
+
+.light_section {
+    background-color: var(--outline_color);
 }
 
 /* .skills_section:before {
@@ -580,7 +590,7 @@ a:hover {
 .skill_box {
     color: var(--primary_color);
     background-color: var(--background_color);
-    border-radius: var(--3px);
+    border-radius: var(--6_25px);
     padding: var(--25px);
     transition: 100ms;
 }
@@ -635,10 +645,10 @@ a:hover {
 }
 
 .highlight_thumbnail {
-    border-radius: var(--3px);
+    border-radius: var(--6_25px) var(--6_25px) 0 0;
     overflow: hidden;
     height: 18.75rem;
-    margin: 0 0 var(--12_5px) 0;
+    margin: 0;
     pointer-events: none;
     position: relative;
 }
@@ -668,7 +678,7 @@ a:hover {
     width: 100%;
     height: 18.75rem;
     object-fit: cover;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px) var(--6_25px) 0 0;
     transition: 0.10s;
 }
 
@@ -676,10 +686,6 @@ a:hover {
     gap: var(--25px);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-.projects_box {
-    width: 100%;
 }
 
 .projects_box p {
@@ -690,7 +696,7 @@ a:hover {
     width: 100%;
     height: 18.75rem;
     object-fit: cover;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px) var(--6_25px) 0 0;
     transition: 100ms;
 }
 
@@ -710,12 +716,21 @@ a:hover {
 
 .project_thumbnail_boundaries {
     overflow: hidden;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px) var(--6_25px) 0 0;
     height: 18.75rem;
     width: 100%;
     margin: 0;
     pointer-events: none;
-    margin: 0 0 var(--12_5px) 0;
+    /* margin: 0 0 var(--12_5px) 0; */
+}
+
+.project_details {
+    padding: var(--25px);
+    background-color: white;
+    border-bottom: var(--1px) solid var(--outline_color);
+    border-left: var(--1px) solid var(--outline_color);
+    border-right: var(--1px) solid var(--outline_color);
+    border-radius: 0 0 var(--6_25px) var(--6_25px);
 }
 
 /* Skill icons */
@@ -772,7 +787,7 @@ a:hover {
 
 .experience_box {
     background-color: var(--background_color);
-    border-radius: var(--3px);
+    border-radius: var(--6_25px);
     color: var(--primary_color);
     display: flex;
     padding: var(--25px);
@@ -837,10 +852,8 @@ a:hover {
 /* ABOUT */
 
 .about_content {
-    width: 100%;
     display: flex;
     column-gap: var(--25px);
-    margin-bottom: var(--50px);
 }
 
 /* Summary */
@@ -864,17 +877,21 @@ a:hover {
 .about_image {
     object-fit: cover;
     width: 100%;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px);
     height: 18.75rem;
     pointer-events: none;
 }
 
 /* Contact */
 
+.contact_section {
+    margin-bottom: var(--100px);
+}
+
 .contact_image {
     object-fit: cover;
     width: 100%;
-    border-radius: var(--3px);
+    border-radius: var(--6_25px);
     height: 18.75rem;
     pointer-events: none;
 }
@@ -917,6 +934,7 @@ a:hover {
     width: var(--25px);
     object-fit: contain;
     transition: 100ms;
+    fill: var(--primary_color);
 }
 
 
@@ -926,7 +944,6 @@ a:hover {
 /* FOOTER SECTION */
 /* Footer content of webpage */
 .footer_section {
-    border-radius: var(--12_5px) var(--12_5px) 0 0;
     background-color: var(--primary_color);
     position: relative;
     color: var(--background_color);
@@ -1022,6 +1039,14 @@ a:hover {
         border-radius: var(--12_5px) var(--12_5px) 0 0 ;
     }
 
+    .contact_section {
+        margin-bottom: 0;
+    }
+
+    .footer_section {
+        border-radius: 0;
+    }
+
 }
 
 @media screen and (max-width: 1080px) {
@@ -1041,7 +1066,8 @@ a:hover {
     .projects_container,
     .experience_container,
     .about_container,
-    .footer_container {
+    .footer_container, 
+    .contact_container {
         width: 100%;
     }
 
@@ -1049,7 +1075,7 @@ a:hover {
         margin-bottom: var(--25px);
     }
 
-    h1 {
+    h1, h2 {
         font-size: var(--30px);
     }
 
@@ -1107,7 +1133,6 @@ a:hover {
     }
 
     .hero_p {
-        width: 50%;
         margin: auto;
         margin-top: var(--6_25px);
         margin-bottom: var(--25px);
@@ -1252,7 +1277,6 @@ a:hover {
     .about_content {
         flex-direction: column;
         row-gap: var(--12_5px);
-        margin-bottom: var(--25px);
     }
 }
 
@@ -1302,11 +1326,11 @@ a:hover {
 @media screen and (min-width: 1080px) {
     .hero_section h1::before {
         animation: h1_animation 500ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
-        width: 19.625rem;
+        width: 47.1875rem;
     }
 
     .hero_p::before {
-        width: 37.625rem;
+        width: 47.1875rem;
         animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
         animation-delay: 500ms;
     }

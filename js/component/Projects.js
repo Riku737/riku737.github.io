@@ -4,26 +4,26 @@ class ProjectBox extends HTMLElement {
         const description = this.getAttribute('description');
         const link = this.getAttribute('link');
 
-        const file =  this.getAttribute('file');
+        const file = this.getAttribute('file');
         const imgWebP = 'assets/web/' + file + '.webp';
         const imgPNG = 'assets/thumbnails/' + file + '.png';
 
         const imgAlt = 'Asset for ' + name;
-        
-        const tools =  this.getAttribute('tools');
+
+        const tools = this.getAttribute('tools');
         const toolsArray = tools.split(',');
-        var toolbox = '';
-        
+        let toolbox = '';
+
         toolsArray.forEach(tool => {
             toolbox += `<tool-item tool="${tool}" type="tool_image"></tool-item>`;
         });
 
-        const type =  this.getAttribute('type');
-        const status =  this.getAttribute('status');
+        const type = this.getAttribute('type');
+        const status = this.getAttribute('status');
 
         if (type === "video") {
-            const videoWebM =  'assets/web/' + file + '.webm';
-            const videoMP4 =  'assets/' + file + '.mp4';
+            const videoWebM = 'assets/web/' + file + '.webm';
+            const videoMP4 = 'assets/' + file + '.mp4';
             this.innerHTML = `
             <a class="project_link" href="${link}" target="_blank" id="thumbnail_highlight_1">
                 <figure class="highlight_thumbnail" id="highlight_thumbnail_1">
@@ -32,7 +32,6 @@ class ProjectBox extends HTMLElement {
                         <source src="${videoMP4}" type="video/mp4">
                     </video>
                 </figure>
-
                 <div class="project_details">
                     <h4>${name}</h4>
                     <p>${description}</p>
@@ -42,7 +41,6 @@ class ProjectBox extends HTMLElement {
                 </div>
             </a>
             `;
-
         } else if (status != null) {
             this.innerHTML = `
                 <div class="projects_box">
@@ -85,9 +83,8 @@ class ProjectBox extends HTMLElement {
                 </a>
             </div>
             `;
-            }
-
         }
+    }
 }
 
 class ChipText extends HTMLElement {
