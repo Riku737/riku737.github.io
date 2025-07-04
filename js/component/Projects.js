@@ -1,16 +1,16 @@
 class ProjectBox extends HTMLElement {
     connectedCallback() {
-        const name = this.getAttribute('name');
-        const description = this.getAttribute('description');
-        const link = this.getAttribute('link');
+        const name = DOMPurify.sanitize(this.getAttribute('name'));
+        const description = DOMPurify.sanitize(this.getAttribute('description'));
+        const link = DOMPurify.sanitize(this.getAttribute('link'));
 
-        const file = this.getAttribute('file');
+        const file = DOMPurify.sanitize(this.getAttribute('file'));
         const imgWebP = 'assets/web/' + file + '.webp';
         const imgPNG = 'assets/thumbnails/' + file + '.png';
 
         const imgAlt = 'Asset for ' + name;
 
-        const tools = this.getAttribute('tools');
+        const tools = DOMPurify.sanitize(this.getAttribute('tools'));
         const toolsArray = tools.split(',');
         let toolbox = '';
 
@@ -18,8 +18,8 @@ class ProjectBox extends HTMLElement {
             toolbox += `<tool-item tool="${tool}" type="tool_image"></tool-item>`;
         });
 
-        const type = this.getAttribute('type');
-        const status = this.getAttribute('status');
+        const type = DOMPurify.sanitize(this.getAttribute('type'));
+        const status = DOMPurify.sanitize(this.getAttribute('status'));
 
         if (type === "video") {
             const videoWebM = 'assets/web/' + file + '.webm';
@@ -41,7 +41,7 @@ class ProjectBox extends HTMLElement {
                 </div>
             </a>
             `;
-        } else if (status != null) {
+        } else if (status == "NEW" || status == "WIP") {
             this.innerHTML = `
                 <div class="projects_box">
                     <a class="project_link" href="${link}" target="_blank">

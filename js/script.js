@@ -3,8 +3,6 @@
 console.log("Hi there! Thanks for checking out my website.");
 
 
-
-
 // WEB NAVIGATION
 // Navigation menu for desktop devices
 

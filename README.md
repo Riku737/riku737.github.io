@@ -18,6 +18,7 @@
 <h2>Features</h2>
 <ul>
   <li>Component-based architecture and modular web components 📐</li>
+  <li><a href="https://github.com/cure53/DOMPurify" target="_blank">DOMPurify</a> HTML sanitization and XSS attack prevention 🛡️</li>
   <li>Mobile responsive web design 📱</li>
   <li>Web accessible sizing based on W3C recommendations ♿</li>
   <li>HTML semantic elements 🏷️</li>

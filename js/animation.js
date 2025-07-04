@@ -69,19 +69,19 @@ gsap.from(".projects_information", {
     opacity: 0,
 });
 
-gsap.from(".highlighted_information", {
-    scrollTrigger: {
-        trigger: ".highlighted_information",
-        markers: true,
-        scrub: false,
-        start: "top 90%",
-        end: "bottom 90%",
-        markers: false,
-        toggleActions: "play none none reverse",
-    },
-    x: "100%",
-    opacity: 0,
-});
+// gsap.from(".highlighted_information", {
+//     scrollTrigger: {
+//         trigger: ".highlighted_information",
+//         markers: true,
+//         scrub: false,
+//         start: "top 90%",
+//         end: "bottom 90%",
+//         markers: false,
+//         toggleActions: "play none none reverse",
+//     },
+//     x: "100%",
+//     opacity: 0,
+// });
 
 gsap.from(".other_projects_information", {
     scrollTrigger: {
