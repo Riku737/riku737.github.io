@@ -3,6 +3,26 @@
 console.log("Hi there! Thanks for checking out my website.");
 
 
+// HOME PAGE
+const emailLink = DOMPurify.sanitize('mailto:hello@rikimcalear.com');
+
+document.querySelectorAll('.linkedin_link').forEach(link => {
+    link.href = DOMPurify.sanitize('https://www.linkedin.com/in/riki-mcalear/');
+});
+
+document.querySelectorAll('.email_link').forEach(link => {
+    link.href = DOMPurify.sanitize('mailto:hello@rikimcalear.com');
+});
+
+document.querySelectorAll('.behance_link').forEach(link => {
+    link.href = DOMPurify.sanitize('https://www.behance.net/rikimcalear');
+});
+
+document.querySelectorAll('.github_link').forEach(link => {
+    link.href = DOMPurify.sanitize('https://github.com/Riku737');
+});
+
+
 // WEB NAVIGATION
 // Navigation menu for desktop devices
 
