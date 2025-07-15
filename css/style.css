@@ -17,8 +17,10 @@
     /* Fonts */
     --36px: 2.25rem;
     --30px: 1.875rem;
+    --32px: 2rem;
     --24px: 1.5rem;
     --18px: 1.125rem;
+    --16px: 1rem;
     --12px: 0.75rem;
 
     /* Spacing */
@@ -71,7 +73,7 @@ h1 {
 
 h2 {
     font-family: "Inter", Arial, Helvetica, sans-serif;
-    font-size: var(--36px);
+    font-size: var(--32px);
     margin-top: 0;
     margin-bottom: var(--12_5px);
 }
@@ -98,11 +100,11 @@ h4 {
 
 p {
     color: var(--text_color);
-    font-size: var(--18px);
+    font-size: var(--16px);
 }
 
 a {
-    font-size: var(--18px);
+    font-size: var(--16px);
 }
 
 a:hover {
@@ -385,7 +387,7 @@ a:hover {
     width: 100%;
     display: flex;
     height: fit-content;
-    column-gap: var(--25px);
+    column-gap: var(--50px);
     justify-content: center;
 }
 

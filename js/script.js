@@ -184,4 +184,15 @@ document.querySelectorAll('.project_link').forEach(link => {
 //     document.getElementById("thumbnail_image_4").style.transform = "scale(1)"
 // });
 
+
+
+// ABOUT ME SECTION
+
+const summary_text = document.getElementById('summary_text');
+summary_text.innerText = "I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.";
+
+const hero_description = document.getElementsByClassName('hero_p')[0];
+hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web development and design, seeking Winter 2026 CO-OP. Front-end and back-end tech-stack.";
+
+
 // Hello!

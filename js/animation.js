@@ -55,6 +55,24 @@ skill_box.forEach(box => {
 
 // Projects
 
+const projects_section = document.querySelectorAll(".other_projects_information");
+
+projects_section.forEach(section => {
+    gsap.from(section, {
+        scrollTrigger: {
+            trigger: section,
+            markers: true,
+            scrub: false,
+            start: "top 90%",
+            end: "bottom 90%",
+            markers: false,
+            toggleActions: "play none none reverse",
+        },
+        x: "-100%",
+        opacity: 0,
+    });
+});
+
 gsap.from(".projects_information", {
     scrollTrigger: {
         trigger: ".projects_information",
@@ -83,19 +101,6 @@ gsap.from(".projects_information", {
 //     opacity: 0,
 // });
 
-gsap.from(".other_projects_information", {
-    scrollTrigger: {
-        trigger: ".other_projects_information",
-        markers: true,
-        scrub: false,
-        start: "top 90%",
-        end: "bottom 90%",
-        markers: false,
-        toggleActions: "play none none reverse",
-    },
-    x: "-100%",
-    opacity: 0,
-});
 
 
 
