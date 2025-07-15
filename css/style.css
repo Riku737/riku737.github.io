@@ -188,6 +188,7 @@ a:hover {
     transition: 100ms;
     position: relative;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .tertiary_button.active::before {
