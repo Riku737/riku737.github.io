@@ -58,7 +58,7 @@ body {
     font-family: "Inter", Arial, Helvetica, sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-image: radial-gradient(circle, #bfbfbf96 1px, #00000000 1px);
+    /* background-image: radial-gradient(circle, #bfbfbf96 1px, #00000000 1px); */
     background-size: 2rem 2rem;
 }
 
@@ -377,11 +377,12 @@ a:hover {
 
 /* HERO SECTION */
 .hero_section {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    background-image: linear-gradient(#ffffff, #e4e4e5);
 }
 
 .hero_content {
@@ -404,6 +405,8 @@ a:hover {
 
 .left_hero {
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .avatar_image {
@@ -412,6 +415,8 @@ a:hover {
     object-fit: cover;
     border-radius: 100%;
     pointer-events: none;
+    display: block;
+    align-content: center;
 }
 
 /* Call to actions */
@@ -528,6 +533,10 @@ a:hover {
 
 /* SKILLS SECTION */
 
+section#skills {
+    margin-top: -6.25rem;
+}
+
 .toned_section {
     color: white;
     position: relative;
@@ -535,8 +544,10 @@ a:hover {
     z-index: 0;
     border-radius: var(--12_5px);
     margin: auto;
-    width: calc(100% - 200px); /* Subtract 100px from each side */
-    /* padding: var(--100px) var(--100px); */
+    /* width: calc(100% - 200px);  */
+    /* Subtract 100px from each side */
+    width: fit-content;
+    padding: var(--100px) var(--100px);
 }
 
 .dark_section {
@@ -883,6 +894,7 @@ a:hover {
     border-radius: var(--6_25px);
     height: 18.75rem;
     pointer-events: none;
+    display: block;
 }
 
 /* Contact */
@@ -897,6 +909,7 @@ a:hover {
     border-radius: var(--6_25px);
     height: 18.75rem;
     pointer-events: none;
+    display: block;
 }
 
 .contact_banner {
@@ -1035,6 +1048,10 @@ a:hover {
 /* Website rescalling and resizing */
 
 @media screen and (max-width: 1400px) {
+
+    section#skills {
+        margin-top: 0;
+    }
 
     .toned_section {
         width: 100%;

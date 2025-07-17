@@ -29,7 +29,7 @@ main_site.innerHTML = `
                     <p class="hero_p"></p>
                     <div class="action_banner">
                         <a href="#projects" class="primary_button">View my work</a>
-                        <a href="#contact" class="secondary_button" style="background-color: white;">Get in touch</a>
+                        <a href="#contact" class="secondary_button">Get in touch</a>
                     </div>
                     <div class="social_banner">
                         <a class="social_link github_link" title="GitHub" href="" target="_blank"><svg class="social_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
