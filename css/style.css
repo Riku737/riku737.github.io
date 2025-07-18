@@ -635,7 +635,7 @@ section#skills {
 .highlight_thumbnail {
     border-radius: var(--6_25px) var(--6_25px) 0 0;
     overflow: hidden;
-    height: 18.75rem;
+    aspect-ratio: 16 / 9;
     margin: 0;
     pointer-events: none;
     position: relative;
@@ -664,7 +664,7 @@ section#skills {
 
 .project_image_highlight {
     width: 100%;
-    height: 18.75rem;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: var(--6_25px) var(--6_25px) 0 0;
     transition: 0.10s;
@@ -682,7 +682,7 @@ section#skills {
 
 .project_image {
     width: 100%;
-    height: 18.75rem;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: var(--6_25px) var(--6_25px) 0 0;
     transition: 100ms;
@@ -705,11 +705,11 @@ section#skills {
 .project_thumbnail_boundaries {
     overflow: hidden;
     border-radius: var(--6_25px) var(--6_25px) 0 0;
-    height: 18.75rem;
     width: 100%;
     margin: 0;
     pointer-events: none;
     /* margin: 0 0 var(--12_5px) 0; */
+    aspect-ratio: 16 / 9;
 }
 
 .project_details {
@@ -788,6 +788,7 @@ section#skills {
 .logo_experience {
     height: var(--50px);
     width: var(--50px);
+    aspect-ratio: 1 / 1;
     object-fit: contain;
 }
 
@@ -868,7 +869,8 @@ section#skills {
     object-fit: cover;
     width: 100%;
     border-radius: var(--6_25px);
-    height: 18.75rem;
+    /* height: 18.75rem; */
+    aspect-ratio: 16 / 9;
     pointer-events: none;
     display: block;
 }
@@ -883,9 +885,10 @@ section#skills {
     object-fit: cover;
     width: 100%;
     border-radius: var(--6_25px);
-    height: 18.75rem;
+    /* height: 18.75rem; */
     pointer-events: none;
     display: block;
+    aspect-ratio: 16 / 9;
 }
 
 .contact_banner {
