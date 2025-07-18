@@ -25,7 +25,7 @@ main_site.innerHTML = `
                 </figure>
                 <!-- Introduction -->
                 <div class="right_hero">
-                    <h1 class="hero_h1">I'm Riki, a Software Engineering Student</h1>
+                    <h1 class="hero_h1"></h1>
                     <p class="hero_p"></p>
                     <div class="action_banner">
                         <a href="#projects" class="primary_button">View my work</a>
@@ -227,7 +227,7 @@ main_site.innerHTML = `
                         <project-box
                             name="Portfolio Website"
                             description="Architected a responsive component-based personal website hosted on GitHub pages."
-                            link="https://github.com/Riku737/portfolio"
+                            link="https://rikimcalear.com"
                             file="website_thumbnail"
                             tools="HTML,CSS,JavaScript,GSAP">
                         </project-box>
@@ -427,5 +427,8 @@ main_site.innerHTML = `
 const summary_text = document.getElementById('summary_text');
 summary_text.innerText = "I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.";
 
+const hero_h1 = document.getElementsByClassName('hero_h1')[0];
+hero_h1.innerText = "I'm Riki, a Software Engineering Student";
+
 const hero_description = document.getElementsByClassName('hero_p')[0];
-hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web development and design, seeking Winter 2026 CO-OP. Front-end and back-end tech-stack.";
+hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web development and design, seeking Winter 2026 CO-OP.";

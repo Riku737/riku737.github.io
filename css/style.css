@@ -382,7 +382,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-image: linear-gradient(#ffffff, #e4e4e5);
+    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 0%, var(--outline_color) 100%);
 }
 
 .hero_content {
@@ -442,33 +442,6 @@ a:hover {
     object-position: 0%;
 }
 
-.social_link:hover::before {
-    animation: social_animation 300ms cubic-bezier(0, 0, 0.2, 1) forwards;
-    fill: white;
-}
-
-.social_link::before {
-    content: "";
-    position: absolute;
-    height: var(--25px);
-    width: var(--25px);
-    background-color: var(--primary_color);
-    border-radius: 100%;
-    transform: scale(0);
-    z-index: -1;
-    fill: white;
-}
-
-@keyframes social_animation {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1.5);
-    }
-}
-
 .social_icon {
     height: var(--25px);
     width: var(--25px);
@@ -478,7 +451,7 @@ a:hover {
 }
 
 .social_icon:hover {
-    fill: white;
+    fill: var(--accent_color);
 }
 
 /* Hero on-load animations */
@@ -555,7 +528,7 @@ section#skills {
 }
 
 .light_section {
-    background-color: var(--outline_color);
+    background: linear-gradient(36deg, rgba(255, 255, 255, 1) 0%, var(--outline_color) 100%);
 }
 
 /* .skills_section:before {
@@ -582,6 +555,7 @@ section#skills {
     height: var(--50px);
     width: var(--50px);
     object-fit: contain;
+    display: block;
 }
 
 .skill_content {
@@ -758,6 +732,7 @@ section#skills {
     height: var(--25px);
     width: var(--25px);
     object-fit: contain;
+    display: list-item;
 }
 
 
@@ -819,6 +794,7 @@ section#skills {
 .logo_box {
     width: fit-content;
     pointer-events: none;
+    display: inline-flex
 }
 
 .experience_box_left {
@@ -1056,7 +1032,7 @@ section#skills {
     .toned_section {
         width: 100%;
         padding: var(--100px) 0rem;
-        border-radius: var(--12_5px) var(--12_5px) 0 0 ;
+        border-radius: 0;
     }
 
     .contact_section {

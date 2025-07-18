@@ -89,7 +89,7 @@ class ProjectBox extends HTMLElement {
 
 class ChipText extends HTMLElement {
     connectedCallback() {
-        const message = this.getAttribute('text');
+        const message = DOMPurify.sanitize(this.getAttribute('text'));
         this.innerHTML = `
         <span class="text_chip">${message}</span>
         `;
