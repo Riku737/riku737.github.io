@@ -227,7 +227,7 @@ main_site.innerHTML = `
                         <project-box
                             name="Portfolio Website"
                             description="Architected a responsive component-based personal website hosted on GitHub pages."
-                            link="https://rikimcalear.com"
+                            link="https://github.com/Riku737/riku737.github.io"
                             file="website_thumbnail"
                             tools="HTML,CSS,JavaScript,GSAP">
                         </project-box>
