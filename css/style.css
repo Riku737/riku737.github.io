@@ -1008,6 +1008,10 @@ section#skills {
     color: var(--accent_color);
 }
 
+.bi {
+    margin-right: var(--6_25px);
+}
+
 /* Back to top */
 
 .logo_link {

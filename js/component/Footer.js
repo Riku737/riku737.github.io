@@ -25,10 +25,10 @@ class Footer extends HTMLElement {
                 <!--Right foot-->
                 <div class="right_foot">
                     <ul class="foot_nav">
-                        <li class="foot_list"><a href="" target="_blank" class="foot_link github_link">GitHub</a></li>
-                        <li class="foot_list"><a href="" target="_blank" class="foot_link linkedin_link">LinkedIn</a></li>
-                        <li class="foot_list"><a href="" target="_blank" class="foot_link behance_link">Behance</a></li>
-                        <li class="foot_list"><a href="" target="_blank" class="foot_link email_link">Email</a></li>
+                        <li class="foot_list"><a href="" target="_blank" class="foot_link github_link"><i class="bi bi-github"></i>GitHub</a></li>
+                        <li class="foot_list"><a href="" target="_blank" class="foot_link linkedin_link"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+                        <li class="foot_list"><a href="" target="_blank" class="foot_link behance_link"><i class="bi bi-behance"></i>Behance</a></li>
+                        <li class="foot_list"><a href="" target="_blank" class="foot_link email_link"><i class="bi bi-envelope"></i>Email</a></li>
                     </ul>
                 </div>
 

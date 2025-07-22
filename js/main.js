@@ -431,4 +431,4 @@ const hero_h1 = document.getElementsByClassName('hero_h1')[0];
 hero_h1.innerText = "I'm Riki, a Software Engineering Student";
 
 const hero_description = document.getElementsByClassName('hero_p')[0];
-hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web development and design, seeking Winter 2026 CO-OP.";
+hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";
