@@ -37,7 +37,7 @@
 /* GLOBAL COLOURS */
 :root {
     --text_color: #7d7d7d;
-    --background_color: #fafafa;
+    --background_color: #f7f7f7;
     --primary_color: #080808;
     --secondary_color: #bfbfbf;
     --accent_color: #4d4d4d;
@@ -528,7 +528,8 @@ section#skills {
 }
 
 .light_section {
-    background: linear-gradient(36deg, rgba(255, 255, 255, 1) 0%, var(--outline_color) 100%);
+    background-color: white;
+    /* background: linear-gradient(36deg, rgba(255, 255, 255, 1) 0%, var(--outline_color) 100%); */
 }
 
 /* .skills_section:before {
@@ -577,7 +578,7 @@ section#skills {
 
 .skill_box {
     color: var(--primary_color);
-    background-color: var(--background_color);
+    background-color: white;
     border-radius: var(--6_25px);
     padding: var(--25px);
     transition: 100ms;
@@ -666,7 +667,7 @@ section#skills {
     margin-bottom: 0;
 }
 
-.project_link, .tool_box {
+.tool_box {
     margin-top: var(--12_5px);
 }
 
@@ -804,7 +805,7 @@ section#skills {
 }
 
 .experience_box {
-    background-color: var(--background_color);
+    background-color: white;
     border-radius: var(--6_25px);
     color: var(--primary_color);
     display: flex;
@@ -970,7 +971,7 @@ section#skills {
 .footer_section {
     background-color: var(--primary_color);
     position: relative;
-    color: var(--background_color);
+    color: white;
 }
 
 /* .footer_section:before {
@@ -1004,7 +1005,7 @@ section#skills {
 }
 
 #social_footer {
-    fill: var(--background_color);
+    fill: white;
 }
 
 .heading_description_footer {
@@ -1042,7 +1043,7 @@ section#skills {
 /* Back to top */
 
 .logo_link {
-    color: var(--background_color);
+    color: white;
     text-decoration: none;
     font-size: var(--18px);
     font-weight: bold;

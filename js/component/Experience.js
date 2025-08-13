@@ -1,5 +1,3 @@
-const DOMPurify = window.DOMPurify;
-
 class Experience extends HTMLElement {
     
     connectedCallback() {
