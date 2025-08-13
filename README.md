@@ -1,10 +1,10 @@
 <img src="assets/github_heading.png" alt="Heading for GitHub README.mb" width="100%">
 <h1>Personal Website</h1>
-<div>
+<!-- <div>
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/riku737/portfolio">
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/riku737/portfolio">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/riku737/portfolio">
-</div>
+</div> -->
 
 <h2>Introduction</h2>
 <p>This is a website built by yours truly to breathe life into my original CV. It visualizes my skills, projects, experience, about, and contact information.</p>
