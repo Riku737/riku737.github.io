@@ -37,7 +37,7 @@
 /* GLOBAL COLOURS */
 :root {
     --text_color: #7d7d7d;
-    --background_color: #ffffff;
+    --background_color: #fafafa;
     --primary_color: #080808;
     --secondary_color: #bfbfbf;
     --accent_color: #4d4d4d;
@@ -261,7 +261,7 @@ a:hover {
 .navigation_section {
     width: 100%;
     /* background-color: #ffffff88; */
-    background-color: white;
+    background-color: var(--background_color);
     border-bottom: var(--1px) solid var(--outline_color);
     /* backdrop-filter: blur(16px); */
     z-index: 6;
@@ -382,7 +382,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: linear-gradient(172deg, rgba(255, 255, 255, 1) 0%, var(--outline_color) 100%);
+    /* background: linear-gradient(172deg, rgba(255, 255, 255, 1) 0%, var(--outline_color) 100%); */
 }
 
 .hero_content {
@@ -620,12 +620,20 @@ section#skills {
 }
 
 /* Project card */
+.projects_box {
+    display: flex;
+    height: 100%;
+}
 
 .project_link {
     color: var(--primary_color);
     text-decoration: none;
     transition: 100ms;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .project_link:hover {
@@ -658,7 +666,7 @@ section#skills {
     margin-bottom: 0;
 }
 
-.project_link .tool_box {
+.project_link, .tool_box {
     margin-top: var(--12_5px);
 }
 
@@ -673,7 +681,7 @@ section#skills {
 .projects_banner {
     gap: var(--25px);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .projects_box p {
@@ -702,6 +710,19 @@ section#skills {
     color: var(--accent_color);
 }
 
+.project_thumbnail_boundaries::before {
+    backdrop-filter: blur(500px);
+    background-color: #6161615c;
+    padding: 1px 3px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+    position: absolute;
+    top: var(--25px);
+    left: var(--25px);
+    z-index: 50;
+}
+
 .project_thumbnail_boundaries {
     overflow: hidden;
     border-radius: var(--6_25px) var(--6_25px) 0 0;
@@ -710,16 +731,24 @@ section#skills {
     pointer-events: none;
     /* margin: 0 0 var(--12_5px) 0; */
     aspect-ratio: 16 / 9;
+    position: relative;
 }
 
 .project_details {
     padding: var(--25px);
     background-color: white;
-    border-bottom: var(--1px) solid var(--outline_color);
+    /* border-bottom: var(--1px) solid var(--outline_color);
     border-left: var(--1px) solid var(--outline_color);
-    border-right: var(--1px) solid var(--outline_color);
+    border-right: var(--1px) solid var(--outline_color); */
     border-radius: 0 0 var(--6_25px) var(--6_25px);
+    flex-grow: 1;
 }
+
+.project_details h4{
+    display: flex;
+    gap: var(--3px);
+}
+
 
 /* Skill icons */
 
@@ -803,7 +832,7 @@ section#skills {
 }
 
 #title_text {
-    margin-bottom: 6.25px;
+    margin-bottom: var(--6_25px);
 }
 
 .experience_box_right {
@@ -1001,15 +1030,13 @@ section#skills {
 .foot_link {
     color: var(--text_color);
     text-decoration: none;
+    display: flex;
+    gap: var(--6_25px);
 }
 
 .foot_link:hover {
     text-decoration: underline;
     color: var(--accent_color);
-}
-
-.bi {
-    margin-right: var(--6_25px);
 }
 
 /* Back to top */
@@ -1158,6 +1185,10 @@ section#skills {
 
 
     /* Projects */
+    .projects_banner {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .projects_section {
         width: unset;
         padding: var(--50px) var(--25px);
@@ -1165,11 +1196,6 @@ section#skills {
 
     .projects_highlight {
         row-gap: var(--25px);
-    }
-
-    .project_image,
-    .project_thumbnail_boundaries {
-        height: 18.75rem;
     }
 
 
@@ -1259,11 +1285,6 @@ section#skills {
 
     .project_link {
         width: 100%;
-    }
-
-    .project_image,
-    .project_thumbnail_boundaries {
-        height: 18.75rem;
     }
 
     .projects_banner, .projects_highlight {

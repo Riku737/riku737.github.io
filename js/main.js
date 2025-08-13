@@ -18,9 +18,7 @@ main_site.innerHTML = `
                 <!-- Profile picture -->
                 <figure class="left_hero" id="destroy-box" data-tilt>
                     <picture>
-                        <source srcset="assets/web/pfp.webp" type="image/webp">
-                        <source srcset="assets/pfp.jpg" type="image/jpeg">
-                        <img class="avatar_image" src="assets/pfp.jpg" alt="Profile picture">
+                        <img class="avatar_image" src="assets/web/pfp.webp" alt="Profile picture">
                     </picture>
                 </figure>
                 <!-- Introduction -->
@@ -132,7 +130,7 @@ main_site.innerHTML = `
 
                     <h3>Collaborative Work</h3>
 
-                    <div class="projects_banner">
+                    <div class="projects_banner" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
 
                         <project-box
                             name="Harmony (Startup Pitch Competition Finalist)"
@@ -154,6 +152,46 @@ main_site.innerHTML = `
                     </div>
 
                 </div>
+
+
+                <!--Development projects-->
+                <div class="other_projects_information">
+                    
+                    <h3>Engineering Projects</h3>
+
+                    <div class="projects_banner">
+
+                        <!-- Portfolio Website -->
+                        <project-box
+                            name="Portfolio Website"
+                            description="Architected a responsive component-based personal website hosted on GitHub pages."
+                            link="https://github.com/Riku737/riku737.github.io"
+                            file="website_thumbnail"
+                            tools="HTML,CSS,JavaScript,GSAP">
+                        </project-box>
+
+                        <!-- Website CMS -->
+                        <project-box
+                            name="Website Content Management System"
+                            description="Built a website CMS platform using PHP and MySQL, implementing user admin authentication and CRUD."
+                            link="https://github.com/Riku737/Content-Management-System"
+                            file="cms_thumbnail"
+                            tools="HTML,CSS,PHP,MySQL">
+                        </project-box>
+
+                        <!-- Website CMS -->
+                        <project-box
+                            name="Car Dealership Inventory System"
+                            description="Developing a vehicle CMS, focusing on PHP object-oriented programming with mySQL."
+                            link="https://github.com/Riku737/Car-Dealership-Inventory-System"
+                            file="cms_dealership"
+                            tools="HTML,CSS,PHP,mySQL">
+                        </project-box>
+
+                    </div>
+
+                </div>
+
 
                 <!--Design projects-->
                 <div class="other_projects_information">
@@ -177,8 +215,7 @@ main_site.innerHTML = `
                             description="Designed social media content to support online outreach from behind the scenes."
                             link="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio"
                             file="code_youth_thumbnail"
-                            tools="XD,Figma,Canva"
-                            status="NEW">
+                            tools="XD,Figma,Canva">
                         </project-box>
 
                         <!-- Harmony -->
@@ -214,45 +251,6 @@ main_site.innerHTML = `
                         </svg>
                         <p>See more on GitHub</p>
                     </a> -->
-
-                </div>
-
-                <!--Development projects-->
-                <div class="other_projects_information">
-                    
-                    <h3>Engineering Projects</h3>
-
-                    <!-- Portfolio Website -->
-                    <div class="projects_banner">
-                        <project-box
-                            name="Portfolio Website"
-                            description="Architected a responsive component-based personal website hosted on GitHub pages."
-                            link="https://github.com/Riku737/riku737.github.io"
-                            file="website_thumbnail"
-                            tools="HTML,CSS,JavaScript,GSAP">
-                        </project-box>
-
-                        <!-- Website CMS -->
-                        <project-box
-                            name="Website Content Management System"
-                            description="Built a website CMS platform using PHP and MySQL, implementing user admin authentication and CRUD."
-                            link="https://github.com/Riku737/Content-Management-System"
-                            file="cms_thumbnail"
-                            tools="HTML,CSS,PHP,MySQL"
-                            status="NEW">
-                        </project-box>
-
-                        <!-- Website CMS -->
-                        <project-box
-                            name="Car Dealership Inventory System"
-                            description="Developing a vehicle CMS, focusing on PHP object-oriented programming with mySQL."
-                            link="https://github.com/Riku737/Car-Dealership-Inventory-System"
-                            file="cms_dealership"
-                            tools="HTML,CSS,PHP,mySQL"
-                            status="WIP">
-                        </project-box>
-
-                    </div>
 
                 </div>
 
