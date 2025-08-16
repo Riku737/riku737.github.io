@@ -637,8 +637,10 @@ section#skills {
     height: 100%;
 }
 
-.project_link:hover {
+.project_link:hover h4  {
     text-decoration: underline;
+    text-decoration-color: var(--accent_color);
+    text-decoration-thickness: 0.1875rem;
 }
 
 .highlight_thumbnail {
