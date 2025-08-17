@@ -7,7 +7,7 @@
 </div> -->
 
 <h2>Introduction</h2>
-<p>This is a website built by yours truly to breathe life into my original CV. It visualizes my skills, projects, experience, about, and contact information.</p>
+<p>This is a component-based website built by yours truly to breathe life into my CV. It visualizes my skills, projects, and experience.</p>
 <a href="https://riku737.github.io/" target="_blank">View website</a>
 
 <h2>Technologies</h2>
