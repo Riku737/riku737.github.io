@@ -11,7 +11,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-
 /* GLOBAL VARIABLES */
 :root {
     /* Fonts */
@@ -42,6 +41,8 @@
     --secondary_color: #bfbfbf;
     --accent_color: #4d4d4d;
     --outline_color: #e7e7e7;
+
+    --pri_font: "Inter", Arial, Helvetica, sans-serif;
 }
 
 
@@ -55,7 +56,7 @@ html {
 
 body {
     background-color: var(--background_color);
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: var(--pri_font);
     margin: 0;
     overflow-x: hidden;
     /* background-image: radial-gradient(circle, #bfbfbf96 1px, #00000000 1px); */
@@ -67,25 +68,25 @@ body {
 h1 {
     font-size: var(--36px);
     margin: 0;
-    font-weight: bold;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: var(--pri_font);
 }
 
 h2 {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: var(--pri_font);
     font-size: var(--32px);
     margin-top: 0;
     margin-bottom: var(--12_5px);
 }
 
 h3 {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: var(--pri_font);
     font-size: var(--24px);
     margin: 0;
     margin-bottom: var(--25px);
 }
 
 h4 {
+    font-family: var(--pri_font);
     font-size: var(--18px);
     margin: 0;
     color: var(--primary_color);
@@ -684,7 +685,7 @@ section#skills {
 .projects_banner {
     gap: var(--25px);
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .projects_box p {
@@ -998,12 +999,18 @@ section#skills {
     width: 50%;
 }
 
+.nav_foot {
+    display: flex;
+    width: 50%;
+    gap: var(--25px);
+}
+
 .middle_foot {
-    width: 25%;
+    width: 50%;
 }
 
 .right_foot {
-    width: 25%;
+    width: 50%;
 }
 
 #social_footer {
@@ -1015,6 +1022,11 @@ section#skills {
     margin: 0;
     margin-top: var(--6_25px);
     margin-bottom: var(--12_5px);
+}
+
+.copyright_detail {
+    margin-top: var(--6_25px);
+    margin: 0rem;
 }
 
 /* Footer navigation */
@@ -1053,4 +1065,13 @@ section#skills {
 
 .logo_link:hover {
     text-decoration: underline;
+}
+
+
+
+
+/* PROJECTS */
+
+.project_hero {
+    margin-top: 66px;
 }

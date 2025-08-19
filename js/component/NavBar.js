@@ -10,11 +10,11 @@ class NavBar extends HTMLElement {
                 </div>
 
                 <div class="right_nav">
-                    <a class="tertiary_button" id="menu_skill" href="#skills">Skills</a>
-                    <a class="tertiary_button" id="menu_projects" href="#projects">Projects</a>
-                    <a class="tertiary_button" id="menu_experience" href="#experience">Experience</a>
-                    <a class="tertiary_button" id="menu_about" href="#about">About</a>
-                    <a class="secondary_button" id="menu_contact" href="#contact" style="background-color: inherit;">Contact</a>
+                    <a class="tertiary_button" id="menu_skill" href="${SITE_ROOT}#skills">Skills</a>
+                    <a class="tertiary_button" id="menu_projects" href="${SITE_ROOT}#projects">Projects</a>
+                    <a class="tertiary_button" id="menu_experience" href="${SITE_ROOT}#experience">Experience</a>
+                    <a class="tertiary_button" id="menu_about" href="${SITE_ROOT}#about">About</a>
+                    <a class="secondary_button" id="menu_contact" href="${SITE_ROOT}#contact" style="background-color: inherit;">Contact</a>
                 </div>
                 
                 <button class="menu_button_nav" id="mobile_nav_button" onclick="mobile_navigation()" title="menu">

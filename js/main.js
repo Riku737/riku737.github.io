@@ -181,7 +181,7 @@ main_site.innerHTML = `
 
                         <!-- Website CMS -->
                         <project-box
-                            name="Car Dealership Inventory System"
+                            name="Car Dealership Website and Management System"
                             description="Developing a vehicle CMS, focusing on PHP object-oriented programming with mySQL."
                             link="https://github.com/Riku737/Car-Dealership-Inventory-System"
                             file="cms_dealership"
@@ -202,7 +202,7 @@ main_site.innerHTML = `
 
                         <!-- SESA -->
                         <project-box
-                            name="SESA Web Design"
+                            name="Software Engineering Student Association Web Design"
                             description="Designed wireframes, low-fidelity, and high-fidelity UI/UX website prototypes."
                             link="https://www.figma.com/proto/BfrFvKdruTjynJFxYUqCgJ/SESA-Design?node-id=535-3618&t=D3RxgZQBFSdMdfUS-1"
                             file="sesa_thumbnail"
@@ -430,3 +430,5 @@ hero_h1.innerText = "I'm Riki, a Software Engineering Student";
 
 const hero_description = document.getElementsByClassName('hero_p')[0];
 hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";
+
+const SITE_ROOT = window.location.origin + '/';
