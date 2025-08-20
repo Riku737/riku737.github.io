@@ -430,5 +430,3 @@ hero_h1.innerText = "I'm Riki, a Software Engineering Student";
 
 const hero_description = document.getElementsByClassName('hero_p')[0];
 hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";
-
-const SITE_ROOT = window.location.origin + '/';

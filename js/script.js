@@ -4,6 +4,7 @@ console.log("Hi there! Thanks for checking out my website.");
 
 
 // HOME PAGE
+
 const emailLink = DOMPurify.sanitize('mailto:hello@rikimcalear.com');
 
 document.querySelectorAll('.linkedin_link').forEach(link => {

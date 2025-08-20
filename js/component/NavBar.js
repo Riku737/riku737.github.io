@@ -1,3 +1,5 @@
+const SITE_ROOT = window.location.origin + '/';
+
 class NavBar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
