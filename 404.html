@@ -14,8 +14,32 @@
         <meta property="og:locale" content="en_US">
         <meta name="author" content="Riki McAlear">
 
-        <script defer src="js/initialize.js"></script>
-        <link rel="stylesheet" href="css/style.css">
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        
+        <!-- DOMPurify -->
+        <!-- Necessary whenever inserting dynamic or user-generated content to prevent cross-site scripting (XSS) attacks -->
+        <!-- Client side sanitzation -->
+        <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+        
+        <!-- Components -->
+        <script src="js/component/NavBar.js" defer></script>
+        <script src="js/component/MobileNavBar.js" defer></script>
+        <script src="js/component/Tools.js" defer></script>
+        <script src="js/component/Projects.js" defer></script>
+        <script src="js/component/Experience.js" defer></script>
+        <script src="js/component/Footer.js" defer></script>
+        
+        <!-- Other -->
+        <script src="js/animation.js" defer></script>
+        <script src="js/script.js" defer></script>
+        <script src="js/vanilla-tilt.js" defer></script>
+        <!-- <script src="js/typewriter.js" defer></script> -->
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        
     </head>
 
     <body>
