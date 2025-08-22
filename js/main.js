@@ -1,3 +1,9 @@
+const summary_text = "I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.";
+
+const hero_h1 = "I'm Riki, a Software Engineering Student";
+
+const hero_description = "Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";
+
 const main_site = document.querySelector('body');
 
 main_site.innerHTML = `
@@ -23,8 +29,8 @@ main_site.innerHTML = `
                 </figure>
                 <!-- Introduction -->
                 <div class="right_hero">
-                    <h1 class="hero_h1"></h1>
-                    <p class="hero_p"></p>
+                    <h1 class="hero_h1">${hero_h1}</h1>
+                    <p class="hero_p">${hero_description}</p>
                     <div class="action_banner">
                         <a href="#projects" class="primary_button">View my work</a>
                         <a href="#contact" class="secondary_button">Get in touch</a>
@@ -133,6 +139,7 @@ main_site.innerHTML = `
                     <div class="projects_banner" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
 
                         <project-box
+                            date="September 2024 - November 2024"
                             name="Harmony (Startup Pitch Competition Finalist)"
                             description="Led a team of 5 to build a marketing website for an app that matches users by music tastes. Designed the branding and developed key pages."
                             link="https://github.com/Harmaniacz/Harmaniacz.github.io"
@@ -142,6 +149,7 @@ main_site.innerHTML = `
                         </project-box>
 
                         <project-box
+                            date="January 2025"
                             name="MayaAI (uOttaHack 2025)"
                             description="Created a web-based flashcard app as part of a team of four at uOttaHack 7 (2025). Contributed to the website's front-end and UI/UX."
                             link="https://github.com/fnguy093/flashcards-majaai"
@@ -163,6 +171,7 @@ main_site.innerHTML = `
 
                         <!-- Portfolio Website -->
                         <project-box
+                            date="November 2024 - Present"
                             name="Portfolio Website"
                             description="Architected a responsive component-based personal website hosted on GitHub pages."
                             link="https://github.com/Riku737/riku737.github.io"
@@ -172,20 +181,24 @@ main_site.innerHTML = `
 
                         <!-- Website CMS -->
                         <project-box
+                            date="May 2024 - July 2025"
                             name="Website Content Management System"
                             description="Built a website CMS platform using PHP and MySQL, implementing user admin authentication and CRUD."
                             link="https://github.com/Riku737/Content-Management-System"
                             file="cms_thumbnail"
-                            tools="HTML,CSS,PHP,MySQL">
+                            tools="HTML,CSS,PHP,MySQL"
+                            status="LinkedIn">
                         </project-box>
 
                         <!-- Website CMS -->
                         <project-box
+                            date="July 2025 - August 2025"
                             name="Car Dealership Website and Management System"
                             description="Developing a vehicle CMS, focusing on PHP object-oriented programming with mySQL."
                             link="https://github.com/Riku737/Car-Dealership-Inventory-System"
                             file="cms_dealership"
-                            tools="HTML,CSS,PHP,mySQL">
+                            tools="HTML,CSS,PHP,mySQL"
+                            status="LinkedIn">
                         </project-box>
 
                     </div>
@@ -202,6 +215,7 @@ main_site.innerHTML = `
 
                         <!-- SESA -->
                         <project-box
+                            date="January 2025 - May 2025"
                             name="Software Engineering Student Association Web Design"
                             description="Designed wireframes, low-fidelity, and high-fidelity UI/UX website prototypes."
                             link="https://www.figma.com/proto/BfrFvKdruTjynJFxYUqCgJ/SESA-Design?node-id=535-3618&t=D3RxgZQBFSdMdfUS-1"
@@ -209,17 +223,9 @@ main_site.innerHTML = `
                             tools="Figma">
                         </project-box>
 
-                        <!-- Code Youth -->
-                        <project-box
-                            name="Code Youth Social Media Design"
-                            description="Designed social media content to support online outreach from behind the scenes."
-                            link="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio"
-                            file="code_youth_thumbnail"
-                            tools="XD,Figma,Canva">
-                        </project-box>
-
                         <!-- Harmony -->
                         <project-box
+                            date="November 2024"
                             name="Harmony App Prototype Design"
                             description="Designed a startup's pitch slidedeck and high-fidelity mobile UI/UX prototypes."
                             link="https://www.behance.net/gallery/216127593/Harmony-social-media-app"
@@ -227,8 +233,19 @@ main_site.innerHTML = `
                             tools="Figma">
                         </project-box>
 
+                        <!-- Code Youth -->
+                        <project-box
+                            date="October 2021 - May 2024"
+                            name="Code Youth Social Media Design"
+                            description="Designed social media content to support online outreach from behind the scenes."
+                            link="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio"
+                            file="code_youth_thumbnail"
+                            tools="XD,Figma,Canva">
+                        </project-box>
+
                         <!-- St Laurent Mall -->
                         <project-box
+                            date="December 2021"
                             name="St. Laurent Mall Redesign Concept"
                             description="Redesigned existing company branding, proposing social media and billboard advertising."
                             link="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign"
@@ -238,6 +255,7 @@ main_site.innerHTML = `
 
                         <!-- Sakura Manga Cafe -->
                         <project-box
+                            date="November 2020"
                             name="Sakura Manga Cafe Brand Design"
                             description="Designed a fictitious company's branding, including billboards, business cards, and pamphlets."
                             link="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement"
@@ -358,7 +376,7 @@ main_site.innerHTML = `
 
                 <div class="about_right">
                     <h4>Summary</h4>
-                    <p id="summary_text"></p>
+                    <p id="summary_text">${summary_text}</p>
                 </div>
 
             </div>
@@ -421,12 +439,3 @@ main_site.innerHTML = `
 </div>
 
 `;
-
-const summary_text = document.getElementById('summary_text');
-summary_text.innerText = "I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.";
-
-const hero_h1 = document.getElementsByClassName('hero_h1')[0];
-hero_h1.innerText = "I'm Riki, a Software Engineering Student";
-
-const hero_description = document.getElementsByClassName('hero_p')[0];
-hero_description.innerText = "Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";

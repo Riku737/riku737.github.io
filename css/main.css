@@ -670,6 +670,14 @@ section#skills {
     margin-bottom: 0;
 }
 
+.project_date {
+    margin-top: 0 !important;
+    margin-bottom: var(--6_25px) !important;
+    text-transform: uppercase;
+    font-size: var(--12px);
+    color: var(--accent_color);
+}
+
 .tool_box {
     margin-top: var(--12_5px);
 }

@@ -1,5 +1,6 @@
 class ProjectBox extends HTMLElement {
     connectedCallback() {
+        const date = DOMPurify.sanitize(this.getAttribute('date'));
         const name = DOMPurify.sanitize(this.getAttribute('name'));
         const description = DOMPurify.sanitize(this.getAttribute('description'));
         const link = DOMPurify.sanitize(this.getAttribute('link'));
@@ -32,6 +33,7 @@ class ProjectBox extends HTMLElement {
                         </video>
                     </div>
                     <div class="project_details">
+                        <p class="project_date">${date}</p>
                         <h4>${name}</h4>
                         <p>${description}</p>
                         <div class="tool_box">
@@ -49,7 +51,26 @@ class ProjectBox extends HTMLElement {
                             <img class="project_image" src="${imgWebP}" alt="${imgAlt}">
                         </div>
                         <div class="project_details">
+                            <p class="project_date">${date}</p>
                             <h4><chip-text text="${status}"></chip-text> ${name}</h4>
+                            <p>${description}</p>
+                            <div class="tool_box">
+                                ${toolbox}
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                `;
+        } else if (status == "LinkedIn") {
+            this.innerHTML = `
+                <div class="projects_box">
+                    <a class="project_link" href="${link}" target="_blank">
+                        <div class="project_thumbnail_boundaries">
+                            <img class="project_image" src="${imgWebP}" alt="${imgAlt}">
+                        </div>
+                        <div class="project_details">
+                            <p class="project_date">${date}</p>
+                            <h4>${name}</h4>
                             <p>${description}</p>
                             <div class="tool_box">
                                 ${toolbox}
@@ -66,6 +87,7 @@ class ProjectBox extends HTMLElement {
                         <img class="project_image" src="${imgWebP}" alt="${imgAlt}">
                     </div>
                     <div class="project_details">
+                    <p class="project_date">${date}</p>    
                         <h4>${name}</h4>
                         <p>${description}</p>
                         <div class="tool_box">
