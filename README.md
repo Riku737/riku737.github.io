@@ -1,4 +1,10 @@
 <img src="assets/github_heading.png" alt="Heading for GitHub README.mb" width="100%">
+<span>
+	<img alt="GitHub Created At" src="https://img.shields.io/github/created-at/riku737/riku737.github.io">
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/riku737/riku737.github.io">
+	<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/riku737/riku737.github.io">
+	<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/riku737/riku737.github.io">
+</span>
 <h1>Personal Website</h1>
 <!-- <div>
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/riku737/portfolio">
