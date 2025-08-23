@@ -89,7 +89,7 @@ main_site.innerHTML = `
                             <tool-item tool="Git" type="skill_image"></tool-item>
                             <tool-item tool="VSCode" type="skill_image"></tool-item>
                             <tool-item tool="Figma" type="skill_image"></tool-item>
-                            <tool-item tool="XD" type="skill_image"></tool-item>
+                            <tool-item tool="Adobe XD" type="skill_image"></tool-item>
                             <tool-item tool="Canva" type="skill_image"></tool-item>
                             <tool-item tool="Vercel" type="skill_image"></tool-item>
                         </div>
@@ -243,7 +243,7 @@ main_site.innerHTML = `
                             description="Designed social media content to support online outreach from behind the scenes."
                             link="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio"
                             file="code_youth_thumbnail"
-                            tools="XD,Figma,Canva">
+                            tools="Adobe XD,Figma,Canva">
                         </project-box>
 
                         <!-- St Laurent Mall -->
@@ -263,7 +263,7 @@ main_site.innerHTML = `
                             description="Designed a fictitious company's branding, including billboards, business cards, and pamphlets."
                             link="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement"
                             file="sakura_manga_cafe"
-                            tools="XD">
+                            tools="Adobe XD">
                         </project-box>
                     </div>
 
