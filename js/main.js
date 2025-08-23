@@ -49,8 +49,10 @@ main_site.innerHTML = `
                                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
                             </svg></a>
                     </div>
+                    
                 </div>
             </div>
+            
         </div>
     </header>
 
@@ -89,6 +91,7 @@ main_site.innerHTML = `
                             <tool-item tool="Figma" type="skill_image"></tool-item>
                             <tool-item tool="XD" type="skill_image"></tool-item>
                             <tool-item tool="Canva" type="skill_image"></tool-item>
+                            <tool-item tool="Vercel" type="skill_image"></tool-item>
                         </div>
                     </div>
 
@@ -98,6 +101,7 @@ main_site.innerHTML = `
                         <div class="skill_banner">
                             <tool-item tool="Bootstrap" type="skill_image"></tool-item>
                             <tool-item tool="GSAP" type="skill_image"></tool-item>
+                            <tool-item tool="React" type="skill_image"></tool-item>
                         </div>
                     </div>
 
@@ -106,10 +110,9 @@ main_site.innerHTML = `
                         <h4>Other</h4>
                         <div class="skill_banner">
                             <tool-item tool="GitHub" type="skill_image"></tool-item>
-                            <tool-item tool="WordPress" type="skill_image"></tool-item>
-                            <tool-item tool="GoogleWorkspace" type="skill_image"></tool-item>
-                            <tool-item tool="Office365" type="skill_image"></tool-item>
-                            <tool-item tool="Arduino" type="skill_image"></tool-item>
+                            <!--<tool-item tool="WordPress" type="skill_image"></tool-item>-->
+                            <tool-item tool="Google Workspace" type="skill_image"></tool-item>
+                            <tool-item tool="Office 365" type="skill_image"></tool-item>
                             <tool-item tool="Cloudflare" type="skill_image"></tool-item>
                             <tool-item tool="Windows" type="skill_image"></tool-item>
                         </div>
@@ -144,17 +147,17 @@ main_site.innerHTML = `
                             description="Led a team of 5 to build a marketing website for an app that matches users by music tastes. Designed the branding and developed key pages."
                             link="https://github.com/Harmaniacz/Harmaniacz.github.io"
                             file="harmony_preview"
-                            tools="HTML,CSS,JavaScript,Figma,Git"
+                            tools="HTML,CSS,JavaScript,Figma"
                             type="video">
                         </project-box>
 
                         <project-box
                             date="January 2025"
-                            name="MayaAI (uOttaHack 2025)"
+                            name="MayaAI (uOttaHack 7)"
                             description="Created a web-based flashcard app as part of a team of four at uOttaHack 7 (2025). Contributed to the website's front-end and UI/UX."
                             link="https://github.com/fnguy093/flashcards-majaai"
                             file="mayaai"
-                            tools="HTML,CSS,JavaScript,Figma,SurveyMonkey">
+                            tools="HTML,CSS,JavaScript,Figma">
                         </project-box>
 
                     </div>
@@ -182,7 +185,7 @@ main_site.innerHTML = `
                         <!-- Website CMS -->
                         <project-box
                             date="May 2024 - July 2025"
-                            name="Website Content Management System"
+                            name="Techno1ogy (LinkedIn Learning)"
                             description="Built a website CMS platform using PHP and MySQL, implementing user admin authentication and CRUD."
                             link="https://github.com/Riku737/Content-Management-System"
                             file="cms_thumbnail"
@@ -193,8 +196,8 @@ main_site.innerHTML = `
                         <!-- Website CMS -->
                         <project-box
                             date="July 2025 - August 2025"
-                            name="Car Dealership Website and Management System"
-                            description="Developing a vehicle CMS, focusing on PHP object-oriented programming with mySQL."
+                            name="The Used Suspects (LinkedIn Learning)"
+                            description="Developed a car dealership website with vehicle inventory and admin management features."
                             link="https://github.com/Riku737/Car-Dealership-Inventory-System"
                             file="cms_dealership"
                             tools="HTML,CSS,PHP,mySQL"

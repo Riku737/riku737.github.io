@@ -504,7 +504,6 @@ a:hover {
 
 
 
-
 /* SKILLS SECTION */
 
 section#skills {
@@ -548,14 +547,13 @@ section#skills {
 
 .skill_banner {
     display: flex;
-    column-gap: var(--6_25px);
-    row-gap: var(--6_25px);
+    gap: var(--6_25px);
     flex-wrap: wrap;
 }
 
 .skill_image {
-    height: var(--50px);
-    width: var(--50px);
+    height: var(--25px);
+    width: var(--25px);
     object-fit: contain;
     display: block;
 }
@@ -678,10 +676,6 @@ section#skills {
     color: var(--accent_color);
 }
 
-.tool_box {
-    margin-top: var(--12_5px);
-}
-
 .project_image_highlight {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -765,8 +759,10 @@ section#skills {
 /* Skill icons */
 
 .tool_box {
+    margin-top: var(--12_5px);
     display: flex;
-    column-gap: var(--6_25px);
+    gap: var(--6_25px);
+    flex-wrap: wrap;
 }
 
 .tool_image {
@@ -774,6 +770,21 @@ section#skills {
     width: var(--25px);
     object-fit: contain;
     display: list-item;
+}
+
+.tool_item {
+    display: flex;
+    align-items: center;
+    gap: var(--6_25px);
+    border: var(--1px) solid var(--outline_color);
+    border-radius: var(--3px);
+    padding: var(--6_25px);
+}
+
+.tool_name {
+    font-size: var(--16px);
+    color: var(--accent_color);
+    font-weight: 500;
 }
 
 
