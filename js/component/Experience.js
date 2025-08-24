@@ -1,15 +1,14 @@
 class Experience extends HTMLElement {
-    
-    connectedCallback() {
-        const company = DOMPurify.sanitize(this.getAttribute('company'));
-        const link = DOMPurify.sanitize(this.getAttribute('link'));
-        const logo = DOMPurify.sanitize(this.getAttribute('logo'));
-        const title = DOMPurify.sanitize(this.getAttribute('title'));
-        const location = DOMPurify.sanitize(this.getAttribute('location'));
-        const start = DOMPurify.sanitize(this.getAttribute('start'));
-        const end = DOMPurify.sanitize(this.getAttribute('end'));
+	connectedCallback() {
+		const company = DOMPurify.sanitize(this.getAttribute("company"));
+		const link = DOMPurify.sanitize(this.getAttribute("link"));
+		const logo = DOMPurify.sanitize(this.getAttribute("logo"));
+		const title = DOMPurify.sanitize(this.getAttribute("title"));
+		const location = DOMPurify.sanitize(this.getAttribute("location"));
+		const start = DOMPurify.sanitize(this.getAttribute("start"));
+		const end = DOMPurify.sanitize(this.getAttribute("end"));
 
-        this.innerHTML = `
+		this.innerHTML = `
         <div class="experience_box">
             <div class="logo_box">
                 <img class="logo_experience" alt="experience_logo" src="assets/icons/${logo}" title="${company}">
@@ -26,7 +25,7 @@ class Experience extends HTMLElement {
             </div>
         </div>
         `;
-    }
+	}
 }
 
-customElements.define('experience-item', Experience);
+customElements.define("experience-item", Experience);

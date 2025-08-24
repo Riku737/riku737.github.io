@@ -1,6 +1,6 @@
 class MobileNavBar extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <nav class="navigation_menu" id="mobile_nav">
 
             <div class="mobile_nav_list">
@@ -30,8 +30,7 @@ class MobileNavBar extends HTMLElement {
 
         </nav>
         `;
-
-    }
+	}
 }
 
-customElements.define('mobile-nav-bar', MobileNavBar);
+customElements.define("mobile-nav-bar", MobileNavBar);

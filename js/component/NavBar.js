@@ -1,8 +1,8 @@
-const SITE_ROOT = window.location.origin + '/';
+const SITE_ROOT = window.location.origin + "/";
 
 class NavBar extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <nav class="navigation_section" id="web_navigation_bar">
 
             <div class="navigation_container">
@@ -32,8 +32,7 @@ class NavBar extends HTMLElement {
 
         </nav>
         `;
-
-    }
+	}
 }
 
-customElements.define('nav-bar', NavBar);
+customElements.define("nav-bar", NavBar);

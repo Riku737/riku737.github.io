@@ -1,10 +1,12 @@
-const summary_text = "I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.";
+const summary_text =
+	"I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.";
 
 const hero_h1 = "I'm Riki, a Software Engineering Student";
 
-const hero_description = "Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";
+const hero_description =
+	"Second-year at the University of Ottawa. Specializing in web and software development, seeking Winter 2026 CO-OP. Skilled in Java, PHP, mySQL.";
 
-const main_site = document.querySelector('body');
+const main_site = document.querySelector("body");
 
 main_site.innerHTML = `
 
@@ -92,6 +94,7 @@ main_site.innerHTML = `
                             <tool-item tool="Adobe XD" type="skill_image"></tool-item>
                             <tool-item tool="Canva" type="skill_image"></tool-item>
                             <tool-item tool="Vercel" type="skill_image"></tool-item>
+                            <tool-item tool="XAMPP" type="skill_image"></tool-item>
                         </div>
                     </div>
 
@@ -99,9 +102,9 @@ main_site.innerHTML = `
                     <div class="skill_box">
                         <h4>Frameworks & Libraries</h4>
                         <div class="skill_banner">
-                            <tool-item tool="Bootstrap" type="skill_image"></tool-item>
-                            <tool-item tool="GSAP" type="skill_image"></tool-item>
-                            <tool-item tool="React" type="skill_image"></tool-item>
+                        <tool-item tool="GSAP" type="skill_image"></tool-item>
+                        <tool-item tool="React" type="skill_image"></tool-item>
+                        <tool-item tool="TailwindCSS" type="skill_image "></tool-item>
                         </div>
                     </div>
 
