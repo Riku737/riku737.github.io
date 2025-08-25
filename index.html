@@ -1,5 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+	<!-- 
+	██   ██ ██     ████████ ██   ██ ███████ ██████  ███████ ██ 
+	██   ██ ██        ██    ██   ██ ██      ██   ██ ██      ██ 
+	███████ ██        ██    ███████ █████   ██████  █████   ██ 
+	██   ██ ██        ██    ██   ██ ██      ██   ██ ██         
+	██   ██ ██        ██    ██   ██ ███████ ██   ██ ███████ ██
+	
+	  ___ _             ____  _ _    _ _ 
+	 |_ _( )_ __ ___   |  _ \(_) | _(_) |
+	  | ||/| '_ ` _ \  | |_) | | |/ / | |
+	  | |  | | | | | | |  _ <| |   <| |_|
+	 |___| |_| |_| |_| |_| \_\_|_|\_\_(_)
+	
+	 (⌐■_■)
+	 _    _      _                          
+	| |  | |    | |                         
+	| |  | | ___| | ___ ___  _ __ ___   ___ 
+	| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \
+	\  /\  /  __/ | (_| (_) | | | | | |  __/
+	 \/  \/ \___|_|\___\___/|_| |_| |_|\___|
+											
+	 _        
+	| |_ ___  
+	| __/ _ \ 
+	| || (_) |
+	 \__\___/ 
+	
+	  _ __ ___  _   _ 
+	| '_ ` _ \| | | |
+	| | | | | | |_| |
+	|_| |_| |_|\__, |
+			   |___/ 
+				  _         _ _   
+	__      _____| |__  ___(_) |_ ___ 
+	\ \ /\ / / _ \ '_ \/ __| | __/ _ \
+	 \ V  V /  __/ |_) \__ \ | ||  __/
+	  \_/\_/ \___|_.__/|___/_|\__\___|
+	
+	-->
+
 	<head>
 		<title>Riki McAlear</title>
 		<meta charset="UTF-8" />
@@ -53,45 +93,619 @@
 		<link rel="stylesheet" href="css/responsive.css" />
 	</head>
 
-	<!-- 
-██   ██ ██     ████████ ██   ██ ███████ ██████  ███████ ██ 
-██   ██ ██        ██    ██   ██ ██      ██   ██ ██      ██ 
-███████ ██        ██    ███████ █████   ██████  █████   ██ 
-██   ██ ██        ██    ██   ██ ██      ██   ██ ██         
-██   ██ ██        ██    ██   ██ ███████ ██   ██ ███████ ██
+	<body>
+		<!--Navigation bar-->
+		<nav-bar></nav-bar>
 
-  ___ _             ____  _ _    _ _ 
- |_ _( )_ __ ___   |  _ \(_) | _(_) |
-  | ||/| '_ ` _ \  | |_) | | |/ / | |
-  | |  | | | | | | |  _ <| |   <| |_|
- |___| |_| |_| |_| |_| \_\_|_|\_\_(_)
+		<!-- Mobile navigation -->
+		<mobile-nav-bar></mobile-nav-bar>
 
- (⌐■_■)
- _    _      _                          
-| |  | |    | |                         
-| |  | | ___| | ___ ___  _ __ ___   ___ 
-| |/\| |/ _ \ |/ __/ _ \| '_ ` _ \ / _ \
-\  /\  /  __/ | (_| (_) | | | | | |  __/
- \/  \/ \___|_|\___\___/|_| |_| |_|\___|
-                                        
- _        
-| |_ ___  
-| __/ _ \ 
-| || (_) |
- \__\___/ 
+		<div class="main_container" id="web_display">
+			<!--Hero section-->
+			<section class="hero_section">
+				<div class="hero_container">
+					<div class="hero_content">
+						<!-- Profile picture -->
+						<figure class="left_hero" id="destroy-box" data-tilt>
+							<picture>
+								<img
+									class="avatar_image"
+									src="assets/web/pfp.webp"
+									alt="Profile picture"
+								/>
+							</picture>
+						</figure>
+						<!-- Introduction -->
+						<div class="right_hero">
+							<ul class="unstyled_list">
+								<li>
+									<h1 class="hero_h1"></h1>
+								</li>
+								<li>
+									<p class="hero_p"></p>
+								</li>
+							</ul>
+							<ul class="action_banner unstyled_list">
+								<li>
+									<a href="#projects" class="primary_button"
+										>View my work</a
+									>
+								</li>
+								<li>
+									<a href="#contact" class="secondary_button"
+										>Get in touch</a
+									>
+								</li>
+							</ul>
+							<ul class="social_banner unstyled_list">
+								<li>
+									<a
+										class="social_link github_link"
+										title="GitHub"
+										href=""
+										target="_blank"
+										><svg
+											class="social_icon"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+											/></svg
+									></a>
+								</li>
+								<li>
+									<a
+										class="social_link linkedin_link"
+										title="LinkedIn"
+										href=""
+										target="_blank"
+										><svg
+											class="social_icon"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+											/></svg
+									></a>
+								</li>
+								<li>
+									<a
+										class="social_link behance_link"
+										title="Behance"
+										href=""
+										target="_blank"
+										><svg
+											class="social_icon"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391s.497.426.641.747c.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922s.461.957.461 1.563c0 .496-.105.922-.285 1.278a2.3 2.3 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.3 5.3 0 0 1-1.278.176L0 12.803V3zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a1 1 0 0 0-.32-.355 1.8 1.8 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305zm6.858-.035q.428.427 1.278.426c.39 0 .746-.106 1.032-.286q.426-.32.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.1 4.1 0 0 1-1.527-.285 2.8 2.8 0 0 1-1.137-.782 2.85 2.85 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4 4 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396m2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176s-.356.25-.496.39a.96.96 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978z"
+											/></svg
+									></a>
+								</li>
+								<li>
+									<a
+										class="social_link email_link"
+										title="Email"
+										href=""
+										target="_blank"
+										><svg
+											class="social_icon"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+											/></svg
+									></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  _ __ ___  _   _ 
-| '_ ` _ \| | | |
-| | | | | | |_| |
-|_| |_| |_|\__, |
-           |___/ 
-              _         _ _   
-__      _____| |__  ___(_) |_ ___ 
-\ \ /\ / / _ \ '_ \/ __| | __/ _ \
- \ V  V /  __/ |_) \__ \ | ||  __/
-  \_/\_/ \___|_.__/|___/_|\__\___|
+			<!--Skills section-->
 
--->
+			<section class="toned_section dark_section" id="skills">
+				<div class="skills_container">
+					<div class="skill_information">
+						<h2>Skills</h2>
+						<p
+							class="heading_description"
+							id="heading_description_bg"
+						>
+							Technical skills in web and software development.
+						</p>
+					</div>
+
+					<div class="skill_content">
+						<!-- Programming languages -->
+						<div class="skill_box">
+							<h4>Programming Languages</h4>
+							<div class="skill_banner">
+								<tool-item
+									tool="Python"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="HTML"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="CSS"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="JavaScript"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="MySQL"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="PHP"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Java"
+									type="skill_image"
+								></tool-item>
+							</div>
+						</div>
+
+						<!-- Tools & platforms -->
+						<div class="skill_box">
+							<h4>Tools & Platforms</h4>
+							<div class="skill_banner">
+								<tool-item
+									tool="Git"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="VSCode"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Figma"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Adobe XD"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Canva"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Vercel"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="XAMPP"
+									type="skill_image"
+								></tool-item>
+							</div>
+						</div>
+
+						<!-- Frameworks & libraries -->
+						<div class="skill_box">
+							<h4>Frameworks & Libraries</h4>
+							<div class="skill_banner">
+								<tool-item
+									tool="GSAP"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="React"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Tailwind CSS"
+									type="skill_image "
+								></tool-item>
+								<tool-item
+									tool="Bootstrap"
+									type="skill_image "
+								></tool-item>
+							</div>
+						</div>
+
+						<!-- Other -->
+						<div class="skill_box">
+							<h4>Other</h4>
+							<div class="skill_banner">
+								<tool-item
+									tool="GitHub"
+									type="skill_image"
+								></tool-item>
+								<!--<tool-item tool="WordPress" type="skill_image"></tool-item>-->
+								<tool-item
+									tool="Google Workspace"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Office 365"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Cloudflare"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Windows"
+									type="skill_image"
+								></tool-item>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Projects section-->
+			<section class="projects_section" id="projects">
+				<div class="projects_container">
+					<div class="projects_information">
+						<h2>Projects</h2>
+						<p class="heading_description">
+							Selected projects from my portfolio.
+						</p>
+					</div>
+
+					<div class="projects_rows">
+						<!--Highlighted projects-->
+						<div class="other_projects_information">
+							<h3>Collaborative Work</h3>
+
+							<div
+								class="projects_banner"
+								style="
+									grid-template-columns: repeat(
+										2,
+										minmax(0, 1fr)
+									);
+								"
+							>
+								<project-box
+									date="September 2024 - November 2024"
+									name="Harmony (Startup Pitch Competition Finalist)"
+									description="Led a team of 5 to build a marketing website for an app that matches users by music tastes. Designed the branding and developed key pages."
+									link="https://github.com/Harmaniacz/Harmaniacz.github.io"
+									file="harmony_preview"
+									tools="HTML,CSS,JavaScript,Figma"
+									type="video"
+								>
+								</project-box>
+
+								<project-box
+									date="January 2025"
+									name="MayaAI (uOttaHack 7)"
+									description="Created a web-based flashcard app as part of a team of four at uOttaHack 7 (2025). Contributed to the website's front-end and UI/UX."
+									link="https://github.com/fnguy093/flashcards-majaai"
+									file="mayaai"
+									tools="HTML,CSS,JavaScript,Figma"
+								>
+								</project-box>
+							</div>
+						</div>
+
+						<!--Development projects-->
+						<div class="other_projects_information">
+							<h3>Engineering Projects</h3>
+
+							<div class="projects_banner">
+								<!-- Portfolio Website -->
+								<project-box
+									date="November 2024 - Present"
+									name="Portfolio Website"
+									description="Architected a responsive component-based personal website hosted on GitHub pages."
+									link="https://github.com/Riku737/riku737.github.io"
+									file="website_thumbnail"
+									tools="HTML,CSS,JavaScript,GSAP"
+								>
+								</project-box>
+
+								<!-- Website CMS -->
+								<project-box
+									date="May 2024 - July 2025"
+									name="Techno1ogy (LinkedIn Learning)"
+									description="Built a website CMS platform using PHP and MySQL, implementing user admin authentication and CRUD."
+									link="https://github.com/Riku737/Content-Management-System"
+									file="cms_thumbnail"
+									tools="HTML,CSS,PHP,MySQL"
+								>
+								</project-box>
+
+								<!-- Website CMS -->
+								<project-box
+									date="July 2025 - August 2025"
+									name="The Used Suspects (LinkedIn Learning)"
+									description="Developed a car dealership website with vehicle inventory and admin management features."
+									link="https://github.com/Riku737/Car-Dealership-Inventory-System"
+									file="cms_dealership"
+									tools="HTML,CSS,JavaScript,PHP,mySQL"
+								>
+								</project-box>
+							</div>
+						</div>
+
+						<!--Design projects-->
+						<div class="other_projects_information">
+							<h3>Design & Interaction</h3>
+
+							<div class="projects_banner">
+								<!-- SESA -->
+								<project-box
+									date="January 2025 - May 2025"
+									name="Software Engineering Student Association Web Design"
+									description="Designed wireframes, low-fidelity, and high-fidelity UI/UX website prototypes."
+									link="https://www.figma.com/proto/BfrFvKdruTjynJFxYUqCgJ/SESA-Design?node-id=535-3618&t=D3RxgZQBFSdMdfUS-1"
+									file="sesa_thumbnail"
+									tools="Figma"
+								>
+								</project-box>
+
+								<!-- Harmony -->
+								<project-box
+									date="November 2024"
+									name="Harmony App Prototype Design"
+									description="Designed a startup's pitch slidedeck and high-fidelity mobile UI/UX prototypes."
+									link="https://www.behance.net/gallery/216127593/Harmony-social-media-app"
+									file="harmony_uiux"
+									tools="Figma"
+								>
+								</project-box>
+
+								<!-- Code Youth -->
+								<project-box
+									date="October 2021 - May 2024"
+									name="Code Youth Social Media Design"
+									description="Designed social media content to support online outreach from behind the scenes."
+									link="https://www.behance.net/gallery/226600643/Code-Youth-Social-Media-Design-Portfolio"
+									file="code_youth_thumbnail"
+									tools="Adobe XD,Figma,Canva"
+								>
+								</project-box>
+
+								<!-- St Laurent Mall -->
+								<project-box
+									date="December 2021"
+									name="St. Laurent Mall Redesign Concept"
+									description="Redesigned existing company branding, proposing social media and billboard advertising."
+									link="https://www.behance.net/gallery/164706309/St-Laurent-Shopping-Centre-Redesign"
+									file="st_laurent"
+									tools="Canva"
+								>
+								</project-box>
+
+								<!-- Sakura Manga Cafe -->
+								<project-box
+									date="November 2020"
+									name="Sakura Manga Cafe Brand Design"
+									description="Designed a fictitious company's branding, including billboards, business cards, and pamphlets."
+									link="https://www.behance.net/gallery/128573061/Sakura-Manga-Cafe-Advertisement"
+									file="sakura_manga_cafe"
+									tools="Adobe XD"
+								>
+								</project-box>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Experience section-->
+			<section class="toned_section dark_section" id="experience">
+				<div class="experience_container">
+					<div class="experience_information">
+						<h2>Experience</h2>
+						<p
+							class="heading_description"
+							id="heading_description_bg"
+						>
+							Background in design, marketing, and leadership.
+						</p>
+					</div>
+
+					<div class="experience_list">
+						<!-- SESA Advisor -->
+						<experience-item
+							company="Software Engineering Student Association (uOttawa SESA)"
+							link="https://uottawasesa.ca"
+							logo="sesa.png"
+							title="Communications Advisor"
+							location="Ottawa, ON"
+							start="May 2025"
+							end="Present"
+						>
+						</experience-item>
+						<!-- SESA Communications Lead -->
+						<experience-item
+							company="Software Engineering Student Association (uOttawa SESA)"
+							link="https://uottawasesa.ca"
+							logo="sesa.png"
+							title="Communications Lead"
+							location="Ottawa, ON"
+							start="Jan 2025"
+							end="May 2025"
+						>
+						</experience-item>
+						<!-- Youth Program Coordinator -->
+						<experience-item
+							company="51 Canada Aviation and Space Museum Air Cadet Squadron"
+							link="https://51aircadets.ca/"
+							logo="51.png"
+							title="Youth Program Coordinator"
+							location="Ottawa, ON"
+							start="Sep 2023"
+							end="Nov 2024"
+						>
+						</experience-item>
+						<!-- Assistant Band Director -->
+						<experience-item
+							company="Joint Cadet Music Program"
+							link="https://51aircadets.ca/band/"
+							logo="jcmp.png"
+							title="Assistant Band Director"
+							location="Ottawa, ON"
+							start="Sep 2022"
+							end="Jun 2024"
+						>
+						</experience-item>
+						<!-- Social Media Designer -->
+						<experience-item
+							company="Code Youth"
+							link="https://www.code-youth.ca/"
+							logo="cy.jpg"
+							title="Social Media Designer"
+							location="Kanata, ON"
+							start="Oct 2021"
+							end="May 2024"
+						>
+						</experience-item>
+						<!-- Yearbook Designer, Marketer, and Photographer -->
+						<experience-item
+							company="Lester B. Pearson High School"
+							link="https://lbh.ocsb.ca/"
+							logo="lbp.png"
+							title="Yearbook Designer, Marketer, and Photographer"
+							location="Ottawa, ON"
+							start="Sep 2021"
+							end="Jun 2024"
+						>
+						</experience-item>
+					</div>
+				</div>
+			</section>
+
+			<!--About section-->
+			<section class="about_section" id="about">
+				<div class="about_container">
+					<div class="about_information">
+						<h2>About</h2>
+						<p class="heading_description">
+							Passion for arts, business, and computers.
+						</p>
+					</div>
+
+					<div class="about_content">
+						<figure data-tilt class="about_left">
+							<picture>
+								<source
+									srcset="assets/web/about.webp"
+									type="image/webp"
+								/>
+								<source
+									srcset="assets/about.jpg"
+									type="image/jpeg"
+								/>
+								<img
+									class="about_image"
+									src="assets/thumbnail/about.jpg"
+									alt="about_image"
+								/>
+							</picture>
+						</figure>
+
+						<div class="about_right">
+							<h4>Summary</h4>
+							<p class="summary_text"></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact_section toned_section light_section">
+				<div class="contact_container">
+					<div class="contact_banner" id="contact">
+						<div class="right_contact">
+							<!-- Linkedin -->
+							<div class="contact_box">
+								<div class="social_contact">
+									<svg
+										class="social_contact_icon"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+										/>
+									</svg>
+								</div>
+								<h4>LinkedIn</h4>
+								<p>
+									Connect with me on LinkedIn to stay updated
+									on my career journey.
+								</p>
+								<a
+									class="secondary_button linkedin_link"
+									href=""
+									target="_blank"
+									id="inline_icon"
+								>
+									<p>Connect with me</p>
+								</a>
+							</div>
+
+							<!-- Email -->
+							<div class="contact_box">
+								<div class="social_contact">
+									<svg
+										class="social_contact_icon"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+										/>
+									</svg>
+								</div>
+								<h4>Email</h4>
+								<p>
+									Reach out to me directly via email for any
+									inquiries, or just to say hi!
+								</p>
+								<a
+									class="secondary_button email_link"
+									href=""
+									target="_blank"
+									id="inline_icon"
+								>
+									<p>Get in touch</p>
+								</a>
+							</div>
+						</div>
+
+						<figure data-tilt class="left_contact">
+							<picture>
+								<source
+									srcset="assets/web/question.webp"
+									type="image/webp"
+								/>
+								<source
+									srcset="assets/thumbnail/question.jpg"
+									type="image/jpeg"
+								/>
+								<img
+									class="contact_image"
+									src="assets/thumbnail/question.jpg"
+									alt="contact_image"
+								/>
+							</picture>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<!--Footer section-->
+			<footer-bar></footer-bar>
+		</div>
+	</body>
 
 	<!-- Here be HTML dragons. -->
 </html>

@@ -22,7 +22,6 @@ class ProjectBox extends HTMLElement {
 		});
 
 		const type = DOMPurify.sanitize(this.getAttribute("type"));
-		const status = DOMPurify.sanitize(this.getAttribute("status"));
 
 		if (type === "video") {
 			const videoWebM = "assets/web/" + file + ".webm";
@@ -45,24 +44,6 @@ class ProjectBox extends HTMLElement {
                 </a>
             </div>
             `;
-		} else if (status == "NEW" || status == "WIP") {
-			this.innerHTML = `
-                <div class="projects_box">
-                    <a class="project_link" href="${link}" target="_blank">
-                        <div class="project_thumbnail_boundaries">
-                            <img class="project_image" src="${imgWebP}" alt="${imgAlt}">
-                        </div>
-                        <div class="project_details">
-                            <p class="project_date">${date}</p>
-                            <h4><chip-text text="${status}"></chip-text> ${name}</h4>
-                            <p>${description}</p>
-                            <div class="tool_box">
-                                ${toolbox}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                `;
 		} else {
 			this.innerHTML = `
             <div class="projects_box">

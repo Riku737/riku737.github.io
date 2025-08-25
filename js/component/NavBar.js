@@ -3,21 +3,29 @@ const SITE_ROOT = window.location.origin + "/";
 class NavBar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-        <nav class="navigation_section" id="web_navigation_bar">
+        <header class="navigation_section" id="web_navigation_bar">
 
-            <div class="navigation_container">
+            <nav class="navigation_container">
 
                 <div class="left_nav">
                     <a class="tertiary_button" id="home" href="${SITE_ROOT}">Riki McAlear</a>
                 </div>
 
-                <div class="right_nav">
-                    <a class="tertiary_button" id="menu_skill" href="${SITE_ROOT}#skills">Skills</a>
-                    <a class="tertiary_button" id="menu_projects" href="${SITE_ROOT}#projects">Projects</a>
-                    <a class="tertiary_button" id="menu_experience" href="${SITE_ROOT}#experience">Experience</a>
-                    <a class="tertiary_button" id="menu_about" href="${SITE_ROOT}#about">About</a>
-                    <a class="secondary_button" id="menu_contact" href="${SITE_ROOT}#contact" style="background-color: inherit;">Contact</a>
-                </div>
+                <ul class="right_nav unstyled_list">
+                    <li>
+                        <a class="tertiary_button" id="menu_skill" href="${SITE_ROOT}#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="tertiary_button" id="menu_projects" href="${SITE_ROOT}#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="tertiary_button" id="menu_experience" href="${SITE_ROOT}#experience">Experience</a>
+                    </li>
+                        <a class="tertiary_button" id="menu_about" href="${SITE_ROOT}#about">About</a>
+                    <li>
+                        <a class="secondary_button" id="menu_contact" href="${SITE_ROOT}#contact" style="background-color: inherit;">Contact</a>
+                    </li>
+                </ul>
                 
                 <button class="menu_button_nav" id="mobile_nav_button" onclick="mobile_navigation()" title="menu">
                     <svg id="hamburger_icon" class="menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -28,9 +36,9 @@ class NavBar extends HTMLElement {
                     </svg>
                 </button>
 
-            </div>
+            </nav>
 
-        </nav>
+        </header>
         `;
 	}
 }

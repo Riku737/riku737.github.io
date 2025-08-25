@@ -54,8 +54,7 @@ body {
 	background-color: var(--background_color);
 	font-family: var(--pri_font);
 	margin: 0;
-	overflow-x: hidden;
-	/* background-image: radial-gradient(circle, #bfbfbf96 1px, #00000000 1px); */
+	/* overflow-x: hidden; */
 	background-size: 2rem 2rem;
 }
 
@@ -193,8 +192,7 @@ a:hover {
 }
 
 .tertiary_button.in-active::before {
-	animation: tertiary_animation_reverse 300ms cubic-bezier(0, 0, 0.2, 1)
-		reverse;
+	animation: tertiary_animation_reverse 300ms cubic-bezier(0, 0, 0.2, 1) reverse;
 }
 
 .tertiary_button::before {
@@ -275,6 +273,12 @@ a:hover {
 	align-content: center;
 }
 
+.unstyled_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
 .left_nav {
 	width: 25%;
 }
@@ -306,13 +310,11 @@ a:hover {
 }
 
 .navigation_menu.active {
-	animation: menu_animation_in 150ms cubic-bezier(0.22, 0.61, 0.36, 1)
-		forwards;
+	animation: menu_animation_in 150ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .navigation_menu.in-active {
-	animation: menu_animation_out 150ms cubic-bezier(0.22, 0.61, 0.36, 1)
-		forwards;
+	animation: menu_animation_out 150ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .mobile_nav_list {
@@ -874,6 +876,10 @@ section#skills {
 }
 
 /* ABOUT */
+
+.about_section {
+	overflow-x: hidden;
+}
 
 .about_content {
 	display: flex;
