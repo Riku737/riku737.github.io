@@ -9,8 +9,7 @@ class ProjectBox extends HTMLElement {
 
 		const file = DOMPurify.sanitize(this.getAttribute("file"));
 		const imgWebP = "assets/web/" + file + ".webp";
-		console.log("Image source:", imgWebP);
-
+		// console.log("Image source:", imgWebP);
 		const imgAlt = "Asset for " + name;
 
 		const tools = DOMPurify.sanitize(this.getAttribute("tools"));
@@ -29,8 +28,15 @@ class ProjectBox extends HTMLElement {
             <div class="projects_box">
                 <a class="project_link" href="${link}" target="_blank">
                     <div class="highlight_thumbnail">
-                        <video class="project_image_highlight highlight_thumbnail" muted id="highlight_cover_1" poster="${imgWebP}" alt="${imgAlt}">
-                            <source src="${videoWebM}" type="video/webm">
+                        <video
+                          class="project_image_highlight highlight_thumbnail"
+                          muted
+                          id="highlight_cover_1"
+                          poster="${imgWebP}"
+                          preload="none"
+                          alt="${imgAlt}"
+                        >
+                          <source src="${videoWebM}" type="video/webm">
                         </video>
                     </div>
                     <div class="project_details">
@@ -49,7 +55,14 @@ class ProjectBox extends HTMLElement {
             <div class="projects_box">
                 <a class="project_link" href="${link}" target="_blank">
                     <div class="project_thumbnail_boundaries">
-                        <img class="project_image" src="${imgWebP}" alt="${imgAlt}">
+                        <img 
+                            class="project_image" 
+                            src="${imgWebP}" 
+                            alt="${imgAlt}"
+                            loading="lazy" 
+                            decoding="async"
+                            referrerpolicy="no-referrer"
+                        >
                     </div>
                     <div class="project_details">
                     <p class="project_date">${date}</p>    

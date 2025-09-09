@@ -11,7 +11,7 @@ class Experience extends HTMLElement {
 		this.innerHTML = `
         <div class="experience_box">
             <div class="logo_box">
-                <img class="logo_experience" alt="experience_logo" src="assets/icons/${logo}" title="${company}">
+                <img class="logo_experience" alt="experience_logo" loading="lazy" src="assets/icons/${logo}" title="${company}">
             </div>
             <div class="experience_box_details">
                 <div class="experience_box_left">

@@ -2,7 +2,11 @@
 /* Website rescalling and resizing */
 
 @media screen and (max-width: 1400px) {
-	section#skills {
+	/* section#skills {
+		margin-top: 0;
+	} */
+
+	.extra_section {
 		margin-top: 0;
 	}
 
@@ -22,6 +26,7 @@
 }
 
 @media screen and (max-width: 1080px) {
+
 	/* Main */
 	html {
 		overflow-x: hidden;
@@ -38,7 +43,8 @@
 	.experience_container,
 	.about_container,
 	.footer_container,
-	.contact_container {
+	.contact_container,
+	.extra_container {
 		width: 100%;
 	}
 
@@ -109,6 +115,14 @@
 	}
 
 	/* Skill */
+	iframe {
+		display: none;
+	}
+
+	.extra_container {
+		padding: 0;
+	}
+
 	.toned_section {
 		padding: var(--50px) var(--25px);
 	}

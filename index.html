@@ -112,19 +112,14 @@
 									class="avatar_image"
 									src="assets/web/pfp.webp"
 									alt="Profile picture"
+									draggable="false"
 								/>
 							</picture>
 						</figure>
 						<!-- Introduction -->
 						<div class="right_hero">
-							<ul class="unstyled_list">
-								<li>
-									<h1 class="hero_h1"></h1>
-								</li>
-								<li>
-									<p class="hero_p"></p>
-								</li>
-							</ul>
+							<h1 class="hero_h1">I'm Riki, a Software Engineering Student</h1>
+							<p class="hero_p">Second-year Software Engineering student at uOttawa with a passion for UI/UX and full-stack development. Available for Winter 2026 CO-OP.</p>
 							<div class="action_banner">
 								<a href="#projects" class="primary_button"
 									>View my work</a
@@ -204,6 +199,29 @@
 				</div>
 			</section>
 
+			<!-- GitHub Commits -->
+			<section class="extra_section">
+
+				<div class="extra_container">
+
+					<iframe 
+						draggable="false"
+						src="https://jandee.vercel.app/Riku737" 
+						width="100%" 
+						height="200" 
+						frameborder="0" 
+						referrerpolicy="no-referrer" 
+						sandbox="allow-scripts allow-same-origin"
+						style="pointer-events: none;"
+						role="presentation"
+						alt="Riku737's GitHub Contributions"
+					>
+					</iframe>
+				  
+				</div>
+
+			</section>
+
 			<!--Skills section-->
 
 			<section class="toned_section dark_section" id="skills">
@@ -278,10 +296,10 @@
 									tool="Canva"
 									type="skill_image"
 								></tool-item>
-								<tool-item
+								<!-- <tool-item
 									tool="Vercel"
 									type="skill_image"
-								></tool-item>
+								></tool-item> -->
 								<tool-item
 									tool="XAMPP"
 									type="skill_image"
@@ -297,16 +315,20 @@
 									tool="GSAP"
 									type="skill_image"
 								></tool-item>
-								<tool-item
+								<!-- <tool-item
 									tool="React"
 									type="skill_image"
 								></tool-item>
 								<tool-item
 									tool="Tailwind CSS"
 									type="skill_image "
-								></tool-item>
+								></tool-item> -->
 								<tool-item
 									tool="Bootstrap"
+									type="skill_image "
+								></tool-item>
+								<tool-item
+									tool="Laravel"
 									type="skill_image "
 								></tool-item>
 							</div>
@@ -395,14 +417,15 @@
 							<h3>Engineering Projects</h3>
 
 							<div class="projects_banner">
-								<!-- Portfolio Website -->
+								
+								<!-- Website CMS -->
 								<project-box
-									date="November 2024 - Present"
-									name="Portfolio Website"
-									description="Architected a responsive component-based personal website hosted on GitHub pages."
-									link="https://github.com/Riku737/riku737.github.io"
-									file="website_thumbnail"
-									tools="HTML,CSS,JavaScript,GSAP"
+									date="August 2025 - Present"
+									name="DevTools"
+									description="A library of tools for every developer, at your fingetips."
+									link="https://github.com/Riku737/DevTools"
+									file="temporary"
+									tools="HTML,CSS,PHP,MySQL,Laravel,Bootstrap"
 								>
 								</project-box>
 
@@ -427,6 +450,18 @@
 									tools="HTML,CSS,JavaScript,PHP,mySQL"
 								>
 								</project-box>
+
+								<!-- Portfolio Website -->
+								<project-box
+									date="November 2024 - Present"
+									name="Portfolio Website"
+									description="Architected a responsive component-based personal website hosted on GitHub pages."
+									link="https://github.com/Riku737/riku737.github.io"
+									file="website_thumbnail"
+									tools="HTML,CSS,JavaScript,GSAP"
+								>
+								</project-box>
+
 							</div>
 						</div>
 
@@ -596,21 +631,18 @@
 									srcset="assets/web/about.webp"
 									type="image/webp"
 								/>
-								<source
-									srcset="assets/about.jpg"
-									type="image/jpeg"
-								/>
 								<img
 									class="about_image"
-									src="assets/thumbnail/about.jpg"
+									src="assets/web/about.webp"
 									alt="about_image"
+									loading="lazy"
 								/>
 							</picture>
 						</figure>
 
 						<div class="about_right">
 							<h4>Summary</h4>
-							<p class="summary_text"></p>
+							<p class="summary_text">I'm Riki, a second-year software engineering student at the University of Ottawa. Through my volunteer and extracurricular work, I found my dream job creating computer programs that solve real-world problems. With my background mentoring youth aged 12-19 and my experience in designing and marketing, I am eager to apply my skills and learn from industry professionals during my internships.</p>
 						</div>
 					</div>
 				</div>
@@ -682,10 +714,7 @@
 								<source
 									srcset="assets/web/question.webp"
 									type="image/webp"
-								/>
-								<source
-									srcset="assets/thumbnail/question.jpg"
-									type="image/jpeg"
+									loading="lazy"
 								/>
 								<img
 									class="contact_image"

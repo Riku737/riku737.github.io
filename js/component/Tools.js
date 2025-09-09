@@ -5,7 +5,13 @@ class Tools extends HTMLElement {
 		const src = `assets/icons/${tool.toLowerCase()}.png`;
 		this.innerHTML = `
             <div class="tool_item" title="${tool}">
-                <img class="${type}" src="${src}" alt="${tool}" title="${tool}">
+                <img 
+					class="${type}" 
+					src="${src}" 
+					alt="${tool}" 
+					title="${tool}"
+					loading="lazy"
+				>
                 <span class="tool_name">${tool}</span>
             </div>
         `;
