@@ -115,8 +115,8 @@
 	}
 
 	/* Skill */
-	iframe {
-		display: none;
+	.extra_section {
+		padding: 0 var(--25px) var(--50px) var(--25px);
 	}
 
 	.extra_container {
