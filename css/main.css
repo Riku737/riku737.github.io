@@ -14,6 +14,7 @@
 /* GLOBAL VARIABLES */
 :root {
 	/* Fonts */
+	--68px: 4.25rem;
 	--36px: 2.25rem;
 	--30px: 1.875rem;
 	--32px: 2rem;
@@ -61,7 +62,7 @@ body {
 /* Text */
 
 h1 {
-	font-size: var(--36px);
+	font-size: var(--68px);
 	margin: 0;
 	font-family: var(--pri_font);
 }
@@ -379,7 +380,7 @@ img {
 
 /* HERO SECTION */
 .hero_section {
-	height: 100vh;
+	height: 90vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -389,10 +390,7 @@ img {
 
 .hero_content {
 	width: 100%;
-	display: flex;
-	height: fit-content;
 	column-gap: var(--50px);
-	justify-content: center;
 }
 
 .left_hero,
