@@ -8,7 +8,9 @@ class NavBar extends HTMLElement {
             <nav class="navigation_container">
 
                 <div class="left_nav">
-                    <a class="tertiary_button" id="home" href="${SITE_ROOT}">Riki McAlear</a>
+                    <a class="tertiary_button" id="home" href="${SITE_ROOT}">
+                        Riki McAlear
+                    </a>
                 </div>
 
                 <ul class="right_nav unstyled_list">
