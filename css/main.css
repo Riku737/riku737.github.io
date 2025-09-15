@@ -460,7 +460,8 @@ img {
 	position: absolute;
 	content: "";
 	background-color: var(--primary_color);
-	height: 2.75rem;
+	/* height: 2.75rem; */
+	height: 10.2rem;
 	z-index: 2;
 	border-radius: var(--3px);
 }
@@ -473,7 +474,8 @@ img {
 
 @keyframes h1_animation {
 	from {
-		width: 47.1875rem;
+		/* width: 47.1875rem; */
+		width: 67rem;
 	}
 
 	to {
@@ -485,14 +487,15 @@ img {
 	position: absolute;
 	content: "";
 	background-color: var(--text_color);
-	height: 2.625rem;
+	height: 1.625rem;
 	z-index: 2;
 	border-radius: var(--3px);
 }
 
 @keyframes p_animation {
 	from {
-		width: 47.1875rem;
+		/* width: 47.1875rem; */
+		width: 67rem;
 	}
 
 	to {
