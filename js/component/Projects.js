@@ -29,7 +29,7 @@ class ProjectBox extends HTMLElement {
                 <a class="project_link" href="${link}" target="_blank">
                     <div class="highlight_thumbnail">
                         <video
-                          class="project_image_highlight highlight_thumbnail"
+                          class="project_image_highlight highlight_thumbnail lazyload"
                           muted
                           id="highlight_cover_1"
                           poster="${imgWebP}"
@@ -56,10 +56,9 @@ class ProjectBox extends HTMLElement {
                 <a class="project_link" href="${link}" target="_blank">
                     <div class="project_thumbnail_boundaries">
                         <img 
-                            class="project_image" 
+                            class="project_image lazyload"
                             src="${imgWebP}" 
                             alt="${imgAlt}"
-                            loading="lazy" 
                             decoding="async"
                             referrerpolicy="no-referrer"
                         >

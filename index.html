@@ -60,9 +60,6 @@
 		<meta property="og:locale" content="en_US" />
 		<meta name="author" content="Riki McAlear" />
 
-		<!-- Web Page -->
-		<script src="js/main.js" defer></script>
-
 		<!-- GSAP -->
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
@@ -87,6 +84,7 @@
 		<script src="js/animation.js" defer></script>
 		<script src="js/script.js" defer></script>
 		<script src="js/vanilla-tilt.js" defer></script>
+		<script src="js/lazysizes.min.js" async=""></script>
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="css/main.css" />
@@ -610,18 +608,11 @@
 
 					<div class="about_content">
 						<figure data-tilt class="about_left">
-							<picture>
-								<source
-									srcset="assets/web/about.webp"
-									type="image/webp"
-								/>
-								<img
-									class="about_image"
-									src="assets/web/about.webp"
-									alt="about_image"
-									loading="lazy"
-								/>
-							</picture>
+							<img
+								class="about_image lazyload"
+								src="assets/web/about.webp"
+								alt="about_image"
+							/>
 						</figure>
 
 						<div class="about_right">
@@ -704,18 +695,11 @@
 						</div>
 
 						<figure data-tilt class="left_contact">
-							<picture>
-								<source
-									srcset="assets/web/question.webp"
-									type="image/webp"
-									loading="lazy"
-								/>
-								<img
-									class="contact_image"
-									src="assets/thumbnail/question.jpg"
-									alt="contact_image"
-								/>
-							</picture>
+							<img
+								class="contact_image lazyload"
+								src="assets/web/question.webp"
+								alt="contact_image"
+							/>
 						</figure>
 					</div>
 				</div>

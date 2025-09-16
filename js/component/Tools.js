@@ -6,11 +6,10 @@ class Tools extends HTMLElement {
 		this.innerHTML = `
             <div class="tool_item" title="${tool}">
                 <img 
-					class="${type}" 
+					class="${type} lazyload" 
 					src="${src}" 
 					alt="${tool}" 
 					title="${tool}"
-					loading="lazy"
 				>
                 <span class="tool_name">${tool}</span>
             </div>
