@@ -108,6 +108,12 @@ a:hover {
 	cursor: pointer;
 }
 
+a:focus-visible {
+	outline: var(--3px) solid;
+	outline-color: #005fcc;
+	/* Visible focus for keyboard users */
+}
+
 .text_chip {
 	background-color: var(--primary_color);
 	color: white;
@@ -165,18 +171,14 @@ img {
 	padding: var(--12_5px) var(--25px);
 	color: var(--primary_color);
 	text-decoration: none;
+	border: var(--1px) solid var(--primary_color);
 	border-radius: var(--6_25px);
 	transition: 100ms;
-	outline: var(--1px) solid var(--primary_color);
-	outline-offset: -0.063rem;
-	background-color: inherit;
-	transition: 100ms;
-	position: relative;
 	font-weight: 500;
 }
 
 .secondary_button:hover {
-	outline-color: var(--accent_color);
+	border-color: var(--accent_color);
 	color: var(--accent_color);
 }
 
