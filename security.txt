@@ -1,1 +1,1 @@
-If you believe you have found a security issue, please report it to Riki at: `security@rikimcalear.com`.If you believe you have found a security issue, please report it to us at: `security@rikimcalear.com`.
+If you believe you have found a security issue, please report it to Riki at: `security@rikimcalear.com`.
