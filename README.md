@@ -18,7 +18,7 @@
 
 <h2>Technologies</h2>
 <a href="https://skills-icons.vercel.app">
-	<img src="https://skills-icons.vercel.app/api/icons?i=html,css,js,vscode,gsap" />
+	<img src="https://skills-icons.vercel.app/api/icons?i=html,css3,js,vscode,gsap" />
 </a>
 
 <h2>Features</h2>
