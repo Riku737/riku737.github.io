@@ -126,6 +126,10 @@ img {
 	-webkit-user-drag: none;
 }
 
+* {
+	line-height: normal;
+}
+
 /* Sections */
 
 .navigation_container,
