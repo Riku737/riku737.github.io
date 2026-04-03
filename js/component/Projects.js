@@ -3,7 +3,7 @@ class ProjectBox extends HTMLElement {
 		const date = DOMPurify.sanitize(this.getAttribute("date"));
 		const name = DOMPurify.sanitize(this.getAttribute("name"));
 		const description = DOMPurify.sanitize(
-			this.getAttribute("description")
+			this.getAttribute("description"),
 		);
 		const link = DOMPurify.sanitize(this.getAttribute("link"));
 
@@ -42,7 +42,6 @@ class ProjectBox extends HTMLElement {
                     <div class="project_details">
                         <p class="project_date">${date}</p>
                         <h4>${name}</h4>
-                        <p>${description}</p>
                         <div class="tool_box">
                             ${toolbox}
                         </div>
@@ -66,7 +65,6 @@ class ProjectBox extends HTMLElement {
                     <div class="project_details">
                     <p class="project_date">${date}</p>    
                         <h4>${name}</h4>
-                        <p>${description}</p>
                         <div class="tool_box">
                             ${toolbox}
                         </div>

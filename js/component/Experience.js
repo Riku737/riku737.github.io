@@ -21,7 +21,7 @@ class Experience extends HTMLElement {
             <div class="experience_box_details">
                 <div class="experience_box_left">
                     <h4 id="title_text">${title}</h4>
-                    <a class="experience_link" href="${link}" target="_blank">${company}</a>
+                    <p class="experience_link">${company}</p>
                 </div>
                 <div class="experience_box_right">
                     <p id="title_text">${start} - ${end}</p>

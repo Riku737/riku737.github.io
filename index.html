@@ -67,10 +67,7 @@
 		<!-- DOMPurify -->
 		<!-- Necessary whenever inserting dynamic or user-generated content to prevent cross-site scripting (XSS) attacks -->
 		<!-- Client side sanitzation -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"
-			defer
-		></script>
+		<script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
 
 		<!-- Components -->
 		<script src="js/component/NavBar.js" defer></script>
@@ -111,8 +108,8 @@
 							</h1>
 							<p class="hero_p">
 								Second-year Software Engineering student at
-								uOttawa with a passion for UI/UX and full-stack
-								development.
+								uOttawa with a passion for data science, UI/UX,
+								and full-stack development.
 							</p>
 							<div class="action_banner">
 								<a href="#projects" class="primary_button"
@@ -293,7 +290,11 @@
 									type="skill_image"
 								></tool-item>
 								<tool-item
-									tool="Android Studio"
+									tool="Salesforce"
+									type="skill_image"
+								></tool-item>
+								<tool-item
+									tool="Jira"
 									type="skill_image"
 								></tool-item>
 							</div>
@@ -369,6 +370,7 @@
 
 					<div class="projects_rows">
 						<!--Highlighted projects-->
+
 						<div class="other_projects_information">
 							<h3>Collaborative Work</h3>
 
@@ -453,7 +455,7 @@
 									name="Portfolio Website"
 									description="Architected a responsive component-based personal website hosted on GitHub pages."
 									link="https://github.com/Riku737/riku737.github.io"
-									file="website_thumbnail"
+									file="personal_website"
 									tools="HTML,CSS,JavaScript,GSAP"
 									role="link"
 								>
@@ -545,6 +547,18 @@
 					</div>
 
 					<div class="experience_list">
+						<!-- ISED -->
+						<experience-item
+							company="Innovation, Science and Economic Development Canada"
+							link="https://www.instagram.com/uottawa.jsa/"
+							logo="ised.png"
+							title="Junior Developer/Data Scientist"
+							location="Ottawa, ON"
+							start="January 2026"
+							end="Present"
+							role="link"
+						>
+						</experience-item>
 						<!-- uOJSA -->
 						<experience-item
 							company="University of Ottawa Japanese Student Association"
