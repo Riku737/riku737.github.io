@@ -8,7 +8,7 @@ class ProjectBox extends HTMLElement {
 		const link = DOMPurify.sanitize(this.getAttribute("link"));
 
 		const file = DOMPurify.sanitize(this.getAttribute("file"));
-		const imgWebP = "assets/web/" + file + ".webp";
+		const imgWebP = "assets/web/" + file;
 		// console.log("Image source:", imgWebP);
 		const imgAlt = "Asset for " + name;
 
@@ -20,37 +20,7 @@ class ProjectBox extends HTMLElement {
 			toolbox += `<tool-item tool="${tool}" type="tool_image"></tool-item>`;
 		});
 
-		const type = DOMPurify.sanitize(this.getAttribute("type"));
-
-		if (type === "video") {
-			const videoWebM = "assets/web/" + file + ".webm";
-			this.innerHTML = `
-            <div class="projects_box">
-                <a class="project_link" href="${link}" target="_blank">
-                    <div class="highlight_thumbnail">
-                        <video
-                          class="project_image_highlight highlight_thumbnail lazyload"
-                          muted
-                          id="highlight_cover_1"
-                          poster="${imgWebP}"
-                          preload="none"
-                          alt="${imgAlt}"
-                        >
-                          <source src="${videoWebM}" type="video/webm">
-                        </video>
-                    </div>
-                    <div class="project_details">
-                        <p class="project_date">${date}</p>
-                        <h4>${name}</h4>
-                        <div class="tool_box">
-                            ${toolbox}
-                        </div>
-                    </div>
-                </a>
-            </div>
-            `;
-		} else {
-			this.innerHTML = `
+		this.innerHTML = `
             <div class="projects_box">
                 <a class="project_link" href="${link}" target="_blank">
                     <div class="project_thumbnail_boundaries">
@@ -72,7 +42,6 @@ class ProjectBox extends HTMLElement {
                 </a>
             </div>
             `;
-		}
 	}
 }
 
