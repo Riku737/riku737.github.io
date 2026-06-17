@@ -32,8 +32,7 @@ class ProjectBox extends HTMLElement {
                             referrerpolicy="no-referrer"
                         >
                     </div>
-                    <div class="project_details">
-                    <p class="project_date">${date}</p>    
+                    <div class="project_details">    
                         <h4>${name}</h4>
                         <div class="tool_box">
                             ${toolbox}
@@ -44,6 +43,8 @@ class ProjectBox extends HTMLElement {
             `;
 	}
 }
+
+// <p class="project_date">${date}</p>
 
 class ChipText extends HTMLElement {
 	connectedCallback() {
