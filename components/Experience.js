@@ -1,7 +1,6 @@
 class Experience extends HTMLElement {
 	connectedCallback() {
 		const company = DOMPurify.sanitize(this.getAttribute("company"));
-		const link = DOMPurify.sanitize(this.getAttribute("link"));
 		const logo = DOMPurify.sanitize(this.getAttribute("logo"));
 		const title = DOMPurify.sanitize(this.getAttribute("title"));
 		const location = DOMPurify.sanitize(this.getAttribute("location"));
