@@ -14,7 +14,6 @@ class Experience extends HTMLElement {
                     class="logo_experience lazyload" 
                     alt="experience_logo" 
                     src="assets/icons/${logo}" 
-                    title="${company}"
                 >
             </div>
             <div class="experience_box_details">

@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
                 <!--Left foot-->
                 <div class="left_foot">
                     <a href="${SITE_ROOT}#" class="logo_link">Riki McAlear</a>
-                    <p class="heading_description_footer" id="heading_description_bg">Third-year software engineering student at the University of Ottawa.</p>
+                    <p class="heading_description_footer" id="heading_description_bg">Third-year software engineering student at the University of Ottawa with a passion for data science, AI/ML, and full-stack development.</p>
                     <p class="copyright_detail">© ${new Date().getFullYear()} Riki McAlear. All Rights Reserved.</p>
                 </div>
 
