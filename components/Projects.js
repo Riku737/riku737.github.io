@@ -1,6 +1,6 @@
 class ProjectBox extends HTMLElement {
 	connectedCallback() {
-		const date = DOMPurify.sanitize(this.getAttribute("date"));
+		// const date = DOMPurify.sanitize(this.getAttribute("date"));
 		const name = DOMPurify.sanitize(this.getAttribute("name"));
 		const description = DOMPurify.sanitize(
 			this.getAttribute("description"),
@@ -33,7 +33,8 @@ class ProjectBox extends HTMLElement {
                         >
                     </div>
                     <div class="project_details">    
-                        <h4>${name}</h4>
+                        <h4 id="project_name">${name}</h4>
+                        <p>${description}</p>
                         <div class="tool_box">
                             ${toolbox}
                         </div>
