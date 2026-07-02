@@ -2,9 +2,7 @@ class ProjectBox extends HTMLElement {
 	connectedCallback() {
 		// const date = DOMPurify.sanitize(this.getAttribute("date"));
 		const name = DOMPurify.sanitize(this.getAttribute("name"));
-		const description = DOMPurify.sanitize(
-			this.getAttribute("description"),
-		);
+		const description = DOMPurify.sanitize(this.getAttribute("description"));
 		const link = DOMPurify.sanitize(this.getAttribute("link"));
 
 		const file = DOMPurify.sanitize(this.getAttribute("file"));
