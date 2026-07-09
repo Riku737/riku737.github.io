@@ -1045,6 +1045,14 @@ img {
 	margin-bottom: var(--12_5px);
 }
 
+.nav_foot h5 {
+	color: white;
+	margin: 0;
+	margin-bottom: var(--12_5px);
+	font-weight: bold;
+	font-size: var(--16px);
+}
+
 .copyright_detail {
 	margin-top: var(--6_25px);
 	margin: 0rem;
