@@ -539,6 +539,7 @@ img {
 
 .dark_section {
 	background-color: var(--primary_color);
+	/*background-color: white;*/
 }
 
 .light_section {
@@ -561,7 +562,7 @@ img {
 
 .skill_banner {
 	display: flex;
-	gap: var(--6_25px);
+	gap: var(--12_5px);
 	flex-wrap: wrap;
 }
 
@@ -771,7 +772,7 @@ img {
 .tool_box {
 	margin-top: var(--12_5px);
 	display: flex;
-	gap: var(--6_25px);
+	gap: var(--12_5px);
 	flex-wrap: wrap;
 }
 
@@ -786,9 +787,9 @@ img {
 	display: flex;
 	align-items: center;
 	gap: var(--6_25px);
-	border: var(--1px) solid var(--outline_color);
+	/*border: var(--1px) solid var(--outline_color);*/
 	border-radius: var(--3px);
-	padding: var(--6_25px);
+	/*padding: var(--6_25px);*/
 }
 
 .tool_name {
@@ -1042,6 +1043,14 @@ img {
 	margin: 0;
 	margin-top: var(--6_25px);
 	margin-bottom: var(--12_5px);
+}
+
+.nav_foot h5 {
+	color: white;
+	margin: 0;
+	margin-bottom: var(--12_5px);
+	font-weight: bold;
+	font-size: var(--16px);
 }
 
 .copyright_detail {

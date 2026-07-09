@@ -18,6 +18,7 @@ class Footer extends HTMLElement {
 
                     <!--Sitemap links-->
                     <div class="middle_foot">
+						<h5>Sitemap</h5>
                         <ul class="foot_nav">
                             <li class="foot_list"><a href="${SITE_ROOT}#skills" class="foot_link">Skills</a></li>
                             <li class="foot_list"><a href="${SITE_ROOT}#projects" class="foot_link">Projects</a></li>
@@ -29,6 +30,7 @@ class Footer extends HTMLElement {
                         
                     <!--Social links-->
                     <div class="right_foot">
+                    	<h5>Socials</h5>
                         <ul class="foot_nav">
                             <li class="foot_list"><a href="${DOMPurify.sanitize("https://www.behance.net/rikimcalear")}" target="_blank" aria-label="Visit my GitHub profile" class="foot_link github_link"><i class="bi bi-github"></i>GitHub</a></li>
                             <li class="foot_list"><a href="" target="_blank" aria-label="Visit my LinkedIn profile" class="foot_link linkedin_link"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
