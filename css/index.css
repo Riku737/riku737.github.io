@@ -562,7 +562,7 @@ img {
 
 .skill_banner {
 	display: flex;
-	gap: var(--12_5px);
+	gap: var(--6_25px);
 	flex-wrap: wrap;
 }
 
@@ -699,7 +699,7 @@ img {
 .projects_banner {
 	gap: var(--25px);
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .projects_box p {
@@ -772,7 +772,7 @@ img {
 .tool_box {
 	margin-top: var(--12_5px);
 	display: flex;
-	gap: var(--12_5px);
+	gap: var(--6_25px);
 	flex-wrap: wrap;
 }
 
@@ -787,9 +787,9 @@ img {
 	display: flex;
 	align-items: center;
 	gap: var(--6_25px);
-	/*border: var(--1px) solid var(--outline_color);*/
+	border: var(--1px) solid var(--outline_color);
 	border-radius: var(--3px);
-	/*padding: var(--6_25px);*/
+	padding: var(--6_25px);
 }
 
 .tool_name {
