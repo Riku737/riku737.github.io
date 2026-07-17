@@ -268,7 +268,7 @@
 	#inline_icon {
 		width: unset;
 		padding: var(--12_5px) 0rem;
-		justify-content: center;
+		/*justify-content: center;*/
 	}
 
 	.action_banner {

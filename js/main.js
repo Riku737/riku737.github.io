@@ -1,4 +1,4 @@
-// HIDDEN CONSOLE MESSAGE
+ // HIDDEN CONSOLE MESSAGE
 // Suprise message for those who check the console! :D
 console.log("Hi there! Thanks for checking out my website.");
 
