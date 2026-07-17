@@ -16,10 +16,12 @@
 :root {
 	/* Fonts */
 	--68px: 4.25rem;
+	--48px: 3rem;
 	--36px: 2.25rem;
 	--30px: 1.875rem;
 	--32px: 2rem;
 	--24px: 1.5rem;
+	--21px: 1.3rem;
 	--18px: 1.125rem;
 	--16px: 1rem;
 	--12px: 0.75rem;
@@ -45,6 +47,7 @@
 	--outline_color: #e7e7e7;
 
 	--pri_font: "Inter", Arial, Helvetica, sans-serif;
+	--sec_font: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 
 /* MAIN */
@@ -70,7 +73,7 @@ h1 {
 
 h2 {
 	font-family: var(--pri_font);
-	font-size: var(--32px);
+	font-size: var(--48px);
 	margin-top: 0;
 	margin-bottom: var(--12_5px);
 }
@@ -199,6 +202,10 @@ img {
 	position: relative;
 	transition: all 0.3s ease;
 	font-weight: 500;
+}
+
+.tertiary_button:hover {
+	color: var(--accent_color);
 }
 
 .tertiary_button.active::before {
@@ -562,6 +569,7 @@ img {
 
 .skill_banner {
 	display: flex;
+	flex-direction: column;
 	gap: var(--6_25px);
 	flex-wrap: wrap;
 }
@@ -579,7 +587,7 @@ img {
     width: 100%; */
 	gap: var(--25px);
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 }
 
 /* .skill_left,
@@ -648,11 +656,26 @@ img {
 	height: 100%;
 }
 
-.project_link:hover h4 {
+.link_button {
+	padding: 0;
+	color: var(--primary_color);
+	text-decoration: none;
+	font-weight: 500;
+	text-underline-offset: 8px;
 	text-decoration: underline;
 	text-decoration-color: var(--accent_color);
-	text-decoration-thickness: 0.1875rem;
 }
+
+.link_button:hover {
+	color: var(--accent_color);
+	transition: 100ms;
+}
+
+/*.project_link:hover h4 {*/
+/*	text-decoration: underline;*/
+/*	text-decoration-color: var(--accent_color);*/
+/*	text-decoration-thickness: 0.1875rem;*/
+/*}*/
 
 .highlight_thumbnail {
 	border-radius: var(--6_25px) var(--6_25px) 0 0;
@@ -681,10 +704,9 @@ img {
 }
 
 .project_date {
-	margin-top: 0 !important;
+	margin-top: var(--3px) !important;
 	margin-bottom: var(--6_25px) !important;
-	text-transform: uppercase;
-	font-size: var(--12px);
+	font-weight: bold;
 	color: var(--accent_color);
 }
 
@@ -699,11 +721,18 @@ img {
 .projects_banner {
 	gap: var(--25px);
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .projects_box p {
 	margin-top: var(--6_25px);
+}
+
+.project_buttons {
+	margin-top: var(--12_5px);
+	display: flex;
+	flex-direction: row;
+	gap: var(--12_5px);
 }
 
 .project_image {
