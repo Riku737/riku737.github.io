@@ -43,8 +43,8 @@ class ProjectBox extends HTMLElement {
 								${toolbox}
 							</div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${link}" target="_blank">Demo</a>
-								<a class="link_button"  href="${link}" target="_blank">GitHub</a>
+								<a class="link_button"  href="${demo_link}" target="_blank">Demo</a>
+								<a class="link_button"  href="${github_link}" target="_blank">GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -71,7 +71,7 @@ class ProjectBox extends HTMLElement {
 								${toolbox}
 							</div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${link}" target="_blank">Demo</a>
+								<a class="link_button"  href="${demo_link}" target="_blank">Demo</a>
 								<a class="link_button"  href="${link}" target="_blank">Behance</a>
 							</div>
 						</div>
@@ -99,7 +99,7 @@ class ProjectBox extends HTMLElement {
 								${toolbox}
 							</div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${link}" target="_blank">Demo</a>
+								<a class="link_button"  href="${demo_link}" target="_blank">Demo</a>
 							</div>
 						</div>
 					</div>
