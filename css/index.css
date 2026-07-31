@@ -982,7 +982,7 @@ img {
 
 .contact_banner {
 	display: flex;
-	column-gap: var(--25px);
+	column-gap: var(--50px);
 }
 
 .left_contact {
