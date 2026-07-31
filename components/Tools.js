@@ -1,47 +1,56 @@
 class Tools extends HTMLElement {
 	connectedCallback() {
-		const tool = DOMPurify.sanitize(this.getAttribute("tool"));
-		const type = DOMPurify.sanitize(this.getAttribute("type"));
-		const src = `assets/icons/${tool.toLowerCase()}.png`;
 
-		if (type === 'skill_image') {
+        const getAttr = (a) => DOMPurify.sanitize(this.getAttribute(a));
+
+        const t = {
+            name: getAttr("tool"),
+            type: getAttr("type"),
+            image: `./assets/icons/${getAttr("tool").toLowerCase()}.png`
+        };
+
+		if (t.type === 'skill_image') { // Skills section
 
 			const img = new Image();
-			img.src = src;
+			img.src = t.image;
 
+            // Tool icon and name
 			img.onload = () => {
 				this.innerHTML = `
-					<div class="tool_item" title="${tool}">
+					<div class="tool_item" title="${t.name}">
 						<img
-							class="${type} lazyload"
-							src="${src}"
-							alt="${tool}"
-							title="${tool}"
+							class="${t.type} lazyload"
+							src="${t.image}"
+							alt="${t.name}"
+							title="${t.name}"
 						>
-						<span class="tool_name">${tool}</span>
+						<span class="tool_name">${t.name}</span>
 					</div>
 				`;
 			};
 
+            // Tool name only (no icon)
 			img.onerror = () => {
 				this.innerHTML = `
-					<div class="tool_item" title="${tool}">
-						<span class="tool_name">${tool}</span>
+					<div class="tool_item" title="${t.name}">
+						<span class="tool_name">${t.name}</span>
 					</div>
 				`;
 			};
 
-		} else {
+		} else { // Projects section
+
 			this.innerHTML = `
-				<div class="tool_item" title="${tool}">
+				<div class="tool_item" title="${t.name}">
 					<img 
-						class="${type} lazyload" 
-						src="${src}" 
-						alt="${tool}" 
-						title="${tool}"
+						class="${t.type} lazyload" 
+						src="${t.image}" 
+						alt="${t.name}" 
+						title="${t.name}"
 					>
 				</div>
 			`;
+
 		}
 
 	}
