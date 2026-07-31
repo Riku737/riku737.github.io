@@ -119,10 +119,13 @@ a:focus-visible {
 }
 
 .text_chip {
-	background-color: var(--primary_color);
-	color: white;
+	background-color: #B8860B;
+	color: #2C2C2C;
 	border-radius: var(--3px);
-	padding: var(--1px) var(--3px);
+    padding: var(--6_25px);
+    display: inline-block;
+    margin-top: 0 !important;
+    margin-bottom: var(--12_5px) !important;
 }
 
 img {
