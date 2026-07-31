@@ -1,4 +1,6 @@
- // HIDDEN CONSOLE MESSAGE
+const DOMPurify = window.DOMPurify;
+
+// HIDDEN CONSOLE MESSAGE
 // Suprise message for those who check the console! :D
 console.log("Hi there! Thanks for checking out my website.");
 
