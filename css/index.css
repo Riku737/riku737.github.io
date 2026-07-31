@@ -119,8 +119,8 @@ a:focus-visible {
 }
 
 .text_chip {
-	background-color: #B8860B;
-	color: #2C2C2C;
+	background-color: #FFD700;
+	color: #1A1A1A;
 	border-radius: var(--3px);
     padding: var(--6_25px);
     display: inline-block;
