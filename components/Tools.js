@@ -42,12 +42,7 @@ class Tools extends HTMLElement {
 
 			this.innerHTML = `
 				<div class="tool_item" title="${t.name}">
-					<img 
-						class="${t.type} lazyload" 
-						src="${t.image}" 
-						alt="${t.name}" 
-						title="${t.name}"
-					>
+					   ${t.name}
 				</div>
 			`;
 

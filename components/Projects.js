@@ -13,7 +13,7 @@ class ProjectBox extends HTMLElement {
             toolBox: getAttr("tools")
                 .split(",")
                 .map(t => `<tool-item tool="${t.trim()}" type="tool_image"></tool-item>`)
-                .join(""),
+                .join("•"),
             subtitle: getAttr("subtitle"),
             demo_link: getAttr("demo_link"),
             github_link: getAttr("github_link"),
@@ -35,15 +35,17 @@ class ProjectBox extends HTMLElement {
 							>
 						</div>
 						<div class="project_details">
-						    <p class="text_chip"><i class="bi bi-trophy-fill"></i> ${p.award}</p>    
-							<h4 class="project_name">${p.name}</h4>
-							<p>${p.description}</p>
+						    <div>
+                                <p class="text_chip"><i class="bi bi-trophy-fill"></i> ${p.award}</p>    
+                                <h4 class="project_name">${p.name}</h4>
+                                <p class="p_description">${p.description}</p>
+                            </div>
 							<div class="tool_box">
 								${p.toolBox}
 							</div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${p.demo_link}" target="_blank">Demo</a>
-								<a class="link_button"  href="${p.github_link}" target="_blank">Source Code</a>
+								<a class="primary_button"  href="${p.demo_link}" target="_blank">Demo</a>
+								<a class="secondary_button"  href="${p.github_link}" target="_blank">Source code</a>
 							</div>
 						</div>
 					</div>
@@ -62,15 +64,17 @@ class ProjectBox extends HTMLElement {
 								referrerpolicy="no-referrer"
 							>
 						</div>
-						<div class="project_details">    
-							<h4 class="project_name">${p.name}</h4>
-							<p>${p.description}</p>
-							<div class="tool_box">
-								${p.toolBox}
-							</div>
+						<div class="project_details">
+						    <div>
+                                <h4 class="project_name">${p.name}</h4>
+                                <p class="p_description">${p.description}</p>
+                                <div class="tool_box">
+                                    ${p.toolBox}
+                                </div>
+                            </div>    
 							<div class="project_buttons">
-								<a class="link_button"  href="${p.demo_link}" target="_blank">Demo</a>
-								<a class="link_button"  href="${p.github_link}" target="_blank">Source Code</a>
+								<a class="primary_button"  href="${p.demo_link}" target="_blank">Demo</a>
+								<a class="secondary_button"  href="${p.github_link}" target="_blank">Source code</a>
 							</div>
 						</div>
 					</div>
@@ -89,15 +93,17 @@ class ProjectBox extends HTMLElement {
 								referrerpolicy="no-referrer"
 							>
 						</div>
-						<div class="project_details">    
-							<h4 class="project_name">${p.name}</h4>
-							<p>${p.description}</p>
-							<div class="tool_box">
-								${p.toolBox}
-							</div>
+						<div class="project_details">
+						    <div>
+                                <h4 class="project_name">${p.name}</h4>
+                                <p class="p_description">${p.description}</p>
+                                <div class="tool_box">
+                                    ${p.toolBox}
+                                </div>
+                            </div>    
 							<div class="project_buttons">
-								<a class="link_button"  href="${p.demo_link}" target="_blank">Demo</a>
-								<a class="link_button"  href="${p.link}" target="_blank">Presentation</a>
+								<a class="primary_button"  href="${p.demo_link}" target="_blank">Demo</a>
+								<a class="secondary_button"  href="${p.link}" target="_blank">Presentation</a>
 							</div>
 						</div>
 					</div>
@@ -116,14 +122,16 @@ class ProjectBox extends HTMLElement {
 								referrerpolicy="no-referrer"
 							>
 						</div>
-						<div class="project_details">    
-							<h4 class="project_name">${p.name}</h4>
-							<p>${p.description}</p>
-							<div class="tool_box">
-								${p.toolBox}
-							</div>
+						<div class="project_details">
+						    <div>
+                                <h4 class="project_name">${p.name}</h4>
+                                <p class="p_description">${p.description}</p>
+                                <div class="tool_box">
+                                    ${p.toolBox}
+                                </div>
+                            </div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${p.demo_link}" target="_blank">Demo</a>
+								<a class="secondary_button"  href="${p.demo_link}" target="_blank">Demo</a>
 							</div>
 						</div>
 					</div>
@@ -142,14 +150,16 @@ class ProjectBox extends HTMLElement {
 								referrerpolicy="no-referrer"
 							>
 						</div>
-						<div class="project_details">    
-							<h4 class="project_name">${p.name}</h4>
-							<p>${p.description}</p>
-							<div class="tool_box">
-								${p.toolBox}
+						<div class="project_details">
+						    <div>
+                                <h4 class="project_name">${p.name}</h4>
+                                <p class="p_description">${p.description}</p>
+                                <div class="tool_box">
+                                    ${p.toolBox}
+                                </div>
 							</div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${p.github_link}" target="_blank">Source Code</a>
+								<a class="secondary_button"  href="${p.github_link}" target="_blank">Source code</a>
 							</div>
 						</div>
 					</div>
@@ -168,14 +178,16 @@ class ProjectBox extends HTMLElement {
 								referrerpolicy="no-referrer"
 							>
 						</div>
-						<div class="project_details">    
-							<h4 class="project_name">${p.name}</h4>
-							<p>${p.description}</p>
-							<div class="tool_box">
-								${p.toolBox}
-							</div>
+						<div class="project_details">
+						    <div>
+                                <h4 class="project_name">${p.name}</h4>
+                                <p class="p_description">${p.description}</p>
+                                <div class="tool_box">
+                                    ${p.toolBox}
+                                </div>
+                            </div>
 							<div class="project_buttons">
-								<a class="link_button"  href="${p.link}" target="_blank">Presentation</a>
+								<a class="secondary_button"  href="${p.link}" target="_blank">Presentation</a>
 							</div>
 						</div>
 					</div>

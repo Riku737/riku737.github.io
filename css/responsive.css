@@ -26,7 +26,7 @@
 	}
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1250px) {
 
 	/* Main */
 	html {
@@ -53,7 +53,10 @@
 		margin-bottom: var(--25px);
 	}
 
-	h1,
+	h1 {
+        font-size: var(--36px);
+    }
+
 	h2 {
 		font-size: var(--30px);
 	}
@@ -82,38 +85,10 @@
 		display: none;
 	}
 
-	/* Hero */
-	.hero_section {
-		height: fit-content;
-	}
-
-	.hero_content {
-		margin-top: 5rem;
-		flex-direction: column;
-		text-align: center;
-		row-gap: var(--25px);
-	}
-
-	.avatar_image {
-		height: 12.5rem;
-		width: 12.5rem;
-	}
-
-	.hero_container {
-		padding: var(--25px) var(--25px) var(--50px) var(--25px);
-	}
-
-	.action_banner,
-	.social_banner {
-		align-items: center;
-		justify-content: center;
-	}
-
-	.hero_p {
-		margin: auto;
-		margin-top: var(--6_25px);
-		margin-bottom: var(--25px);
-	}
+    /* Hero */
+    .hero_container {
+        padding: 0 var(--25px);
+    }
 
 	/* Skill */
 	.extra_section {
@@ -232,9 +207,40 @@
 }
 
 @media screen and (max-width: 700px) {
-	.hero_p {
-		width: unset;
-	}
+
+    /* Hero */
+    .hero_section {
+        height: fit-content;
+    }
+
+    .hero_content {
+        margin-top: 5rem;
+        flex-direction: column;
+        text-align: center;
+        row-gap: var(--25px);
+    }
+
+    .avatar_image {
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+
+    .hero_container {
+        padding: var(--25px) var(--25px) var(--50px) var(--25px);
+    }
+
+    .action_banner,
+    .social_banner {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_p {
+        margin: auto;
+        margin-top: var(--6_25px);
+        margin-bottom: var(--25px);
+        width: unset;
+    }
 
 	.project_link {
 		width: 100%;
@@ -296,16 +302,16 @@
 	}
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1250px) {
 	.hero_section h1::before {
 		animation: h1_animation 500ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
 		/* width: 47.1875rem; */
-		width: 67rem;
+		width: 72rem;
 	}
 
 	.hero_p::before {
 		/* width: 47.1875rem; */
-		width: 67rem;
+		width: 72rem;
 		animation: p_animation 1000ms cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
 		animation-delay: 500ms;
 	}
