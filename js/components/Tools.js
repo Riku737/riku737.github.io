@@ -1,20 +1,20 @@
 class Tools extends HTMLElement {
 	connectedCallback() {
 
-        const getAttr = (a) => DOMPurify.sanitize(this.getAttribute(a));
+	    const getAttr = (a) => DOMPurify.sanitize(this.getAttribute(a));
 
-        const t = {
-            name: getAttr("tool"),
-            type: getAttr("type"),
-            image: `./assets/icons/${getAttr("tool").toLowerCase()}.png`
-        };
+	    const t = {
+	        name: getAttr("tool"),
+	        type: getAttr("type"),
+	        image: `./assets/icons/${getAttr("tool").toLowerCase()}.png`
+	    };
 
 		if (t.type === 'skill_image') { // Skills section
 
 			const img = new Image();
 			img.src = t.image;
 
-            // Tool icon and name
+	        // Tool icon and name
 			img.onload = () => {
 				this.innerHTML = `
 					<div class="tool_item" title="${t.name}">
@@ -29,7 +29,7 @@ class Tools extends HTMLElement {
 				`;
 			};
 
-            // Tool name only (no icon)
+	        // Tool name only (no icon)
 			img.onerror = () => {
 				this.innerHTML = `
 					<div class="tool_item" title="${t.name}">

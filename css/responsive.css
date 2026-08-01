@@ -54,8 +54,8 @@
 	}
 
 	h1 {
-        font-size: var(--36px);
-    }
+	    font-size: var(--36px);
+	}
 
 	h2 {
 		font-size: var(--30px);
@@ -85,10 +85,10 @@
 		display: none;
 	}
 
-    /* Hero */
-    .hero_container {
-        padding: 0 var(--25px);
-    }
+	/* Hero */
+	.hero_container {
+	    padding: 0 var(--25px);
+	}
 
 	/* Skill */
 	.extra_section {
@@ -104,13 +104,13 @@
 	}
 
 	.skill_content {
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	/* .skill_left,
-    .skill_right {
-        width: 100%;
-    } */
+	.skill_right {
+	    width: 100%;
+	} */
 
 	/* Projects */
 	.projects_banner {
@@ -206,41 +206,50 @@
 	}
 }
 
+@media screen and (max-width: 800px) {
+	.skill_content {
+	    grid-template-columns: repeat(1, 1fr);
+	}
+	.skill_box {
+	    aspect-ratio: unset;
+	}
+}
+
 @media screen and (max-width: 700px) {
 
-    /* Hero */
-    .hero_section {
-        height: fit-content;
-    }
+	/* Hero */
+	.hero_section {
+	    height: fit-content;
+	}
 
-    .hero_content {
-        margin-top: 5rem;
-        flex-direction: column;
-        text-align: center;
-        row-gap: var(--25px);
-    }
+	.hero_content {
+	    margin-top: 5rem;
+	    flex-direction: column;
+	    text-align: center;
+	    row-gap: var(--25px);
+	}
 
-    .avatar_image {
-        height: 12.5rem;
-        width: 12.5rem;
-    }
+	.avatar_image {
+	    height: 12.5rem;
+	    width: 12.5rem;
+	}
 
-    .hero_container {
-        padding: var(--25px) var(--25px) var(--50px) var(--25px);
-    }
+	.hero_container {
+	    padding: var(--25px) var(--25px) var(--50px) var(--25px);
+	}
 
-    .action_banner,
-    .social_banner {
-        align-items: center;
-        justify-content: center;
-    }
+	.action_banner,
+	.social_banner {
+	    align-items: center;
+	    justify-content: center;
+	}
 
-    .hero_p {
-        margin: auto;
-        margin-top: var(--6_25px);
-        margin-bottom: var(--25px);
-        width: unset;
-    }
+	.hero_p {
+	    margin: auto;
+	    margin-top: var(--6_25px);
+	    margin-bottom: var(--25px);
+	    width: unset;
+	}
 
 	.project_link {
 		width: 100%;
