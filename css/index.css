@@ -174,7 +174,7 @@ img {
 	color: white;
 	text-decoration: none;
 	display: inline-block;
-	border-radius: var(--100px);
+	border-radius: var(--6_25px);
 	transition: 100ms;
 	font-weight: 500;
 	border: var(--1px) solid var(--primary_color);
@@ -190,7 +190,7 @@ img {
 	color: var(--primary_color);
 	text-decoration: none;
 	border: var(--1px) solid var(--primary_color);
-	border-radius: var(--100px);
+	border-radius: var(--6_25px);
 	transition: 100ms;
 	font-weight: 500;
 }

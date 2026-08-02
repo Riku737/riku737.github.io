@@ -90,3 +90,36 @@ document.getElementById("home").onclick = () => {
 	}
 	window.scrollTo(0, 0);
 };
+
+// PROJECTS SECTION
+
+document.querySelectorAll(".project_link").forEach((link) => {
+    link.addEventListener("mouseenter", () => {
+        // Scale image thumbnails
+        const img = link.querySelector(".project_image");
+        if (img) {
+            img.style.transform = "scale(1.05)";
+        }
+        // Scale and play video highlights
+
+        const video = link.querySelector(".project_image_highlight");
+        if (video) {
+            video.style.transform = "scale(1.05)";
+            video.play();
+        }
+    });
+    link.addEventListener("mouseleave", () => {
+        // Reset image thumbnails
+        const img = link.querySelector(".project_image");
+        if (img) {
+            img.style.transform = "scale(1) rotate(0deg)";
+        }
+        // Reset and pause video highlights
+        const video = link.querySelector(".project_image_highlight");
+        if (video) {
+            video.style.transform = "scale(1)";
+            video.pause();
+            video.load();
+        }
+    });
+});
