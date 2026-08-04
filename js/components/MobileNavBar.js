@@ -8,8 +8,7 @@ class MobileNavBar extends HTMLElement {
 	            <a class="tertiary_button" id="menu_button" href="${SITE_ROOT}#skills">Skills</a>
 	            <a class="tertiary_button" id="menu_button" href="${SITE_ROOT}#projects">Projects</a>
 	            <a class="tertiary_button" id="menu_button" href="${SITE_ROOT}#experience">Experience</a>
-	            <a class="tertiary_button" id="menu_button" href="${SITE_ROOT}#about">About</a>
-	            <a class="secondary_button" id="menu_button" href="${SITE_ROOT}#contact">Contact</a>
+	            <a class="tertiary_button" id="menu_button" href="${SITE_ROOT}#contact">Contact</a>
 
 	            <div class="social_banner">
 	                <a class="social_link" title="GitHub" href="https://github.com/Riku737" target="_blank"><svg class="social_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">

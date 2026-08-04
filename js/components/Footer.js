@@ -23,7 +23,6 @@ class Footer extends HTMLElement {
 	                        <li class="foot_list"><a href="${SITE_ROOT}#skills" class="foot_link">Skills</a></li>
 	                        <li class="foot_list"><a href="${SITE_ROOT}#projects" class="foot_link">Projects</a></li>
 	                        <li class="foot_list"><a href="${SITE_ROOT}#experience" class="foot_link">Experience</a></li>
-	                        <li class="foot_list"><a href="${SITE_ROOT}#about" class="foot_link">About</a></li>
 	                        <li class="foot_list"><a href="${SITE_ROOT}#contact" class="foot_link">Contact</a></li>
 	                    </ul>
 	                </div>

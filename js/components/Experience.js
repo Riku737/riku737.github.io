@@ -6,7 +6,7 @@ class Experience extends HTMLElement {
 	    const c = {
 	        company: getAttr("company"),
 	        logo: getAttr("logo"),
-	        title: getAttr("title"),
+	        title: getAttr("role"),
 	        location: getAttr("location"),
 	        start: getAttr("start"),
 	        end: getAttr("end")

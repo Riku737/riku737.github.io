@@ -3,9 +3,9 @@ const SITE_ROOT = window.location.origin + "/";
 class WebNavBar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-	    <header class="navigation_section" id="web_navigation_bar">
+	    <nav class="navigation_section" id="web_navigation_bar">
 
-	        <nav class="navigation_container">
+	        <div class="navigation_container">
 
 	            <div class="left_nav">
 	                <a class="tertiary_button" id="home" href="${SITE_ROOT}">
@@ -13,7 +13,7 @@ class WebNavBar extends HTMLElement {
 	                </a>
 	            </div>
 
-	            <ul class="right_nav unstyled_list">
+	            <div class="right_nav unstyled_list">
 	                <li>
 	                    <a class="tertiary_button" id="menu_skill" href="${SITE_ROOT}#skills">Skills</a>
 	                </li>
@@ -23,11 +23,10 @@ class WebNavBar extends HTMLElement {
 	                <li>
 	                    <a class="tertiary_button" id="menu_experience" href="${SITE_ROOT}#experience">Experience</a>
 	                </li>
-	                    <a class="tertiary_button" id="menu_about" href="${SITE_ROOT}#about">About</a>
 	                <li>
-	                    <a class="secondary_button" id="menu_contact" href="${SITE_ROOT}#contact" style="background-color: inherit;">Contact</a>
+	                    <a class="tertiary_button" id="menu_contact" href="${SITE_ROOT}#contact" style="background-color: inherit;">Contact</a>
 	                </li>
-	            </ul>
+	            </div>
 	            
 	            <button class="menu_button_nav" id="mobile_nav_button" onclick="mobile_navigation()" title="menu">
 	                <svg id="hamburger_icon" class="menu_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -38,9 +37,9 @@ class WebNavBar extends HTMLElement {
 	                </svg>
 	            </button>
 
-	        </nav>
+	        </div>
 
-	    </header>
+	    </nav>
 	    `;
 	}
 }
