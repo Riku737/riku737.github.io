@@ -45,7 +45,7 @@ class ProjectBox extends HTMLElement {
 							</div>
 							<div class="project_buttons">
 								<a class="primary_button"  href="${p.demo_link}" target="_blank">Demo</a>
-								<a class="secondary_button"  href="${p.github_link}" target="_blank">Source code</a>
+								<a class="secondary_button"  href="${p.github_link}" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -74,7 +74,7 @@ class ProjectBox extends HTMLElement {
 	                        </div>    
 							<div class="project_buttons">
 								<a class="primary_button"  href="${p.demo_link}" target="_blank">Demo</a>
-								<a class="secondary_button"  href="${p.github_link}" target="_blank">Source code</a>
+								<a class="secondary_button"  href="${p.github_link}" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -103,7 +103,7 @@ class ProjectBox extends HTMLElement {
 	                        </div>    
 							<div class="project_buttons">
 								<a class="primary_button"  href="${p.demo_link}" target="_blank">Demo</a>
-								<a class="secondary_button"  href="${p.link}" target="_blank">Presentation</a>
+								<a class="secondary_button"  href="${p.link}" target="_blank">Figma</a>
 							</div>
 						</div>
 					</div>
@@ -159,7 +159,7 @@ class ProjectBox extends HTMLElement {
 	                            </div>
 							</div>
 							<div class="project_buttons">
-								<a class="secondary_button"  href="${p.github_link}" target="_blank">Source code</a>
+								<a class="secondary_button"  href="${p.github_link}" target="_blank">Github</a>
 							</div>
 						</div>
 					</div>
@@ -187,7 +187,7 @@ class ProjectBox extends HTMLElement {
 	                            </div>
 	                        </div>
 							<div class="project_buttons">
-								<a class="secondary_button"  href="${p.link}" target="_blank">Presentation</a>
+								<a class="secondary_button"  href="${p.link}" target="_blank">Behance</a>
 							</div>
 						</div>
 					</div>
