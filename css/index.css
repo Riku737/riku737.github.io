@@ -179,7 +179,7 @@ img {
 	transition: 100ms;
 	font-weight: 500;
 	border: var(--1px) solid var(--primary_color);
-    font-family: var(--ter_font);
+    /*font-family: var(--ter_font);*/
 }
 
 .primary_button:hover {
@@ -195,7 +195,7 @@ img {
 	border-radius: var(--12_5px);
 	transition: 100ms;
 	font-weight: 500;
-    font-family: var(--ter_font);
+    /*font-family: var(--ter_font);*/
 }
 
 .secondary_button:hover {
