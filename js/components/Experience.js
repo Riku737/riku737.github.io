@@ -1,5 +1,10 @@
 class Experience extends HTMLElement {
-	connectedCallback() {
+
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
 
 	    const getAttr = (attr) => DOMPurify.sanitize(this.getAttribute(attr));
 

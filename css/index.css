@@ -179,7 +179,6 @@ img {
 	transition: 100ms;
 	font-weight: 500;
 	border: var(--1px) solid var(--primary_color);
-    /*font-family: var(--ter_font);*/
 }
 
 .primary_button:hover {
@@ -195,7 +194,6 @@ img {
 	border-radius: var(--12_5px);
 	transition: 100ms;
 	font-weight: 500;
-    /*font-family: var(--ter_font);*/
 }
 
 .secondary_button:hover {
@@ -203,7 +201,7 @@ img {
 	color: var(--accent_color);
 }
 
-.projects_section #inline_icon:hover svg {
+.projects_section .inline_icon:hover svg {
 	fill: var(--accent_color);
 }
 
@@ -261,7 +259,7 @@ img {
 
 /* Icon buttons */
 
-#inline_icon {
+.inline_icon {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -270,13 +268,13 @@ img {
 	width: fit-content;
 }
 
-#inline_icon p {
+.inline_icon p {
 	margin-top: 0rem;
 	margin-bottom: 0rem;
 	color: inherit;
 }
 
-#inline_icon svg {
+.inline_icon svg {
 	height: var(--25px);
 	width: var(--25px);
 }
@@ -635,7 +633,7 @@ img {
 	font-size: var(--21px);
 }
 
-#heading_description_bg {
+.heading_description_bg {
 	color: var(--text_color);
 }
 

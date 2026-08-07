@@ -1,7 +1,12 @@
 const SITE_ROOT = window.location.origin + "/";
 
 class WebNavBar extends HTMLElement {
-	connectedCallback() {
+
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
 		this.innerHTML = `
 	    <nav class="navigation_section" id="web_navigation_bar">
 

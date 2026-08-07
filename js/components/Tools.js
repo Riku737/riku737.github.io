@@ -1,5 +1,10 @@
 class Tools extends HTMLElement {
-	connectedCallback() {
+
+    constructor() {
+        super();
+    }
+
+    connectedCallback() {
 
 	    const getAttr = (a) => DOMPurify.sanitize(this.getAttribute(a));
 
