@@ -175,7 +175,7 @@ img {
 	color: white;
 	text-decoration: none;
 	display: inline-block;
-	border-radius: var(--12_5px);
+	/*border-radius: var(--12_5px);*/
 	transition: 100ms;
 	font-weight: 500;
 	border: var(--1px) solid var(--primary_color);
@@ -191,7 +191,7 @@ img {
 	color: var(--primary_color);
 	text-decoration: none;
 	border: var(--1px) solid var(--primary_color);
-	border-radius: var(--12_5px);
+	/*border-radius: var(--12_5px);*/
 	transition: 100ms;
 	font-weight: 500;
 }
@@ -551,7 +551,7 @@ img {
 	position: relative;
 	box-sizing: border-box;
 	z-index: 0;
-	border-radius: var(--25px);
+	/*border-radius: var(--25px);*/
 	margin: auto;
 	width: calc(100% - var(--100px));
 	/* Subtract 100px from each side */
@@ -616,7 +616,7 @@ img {
 .skill_box {
 	color: var(--primary_color);
 	background-color: white;
-	border-radius: var(--12_5px);
+	/*border-radius: var(--12_5px);*/
 	padding: var(--25px);
 	transition: 100ms;
 	aspect-ratio: 1 / 1;
@@ -697,7 +697,7 @@ img {
 /*}*/
 
 .highlight_thumbnail {
-	border-radius: var(--6_25px) var(--6_25px) 0 0;
+	/*border-radius: var(--6_25px) var(--6_25px) 0 0;*/
 	overflow: hidden;
 	aspect-ratio: 16 / 9;
 	margin: 0;
@@ -733,7 +733,7 @@ img {
 	width: 100%;
 	aspect-ratio: 16 / 9;
 	object-fit: cover;
-	border-radius: var(--6_25px) var(--6_25px) 0 0;
+	/*border-radius: var(--6_25px) var(--6_25px) 0 0;*/
 	transition: 0.1s;
 }
 
@@ -759,7 +759,7 @@ img {
 	width: 100%;
 	aspect-ratio: 16 / 9;
 	object-fit: cover;
-	border-radius: var(--6_25px) var(--6_25px) 0 0;
+	/*border-radius: var(--6_25px) var(--6_25px) 0 0;*/
 	transition: 100ms;
 }
 
@@ -792,7 +792,7 @@ img {
 
 .project_thumbnail_boundaries {
 	overflow: hidden;
-	border-radius: var(--12_5px) var(--12_5px) 0 0;
+	/*border-radius: var(--12_5px) var(--12_5px) 0 0;*/
 	width: 100%;
 	margin: 0;
 	pointer-events: none;
@@ -804,7 +804,7 @@ img {
 .project_details {
 	padding: var(--25px);
 	background-color: white;
-	border-radius: 0 0 var(--12_5px) var(--12_5px);
+	/*border-radius: 0 0 var(--12_5px) var(--12_5px);*/
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
@@ -889,7 +889,7 @@ img {
 
 .experience_box {
 	background-color: white;
-	border-radius: var(--12_5px);
+	/*border-radius: var(--12_5px);*/
 	color: var(--primary_color);
 	display: flex;
 	padding: var(--25px);
@@ -994,7 +994,7 @@ img {
 .contact_image {
 	object-fit: cover;
 	width: 100%;
-	border-radius: var(--12_5px);
+	/*border-radius: var(--12_5px);*/
 	/* height: 18.75rem; */
 	pointer-events: none;
 	display: block;
